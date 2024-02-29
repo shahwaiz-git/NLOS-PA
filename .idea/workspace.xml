@@ -32,6 +32,12 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -286,6 +292,7 @@
       <workItem from="1709174223573" duration="811000" />
       <workItem from="1709175428910" duration="4219000" />
       <workItem from="1709189862785" duration="2065000" />
+      <workItem from="1709192074598" duration="889000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -351,7 +358,47 @@
       <option name="project" value="LOCAL" />
       <updated>1709191547686</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="init">
+      <option name="closed" value="true" />
+      <created>1709192113658</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1709192113658</updated>
+    </task>
+    <task id="LOCAL-00010" summary="init">
+      <option name="closed" value="true" />
+      <created>1709192256507</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1709192256507</updated>
+    </task>
+    <task id="LOCAL-00011" summary="init">
+      <option name="closed" value="true" />
+      <created>1709192276722</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1709192276722</updated>
+    </task>
+    <task id="LOCAL-00012" summary="init">
+      <option name="closed" value="true" />
+      <created>1709192621818</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1709192621818</updated>
+    </task>
+    <task id="LOCAL-00013" summary="init">
+      <option name="closed" value="true" />
+      <created>1709192716277</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1709192716277</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
