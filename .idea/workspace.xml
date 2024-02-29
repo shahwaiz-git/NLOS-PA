@@ -5,181 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="499d4161-e95a-446e-9f4b-63ea55533d07" name="更改" comment="init">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/CODE.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DAS.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DATA/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DATA/data_interface.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DATA/mydataset.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MODEL/DAS.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MODEL/UNet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MODEL/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MODEL/model_interface.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/density_map.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lightning_logs/version_0/events.out.tfevents.1703397624.Shahwaiz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lightning_logs/version_0/hparams.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lightning_logs/version_1/events.out.tfevents.1703397912.Shahwaiz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lightning_logs/version_1/events.out.tfevents.1703398295.Shahwaiz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lightning_logs/version_1/hparams.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lightning_logs/version_2/events.out.tfevents.1703398518.Shahwaiz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lightning_logs/version_2/hparams.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lightning_logs/version_3/events.out.tfevents.1703398777.Shahwaiz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lightning_logs/version_3/hparams.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lightning_logs/version_4/events.out.tfevents.1703400139.Shahwaiz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lightning_logs/version_4/hparams.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mydataset.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phantom.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sample.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/simple.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.m" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utlis.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/debug-cli.19086.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_110731-zytdcb69/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_110731-zytdcb69/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_110731-zytdcb69/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_110731-zytdcb69/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_110731-zytdcb69/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_110731-zytdcb69/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_110731-zytdcb69/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_110731-zytdcb69/run-zytdcb69.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_113557-ljtavdhj/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_113557-ljtavdhj/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_113557-ljtavdhj/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_113557-ljtavdhj/run-ljtavdhj.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_114946-vq8r8ajl/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_114946-vq8r8ajl/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_114946-vq8r8ajl/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_114946-vq8r8ajl/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_114946-vq8r8ajl/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_114946-vq8r8ajl/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_114946-vq8r8ajl/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_114946-vq8r8ajl/run-vq8r8ajl.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_115048-chbp9kjm/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_115048-chbp9kjm/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_115048-chbp9kjm/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_115048-chbp9kjm/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_115048-chbp9kjm/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_115048-chbp9kjm/files/wandb-summary.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_115048-chbp9kjm/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_115048-chbp9kjm/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_115048-chbp9kjm/run-chbp9kjm.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_115703-2anp6sob/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_115703-2anp6sob/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_115703-2anp6sob/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_115703-2anp6sob/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_115703-2anp6sob/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_115703-2anp6sob/files/wandb-summary.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_115703-2anp6sob/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_115703-2anp6sob/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_115703-2anp6sob/run-2anp6sob.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_120800-9kbryoaa/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_120800-9kbryoaa/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_120800-9kbryoaa/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_120800-9kbryoaa/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_120800-9kbryoaa/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_120800-9kbryoaa/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_120800-9kbryoaa/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_120800-9kbryoaa/run-9kbryoaa.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_121126-0h9oxv8i/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_121126-0h9oxv8i/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_121126-0h9oxv8i/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_121126-0h9oxv8i/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_121126-0h9oxv8i/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_121126-0h9oxv8i/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_121126-0h9oxv8i/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_121126-0h9oxv8i/run-0h9oxv8i.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_123620-9vudaix7/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_123620-9vudaix7/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_123620-9vudaix7/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_123620-9vudaix7/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_123620-9vudaix7/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_123620-9vudaix7/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_123620-9vudaix7/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_123620-9vudaix7/run-9vudaix7.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_124238-el399day/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_124238-el399day/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_124238-el399day/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_124238-el399day/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_124238-el399day/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_124238-el399day/files/wandb-summary.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_124238-el399day/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_124238-el399day/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_124238-el399day/run-el399day.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_135422-wiu5hpwi/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_135422-wiu5hpwi/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_135422-wiu5hpwi/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_135422-wiu5hpwi/run-wiu5hpwi.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_135622-ofouqe7h/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_135622-ofouqe7h/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_135622-ofouqe7h/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_135622-ofouqe7h/run-ofouqe7h.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_135835-z69eq3fv/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_135835-z69eq3fv/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_135835-z69eq3fv/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_135835-z69eq3fv/run-z69eq3fv.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_154321-f1ezv5gk/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_154321-f1ezv5gk/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_154321-f1ezv5gk/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_154321-f1ezv5gk/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_154321-f1ezv5gk/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_154321-f1ezv5gk/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_154321-f1ezv5gk/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_154321-f1ezv5gk/run-f1ezv5gk.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_154658-ij9nwjpj/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_154658-ij9nwjpj/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_154658-ij9nwjpj/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_154658-ij9nwjpj/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_154658-ij9nwjpj/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_154658-ij9nwjpj/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_154658-ij9nwjpj/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_154658-ij9nwjpj/run-ij9nwjpj.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_155043-kf6nhv0g/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_155043-kf6nhv0g/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_155043-kf6nhv0g/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_155043-kf6nhv0g/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_155043-kf6nhv0g/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_155043-kf6nhv0g/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_155043-kf6nhv0g/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_155043-kf6nhv0g/run-kf6nhv0g.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_155822-7sy3a754/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_155822-7sy3a754/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_155822-7sy3a754/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_155822-7sy3a754/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_155822-7sy3a754/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_155822-7sy3a754/files/wandb-summary.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_155822-7sy3a754/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_155822-7sy3a754/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_155822-7sy3a754/run-7sy3a754.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_161844-d2lj9k7v/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_161844-d2lj9k7v/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_161844-d2lj9k7v/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_161844-d2lj9k7v/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_161844-d2lj9k7v/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_161844-d2lj9k7v/files/wandb-summary.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_161844-d2lj9k7v/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_161844-d2lj9k7v/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_161844-d2lj9k7v/run-d2lj9k7v.wandb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_212135-wngplhy4/files/conda-environment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_212135-wngplhy4/files/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_212135-wngplhy4/files/output.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_212135-wngplhy4/files/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_212135-wngplhy4/files/wandb-metadata.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_212135-wngplhy4/files/wandb-summary.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_212135-wngplhy4/logs/debug-internal.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_212135-wngplhy4/logs/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wandb/run-20231224_212135-wngplhy4/run-wngplhy4.wandb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lightning_logs/version_31/events.out.tfevents.1709190362.Shahwaiz" beforeDir="false" afterPath="$PROJECT_DIR$/lightning_logs/version_31/events.out.tfevents.1709190362.Shahwaiz" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,36 +52,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.TRM.executor&quot;: &quot;Run&quot;,
-    &quot;Python.UNet1D.executor&quot;: &quot;Run&quot;,
-    &quot;Python.UNet2D.executor&quot;: &quot;Run&quot;,
-    &quot;Python.bmode_reconstruction_example.executor&quot;: &quot;Run&quot;,
-    &quot;Python.example_array_as_a_sensor.executor&quot;: &quot;Run&quot;,
-    &quot;Python.example_array_as_a_source.executor&quot;: &quot;Run&quot;,
-    &quot;Python.example_at_linear_array_transducer.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.mydataset.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/HISLab/毕设/CODE&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.TRM.executor": "Run",
+    "Python.UNet1D.executor": "Run",
+    "Python.UNet2D.executor": "Run",
+    "Python.bmode_reconstruction_example.executor": "Run",
+    "Python.example_array_as_a_sensor.executor": "Run",
+    "Python.example_array_as_a_source.executor": "Run",
+    "Python.example_at_linear_array_transducer.executor": "Run",
+    "Python.main.executor": "Debug",
+    "Python.mydataset.executor": "Run",
+    "Python.test.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "WebServerToolWindowPanel.toolwindow.highlight.mappings": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.symlinks": "true",
+    "WebServerToolWindowPanel.toolwindow.show.date": "false",
+    "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
+    "WebServerToolWindowPanel.toolwindow.show.size": "false",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "D:/HISLab/毕设/CODE",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\HISLab\毕设\CODE\DATA" />
@@ -456,14 +288,54 @@
       <workItem from="1709111627201" duration="628000" />
       <workItem from="1709174223573" duration="811000" />
       <workItem from="1709175428910" duration="4219000" />
-      <workItem from="1709189862785" duration="423000" />
+      <workItem from="1709189862785" duration="1176000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <option name="closed" value="true" />
+      <created>1709190412881</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709190412881</updated>
+    </task>
+    <task id="LOCAL-00002" summary="init">
+      <option name="closed" value="true" />
+      <created>1709190555130</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709190555130</updated>
+    </task>
+    <task id="LOCAL-00003" summary="init">
+      <option name="closed" value="true" />
+      <created>1709190748245</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709190748245</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -490,10 +362,10 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CODE$model_interface.coverage" NAME="model_interface 覆盖结果" MODIFIED="1703252043007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MODEL" />
     <SUITE FILE_PATH="coverage/CODE$UNet.coverage" NAME="UNet 覆盖结果" MODIFIED="1703137109790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MODEL" />
+    <SUITE FILE_PATH="coverage/CODE$model_interface.coverage" NAME="model_interface 覆盖结果" MODIFIED="1703252043007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MODEL" />
     <SUITE FILE_PATH="coverage/CODE$mydataset.coverage" NAME="mydataset 覆盖结果" MODIFIED="1703738874845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DATA" />
-    <SUITE FILE_PATH="coverage/CODE$main.coverage" NAME="main 覆盖结果" MODIFIED="1709177480961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CODE$main.coverage" NAME="main 覆盖结果" MODIFIED="1709190351107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CODE$memo.coverage" NAME="memo 覆盖结果" MODIFIED="1703056628395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CODE$example_at_linear_array_transducer.coverage" NAME="example_at_linear_array_transducer 覆盖结果" MODIFIED="1703491940239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../MODEL/Github/k-wave-python-master/examples" />
     <SUITE FILE_PATH="coverage/CODE$bmode_reconstruction_example.coverage" NAME="bmode_reconstruction_example 覆盖结果" MODIFIED="1703491909918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../MODEL/Github/k-wave-python-master/examples" />
