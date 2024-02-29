@@ -10,7 +10,6 @@ class DAS(nn.Module):
                  dx=1e-4, dy=1e-4,
                  vs=1550):
         super(DAS, self).__init__()
-        # TODO:load and sort problem
         sensor_mask = scipy.io.loadmat(sensor_mask_dir)['sensor_mask_idx']
         self.sensor_mask = sensor_mask[:, np.lexsort((sensor_mask[0], sensor_mask[1]))].T
 
