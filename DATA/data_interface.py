@@ -27,8 +27,7 @@ class SimuDataset(Dataset):
         mixed_signal = torch.tensor(loadmat(join(self.mixed_signal_dir, name))['mixed_signal'])
         direct_signal = torch.tensor(loadmat(join(self.direct_signal_dir, name))['direct_signal'])
         target = ToTensor()(loadmat(join(self.target_dir, name))['target'])
-        # TODO:???
-        # target /= torch.max(target)
+        target /= torch.max(target)
         return mixed_signal, direct_signal, target, name
 
 
