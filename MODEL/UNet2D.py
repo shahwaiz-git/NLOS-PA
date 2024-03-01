@@ -50,52 +50,50 @@ class Down(nn.Module):
 class Up(nn.Module):
     def __init__(self, in_channels):
         super().__init__()
-        self.up = nn.ConvTranspose2d(in_channels, in_channels // 2,
-                                     kernel_size=(2, 2), stride=(2, 2), padding=(0, 0))
-        self.conv = DoubleConv(in_channels, in_channels // 2)
+        self.up = nn.Sequential(
+            nn.ConvTranspose2d(in_channels, in_channels, kernel_size=(2, 2), stride=(2, 2), padding=(0, 0)),
+            DoubleConv(in_channels, in_channels//2)
+        )
 
-    def forward(self, x1, x2):
-        x2 = self.up(x2)
-        x1 = crop(x1, x2)
-        x = torch.cat([x1, x2], dim=1)
-        return self.conv(x)
+    def forward(self, x):
+        return self.up(x)
 
 
 class UNet2D(nn.Module):
     def __init__(self, n_classes=1):
         super(UNet2D, self).__init__()
-        self.down1 = DoubleConv(1, 64)
-        self.down2 = Down(64)
-        self.down3 = Down(128)
-        self.down4 = Down(256)
-        self.down5 = Down(512)
+        self.down1 = DoubleConv(1, 16)
+        self.down2 = Down(16)
+        self.down3 = Down(32)
+        self.down4 = Down(64)
+        self.down5 = Down(128)
 
-        self.up1 = Up(1024)
-        self.up2 = Up(512)
-        self.up3 = Up(256)
-        self.up4 = Up(128)
-        self.out = nn.Conv2d(64, out_channels=n_classes, kernel_size=(3, 3), padding=(1,1))
+        self.up1 = Up(256)
+        self.up2 = Up(128)
+        self.up3 = Up(64)
+        self.up4 = Up(32)
+        self.out = nn.Conv2d(16, out_channels=n_classes, kernel_size=(3, 3), padding=(1,1))
 
     def forward(self, x):
-        out1 = self.down1(x)
-        out2 = self.down2(out1)
-        out3 = self.down3(out2)
-        out4 = self.down4(out3)
-        out5 = self.down5(out4)
+        x = self.down1(x)
+        x = self.down2(x)
+        x = self.down3(x)
+        x = self.down4(x)
+        x = self.down5(x)
 
-        out6 = self.up1(out4, out5)
-        out7 = self.up2(out3, out6)
-        out8 = self.up3(out2, out7)
-        out9 = self.up4(out1, out8)
+        x = self.up1(x)
+        x = self.up2(x)
+        x = self.up3(x)
+        x = self.up4(x)
 
-        out = self.out(out9)
-        return out
+        x = self.out(x)
+        return x
 
 if __name__ == '__main__':
-    # net = UNet2D()
-    # input = torch.randn(3, 1, 512, 512)
-    # out = net(input)
-    # print(out.shape)
+    net = UNet2D()
+    input = torch.randn(3, 1, 512, 512)
+    out = net(input)
+    print(out.shape)
 
     from torchsummary import summary
     net = UNet2D().to("cuda")
