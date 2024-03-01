@@ -91,9 +91,13 @@ class UNet2D(nn.Module):
         out = self.out(out9)
         return out
 
-# if __name__ == '__main__':
-#     net = UNet2D()
-#     input = torch.randn(3, 1, 512, 512)
-#     out = net(input)
-#     print(out.shape)
+if __name__ == '__main__':
+    # net = UNet2D()
+    # input = torch.randn(3, 1, 512, 512)
+    # out = net(input)
+    # print(out.shape)
+
+    from torchsummary import summary
+    net = UNet2D().to("cuda")
+    summary(net, (1, 512, 512), device="cuda", batch_size=64)
 

@@ -3,5 +3,5 @@
   <component name="Black">
     <option name="sdkName" value="UNet-DAS" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="UNet-DAS" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="unet" project-jdk-type="Python SDK" />
 </project>

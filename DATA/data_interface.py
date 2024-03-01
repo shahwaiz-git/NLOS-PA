@@ -70,4 +70,5 @@ class DInterface(pl.LightningDataModule):
         return DataLoader(
             dataset=self.test_dataset,
             batch_size=self.batch_size,
+            persistent_workers=True,
             pin_memory=True)

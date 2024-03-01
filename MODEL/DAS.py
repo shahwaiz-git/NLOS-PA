@@ -41,11 +41,24 @@ class DAS(nn.Module):
         return image
 
 
-# if __name__ == '__main__':
-#     sensor_mask_dir = r'.\sensor_mask_idx.mat'
-#     net = DAS(sensor_mask_dir, dt=1 / 5e6)
-#     input_ = torch.tensor(scipy.io.loadmat(r"D:\HISLab\DATASET\StripSkullCT_Simulation\direct_signal\300_410.mat")['direct_signal'],device='cuda').repeat(1,2,1,1)
-#     out = net(input_)
-#     import matplotlib.pyplot as plt
-#     plt.imshow(out[0][0].cpu())
-#     plt.show()
+if __name__ == '__main__':
+    current_memory = torch.cuda.memory_allocated()
+    torch.cuda.reset_peak_memory_stats()
+
+    sensor_mask_dir = r'.\sensor_mask_idx.mat'
+    net = DAS(sensor_mask_dir, dt=1 / 5e6)
+    input_ = torch.tensor(scipy.io.loadmat(r"D:\HISLab\DATASET\StripSkullCT_Simulation\direct_signal\300_410.mat")['direct_signal'],device='cuda').repeat(1,2,1,1)
+    out = net(input_)
+
+    additional_memory = torch.cuda.memory_allocated() - (current_memory)
+    peak_memory = torch.cuda.max_memory_allocated()
+    additional_peak_memory = peak_memory - (current_memory)
+
+    print(f"Additional memory used: {additional_memory / (1024 ** 3)} GB")
+    print(f"Additional peak memory used: {additional_peak_memory / (1024 ** 3)} GB")
+
+
+    # import matplotlib.pyplot as plt
+    # plt.imshow(out[0][0].cpu())
+    # plt.show()
+
