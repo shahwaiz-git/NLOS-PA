@@ -6,6 +6,7 @@ from skimage.metrics import structural_similarity
 from skimage.metrics import peak_signal_noise_ratio
 
 from PIL import Image
+import scipy
 
 
 def PSNR(y, y_hat):
@@ -31,9 +32,17 @@ def save_result(y_hat, base_dir, names):
         image = Image.fromarray(y_hat[i][0].cpu().numpy() * 255.).convert('L')
         image.save(join(base_dir, names[i][:-4] + '.png'))
 
+
+def save_mat(signal_hat, base_dir, names):
+    for i in range(len(names)):
+        mat = signal_hat[i][0].cpu().numpy()
+        scipy.io.savemat(join(base_dir, names[i][:-4] + '.mat'), {'direct_signal_hat': mat})
+
+
 if __name__ == '__main__':
     from PIL import Image
     from torchvision.transforms import ToTensor
+
     y = ToTensor()(np.array(Image.open(r"D:\Photo\证件照\DSC_0146.JPG")))
     y_hat = ToTensor()(np.array(Image.open(r"D:\Photo\证件照\压缩1.jpg")))
     print(PSNR(y, y_hat))

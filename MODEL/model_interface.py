@@ -55,6 +55,7 @@ class MInterface(pl.LightningModule):
 
         if stage == 'test' and self.hparams.save_dir:
             save_result(image_hat, self.hparams.save_dir, names)
+            save_mat(signal_hat, self.hparams.save_dir, names)
 
     def validation_step(self, batch, batch_idx):
         self.evaluate(batch, 'val')

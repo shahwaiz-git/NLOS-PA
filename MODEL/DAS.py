@@ -6,8 +6,8 @@ import scipy
 
 class DAS(nn.Module):
     def __init__(self, sensor_mask_dir, dt,
-                 Nx=512, Ny=512,
-                 dx=1e-4, dy=1e-4,
+                 Nx=256, Ny=256,
+                 dx=1e-4, dy=1e-3,
                  vs=1550):
         super(DAS, self).__init__()
         sensor_mask = scipy.io.loadmat(sensor_mask_dir)['sensor_mask_idx']
@@ -31,8 +31,8 @@ class DAS(nn.Module):
         image = torch.zeros(batch, 2, self.Nx, self.Ny, device='cuda')
 
         # att: needn't .copy() here
-        idx = torch.arange(1, 513, device='cuda').unsqueeze(1).repeat(batch, 2, 1, 512)  # batch, 2, Nx, Ny
-        idy = torch.arange(1, 513, device='cuda').unsqueeze(0).repeat(batch, 2, 512, 1)  # batch, 2, Nx, Ny
+        idx = torch.arange(1, self.Nx+1, device='cuda').unsqueeze(1).repeat(batch, 2, 1, self.Nx)  # batch, 2, Nx, Ny
+        idy = torch.arange(1, self.Ny+1, device='cuda').unsqueeze(0).repeat(batch, 2, self.Ny, 1)  # batch, 2, Nx, Ny
         for c, (x, y) in enumerate(self.sensor_mask):
             dis = torch.sqrt(((x - idx + 1) * self.dx) ** 2 + ((y - idy + 1) * self.dy) ** 2)  # batch, 2, Nx, Ny
             t = (dis / self.vs / self.dt).to(torch.long).view(batch, 2, -1)  # batch, 2, Nx*Ny

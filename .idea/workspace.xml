@@ -6,22 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="499d4161-e95a-446e-9f4b-63ea55533d07" name="更改" comment="UNET2D更改后提交">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DAS.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DATA/data_interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/DATA/data_interface.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MODEL/DAS.py" beforeDir="false" afterPath="$PROJECT_DIR$/MODEL/DAS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MODEL/UNet1D.py" beforeDir="false" afterPath="$PROJECT_DIR$/MODEL/UNet1D.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MODEL/UNet2D.py" beforeDir="false" afterPath="$PROJECT_DIR$/MODEL/UNet2D.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/density_map.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/density_map_phantom.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mydataset.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/p0.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensor_mask.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sensor_mask_idx.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/simu_fun.m" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tissue.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tissue_phantom.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MODEL/model_interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/MODEL/model_interface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utlis.py" beforeDir="false" afterPath="$PROJECT_DIR$/utlis.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -321,7 +309,8 @@
       <workItem from="1709279621928" duration="7758000" />
       <workItem from="1709295402715" duration="1263000" />
       <workItem from="1709298662216" duration="8282000" />
-      <workItem from="1709361036958" duration="9970000" />
+      <workItem from="1709361036958" duration="12054000" />
+      <workItem from="1709529991877" duration="2071000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -475,7 +464,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709304673958</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="UNET2D更改后提交">
+      <option name="closed" value="true" />
+      <created>1709521129068</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1709521129068</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
