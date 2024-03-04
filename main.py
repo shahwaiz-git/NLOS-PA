@@ -28,13 +28,14 @@ parser.add_argument('--n_classes', default=1, type=int)
 parser.add_argument('--channels', default=25, type=int)
 parser.add_argument('--dt', default=1 / 5e6, type=float)
 
-parser.add_argument('--train_size', default=0.9, type=float)
+parser.add_argument('--train_size', default=0.8, type=float)
 parser.add_argument('--val_size', default=0.1, type=float)  # included in train_size
 parser.add_argument('--max_epochs', default=300, type=int)
-parser.add_argument('--batch_size', default=2, type=int)
+parser.add_argument('--min_epochs', default=100, type=int)
+parser.add_argument('--batch_size', default=64, type=int)
 parser.add_argument('--num_workers', default=10, type=int)
 parser.add_argument('--seed', default=1121, type=int)
-parser.add_argument('--lr', default=1e-3, type=float)
+parser.add_argument('--lr', default=1e-4, type=float)
 parser.add_argument('--loss', default='mse', type=str)  # mse or l1
 
 # Other
@@ -72,10 +73,9 @@ if __name__ == '__main__':
     trainer = Trainer(
         accelerator="gpu",
         devices=1,
-        min_epochs=10,
+        min_epochs=args.min_epochs,
         max_epochs=args.max_epochs,
         callbacks=[callback_checkpoint, callback_early_stop],
-        # num_sanity_val_steps=0,
         # logger=wandb_logger,
     )
 

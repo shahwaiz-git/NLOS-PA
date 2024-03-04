@@ -46,7 +46,7 @@ class DInterface(pl.LightningDataModule):
     def setup(self, stage: str) -> None:
         dataset = SimuDataset(self.mixed_signal_dir, self.direct_signal_dir, self.target_dir)
         self.train_dataset, self.val_dataset, self.test_dataset = random_split(dataset, [
-            self.train_size-self.val_size, self.val_size, 1-self.train_size])
+            self.train_size, self.val_size, 1-self.train_size-self.val_size])
 
     def train_dataloader(self):
         return DataLoader(
@@ -70,5 +70,6 @@ class DInterface(pl.LightningDataModule):
         return DataLoader(
             dataset=self.test_dataset,
             batch_size=self.batch_size,
+            num_workers=self.num_workers,
             persistent_workers=True,
             pin_memory=True)

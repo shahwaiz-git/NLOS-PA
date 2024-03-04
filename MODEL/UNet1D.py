@@ -45,7 +45,7 @@ class Up(nn.Module):
 
 
 class UNet1D(nn.Module):
-    def __init__(self, channels=25):
+    def __init__(self, channels=50):
         super(UNet1D, self).__init__()
         self.down1 = DoubleConv(channels)
         self.down2 = Down(channels)
@@ -84,4 +84,4 @@ if __name__ == '__main__':
 
     from torchsummary import summary
     net = UNet1D().to("cuda")
-    summary(net, (25, 512), device="cuda", batch_size=64)
+    summary(net, (50, 1024), device="cuda", batch_size=64)

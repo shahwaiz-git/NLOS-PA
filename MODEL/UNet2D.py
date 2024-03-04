@@ -62,17 +62,20 @@ class Up(nn.Module):
 class UNet2D(nn.Module):
     def __init__(self, n_classes=1):
         super(UNet2D, self).__init__()
-        self.down1 = DoubleConv(1, 16)
-        self.down2 = Down(16)
-        self.down3 = Down(32)
-        self.down4 = Down(64)
-        self.down5 = Down(128)
+        self.down1 = DoubleConv(1, 4)
+        self.down2 = Down(4)
+        self.down3 = Down(8)
+        self.down4 = Down(16)
+        self.down5 = Down(32)
 
-        self.up1 = Up(256)
-        self.up2 = Up(128)
-        self.up3 = Up(64)
-        self.up4 = Up(32)
-        self.out = nn.Conv2d(16, out_channels=n_classes, kernel_size=(3, 3), padding=(1,1))
+        self.up1 = Up(64)
+        self.up2 = Up(32)
+        self.up3 = Up(16)
+        self.up4 = Up(8)
+        self.out = nn.Sequential(
+            nn.Conv2d(4, out_channels=n_classes, kernel_size=(3, 3), padding=(1, 1)),
+            nn.BatchNorm2d(1),
+        )
 
     def forward(self, x):
         x = self.down1(x)
@@ -90,12 +93,9 @@ class UNet2D(nn.Module):
         return x
 
 if __name__ == '__main__':
-    net = UNet2D()
-    input = torch.randn(3, 1, 512, 512)
-    out = net(input)
-    print(out.shape)
-
     from torchsummary import summary
+
     net = UNet2D().to("cuda")
-    summary(net, (1, 512, 512), device="cuda", batch_size=64)
+
+    summary(net, (1, 256, 256), device="cuda", batch_size=64)
 
