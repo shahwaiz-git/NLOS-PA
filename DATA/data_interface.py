@@ -42,11 +42,13 @@ class DInterface(pl.LightningDataModule):
         self.val_size = kwargs['val_size']
         self.batch_size = kwargs['batch_size']
         self.num_workers = kwargs['num_workers']
+        self.seed = kwargs['seed']
 
     def setup(self, stage: str) -> None:
         dataset = SimuDataset(self.mixed_signal_dir, self.direct_signal_dir, self.target_dir)
         self.train_dataset, self.val_dataset, self.test_dataset = random_split(dataset, [
-            self.train_size, self.val_size, 1-self.train_size-self.val_size])
+            self.train_size, self.val_size, 1-self.train_size-self.val_size],
+            generator=torch.Generator().manual_seed(self.seed))
 
     def train_dataloader(self):
         return DataLoader(

@@ -16,6 +16,7 @@ class MInterface(pl.LightningModule):
         self.unet1d = UNet1D(channels=kwargs['channels'])
         self.unet2d = UNet2D(n_classes=kwargs['n_classes'])
         self.configure_loss()
+        self.automatic_optimization = False
 
     def forward(self, mixed):
         direct_signal = self.unet1d(mixed)
@@ -30,13 +31,20 @@ class MInterface(pl.LightningModule):
     def training_step(self, batch, batch_idx):
         mixed_signal, direct_signal, target, _ = batch
         signal_hat, image_hat = self.forward(mixed_signal)
+        (opt1, opt2) = self.optimizers(use_pl_optimizer=True)
+
         loss1 = self.loss_function1(direct_signal.float(), signal_hat.float())
+        opt1.zero_grad()
+        self.manual_backward(loss1)
+        opt1.step()
+
         loss2 = self.loss_function2(target.float(), image_hat.float())
-        loss = loss1 + loss2
-        self.log("train loss1", loss1, on_step=False, on_epoch=True, prog_bar=True, batch_size=self.hparams.batch_size)
-        self.log("train loss2", loss2, on_step=False, on_epoch=True, prog_bar=True, batch_size=self.hparams.batch_size)
-        self.log("train loss", loss, on_step=False, on_epoch=True, prog_bar=True, batch_size=self.hparams.batch_size)
-        return loss
+        opt2.zero_grad()
+        self.manual_backward(loss2)
+        opt2.step()
+
+        self.log_dict({'train loss1': loss1, 'train loss2': loss2, 'train loss': loss1 + loss2},
+                      on_step=False, on_epoch=True, prog_bar=True, batch_size=self.hparams.batch_size)
 
     def evaluate(self, batch, stage):
         assert stage in ['val', 'test']
@@ -47,11 +55,9 @@ class MInterface(pl.LightningModule):
         loss = loss1 + loss2
         psnr = PSNR(target, image_hat)
         ssim = SSIM(target, image_hat)
-        self.log(f"{stage}_loss1", loss1, prog_bar=True, batch_size=self.hparams.batch_size)
-        self.log(f"{stage}_loss2", loss2, prog_bar=True, batch_size=self.hparams.batch_size)
-        self.log(f"{stage}_loss", loss, prog_bar=True, batch_size=self.hparams.batch_size)
-        self.log(f"{stage}_PSNR", psnr, prog_bar=True, batch_size=self.hparams.batch_size)
-        self.log(f"{stage}_SSIM", ssim, prog_bar=True, batch_size=self.hparams.batch_size)
+        self.log_dict({'train loss1': loss1, 'train loss2': loss2, 'train loss': loss,
+                       f"{stage}_PSNR": psnr, f"{stage}_SSIM": ssim},
+                      prog_bar=True, batch_size=self.hparams.batch_size)
 
         if stage == 'test' and self.hparams.save_dir:
             save_result(image_hat, self.hparams.save_dir, names)
@@ -68,7 +74,9 @@ class MInterface(pl.LightningModule):
         return signal, y_hat
 
     def configure_optimizers(self):
-        return torch.optim.Adam(self.parameters(), lr=self.hparams.lr)
+        opt1 = torch.optim.Adam(self.unet1d.parameters(), lr=self.hparams.lr)
+        opt2 = torch.optim.Adam(self.unet2d.parameters(), lr=self.hparams.lr)
+        return opt1, opt2
 
     def configure_loss(self):
         loss = self.hparams.loss.lower()

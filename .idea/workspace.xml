@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="499d4161-e95a-446e-9f4b-63ea55533d07" name="更改" comment="UNET2D更改后提交">
+    <list default="true" id="499d4161-e95a-446e-9f4b-63ea55533d07" name="更改" comment="init">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MODEL/DAS.py" beforeDir="false" afterPath="$PROJECT_DIR$/MODEL/DAS.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MODEL/UNet2D.py" beforeDir="false" afterPath="$PROJECT_DIR$/MODEL/UNet2D.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DATA/data_interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/DATA/data_interface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MODEL/UNet1D.py" beforeDir="false" afterPath="$PROJECT_DIR$/MODEL/UNet1D.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MODEL/model_interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/MODEL/model_interface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utlis.py" beforeDir="false" afterPath="$PROJECT_DIR$/utlis.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +72,7 @@
     &quot;Python.example_array_as_a_sensor.executor&quot;: &quot;Run&quot;,
     &quot;Python.example_array_as_a_source.executor&quot;: &quot;Run&quot;,
     &quot;Python.example_at_linear_array_transducer.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Debug&quot;,
     &quot;Python.model_interface.executor&quot;: &quot;Run&quot;,
     &quot;Python.mydataset.executor&quot;: &quot;Run&quot;,
     &quot;Python.test.executor&quot;: &quot;Run&quot;,
@@ -111,7 +112,7 @@
       <recent name="D:\HISLab\毕设\CODE\DATA" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.UNet1D">
+  <component name="RunManager" selected="Python.main">
     <configuration name="DAS" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CODE" />
       <option name="ENV_FILES" value="" />
@@ -182,7 +183,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="unet_model" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CODE" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -191,12 +192,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../MODEL/Github/Pytorch-UNet/unet" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../MODEL/Github/Pytorch-UNet/unet/unet_model.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -229,19 +230,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.main" />
       <item itemvalue="Python.DAS" />
-      <item itemvalue="Python.unet_model" />
       <item itemvalue="Python.utlis" />
       <item itemvalue="Python.UNet1D" />
       <item itemvalue="Python.UNet2D" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.UNet1D" />
         <item itemvalue="Python.UNet2D" />
         <item itemvalue="Python.DAS" />
         <item itemvalue="Python.utlis" />
-        <item itemvalue="Python.unet_model" />
       </list>
     </recent_temporary>
   </component>
@@ -310,7 +311,10 @@
       <workItem from="1709295402715" duration="1263000" />
       <workItem from="1709298662216" duration="8282000" />
       <workItem from="1709361036958" duration="12054000" />
-      <workItem from="1709529991877" duration="2071000" />
+      <workItem from="1709529991877" duration="5106000" />
+      <workItem from="1709537636232" duration="574000" />
+      <workItem from="1709538562773" duration="334000" />
+      <workItem from="1709538925771" duration="11653000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -472,7 +476,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709521129068</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="init">
+      <option name="closed" value="true" />
+      <created>1709532809252</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1709532809253</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -505,10 +517,10 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="init" />
     <MESSAGE value="UNET2D更改前提交" />
     <MESSAGE value="UNET2D更改后提交" />
-    <option name="LAST_COMMIT_MESSAGE" value="UNET2D更改后提交" />
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -525,8 +537,8 @@
     <SUITE FILE_PATH="coverage/CODE$DAS.coverage" NAME="DAS 覆盖结果" MODIFIED="1709371371930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MODEL" />
     <SUITE FILE_PATH="coverage/CODE$UNet.coverage" NAME="UNet 覆盖结果" MODIFIED="1703137109790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MODEL" />
     <SUITE FILE_PATH="coverage/CODE$model_interface.coverage" NAME="model_interface 覆盖结果" MODIFIED="1709289903350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MODEL" />
-    <SUITE FILE_PATH="coverage/CODE$main.coverage" NAME="main 覆盖结果" MODIFIED="1709294658942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CODE$mydataset.coverage" NAME="mydataset 覆盖结果" MODIFIED="1703738874845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DATA" />
+    <SUITE FILE_PATH="coverage/CODE$main.coverage" NAME="main 覆盖结果" MODIFIED="1709540465795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CODE$memo.coverage" NAME="memo 覆盖结果" MODIFIED="1703056628395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CODE$example_at_linear_array_transducer.coverage" NAME="example_at_linear_array_transducer 覆盖结果" MODIFIED="1703491940239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../MODEL/Github/k-wave-python-master/examples" />
     <SUITE FILE_PATH="coverage/CODE$unet_model.coverage" NAME="unet_model 覆盖结果" MODIFIED="1709361351864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../MODEL/Github/Pytorch-UNet/unet" />

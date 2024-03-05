@@ -7,12 +7,12 @@ class DoubleConv(nn.Module):
         self.double_conv = nn.Sequential(
             nn.Conv1d(in_channels=channels, out_channels=channels,
                       kernel_size=3, stride=1, padding=1),
-            nn.BatchNorm1d(channels),
+            # nn.BatchNorm1d(channels),
             nn.ReLU(),
 
             nn.Conv1d(in_channels=channels, out_channels=channels,
                       kernel_size=3, stride=1, padding=1),
-            nn.BatchNorm1d(channels),
+            # nn.BatchNorm1d(channels),
             nn.ReLU(),
         )
 

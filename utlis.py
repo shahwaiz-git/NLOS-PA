@@ -30,13 +30,13 @@ def save_result(y_hat, base_dir, names):
     # TODO: save format
     for i in range(len(names)):
         image = Image.fromarray(y_hat[i][0].cpu().numpy() * 255.).convert('L')
-        image.save(join(base_dir, names[i][:-4] + '.png'))
+        image.save(join(base_dir, 'target_hat', names[i][:-4] + '.png'))
 
 
 def save_mat(signal_hat, base_dir, names):
     for i in range(len(names)):
-        mat = signal_hat[i][0].cpu().numpy()
-        scipy.io.savemat(join(base_dir, names[i][:-4] + '.mat'), {'direct_signal_hat': mat})
+        mat = signal_hat[i].cpu().numpy()
+        scipy.io.savemat(join(base_dir, 'direct_signal_hat', names[i][:-4] + '.mat'), {'direct_signal_hat': mat})
 
 
 if __name__ == '__main__':
