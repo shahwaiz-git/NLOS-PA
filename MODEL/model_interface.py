@@ -22,11 +22,9 @@ class MInterface(pl.LightningModule):
     def forward(self, mixed_signal):
         direct_signal = self.unet1d(mixed_signal)
         reflected_signal = mixed_signal - direct_signal
-        signal = torch.cat((direct_signal.unsqueeze(1), reflected_signal.unsqueeze(1)), dim=1)
 
-        image = self.das(signal.detach())
-        direct_image = image[:, 0, :, :].unsqueeze(1)
-        reflected_image = image[:, 1, :, :].unsqueeze(1).detach()
+        direct_image = self.das(direct_signal.detach()).unsqueeze(1)
+        reflected_image = self.das(reflected_signal.detach()).unsqueeze(1)
 
         reflected_image = self.unet2d(reflected_image)
 

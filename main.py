@@ -80,7 +80,7 @@ if __name__ == '__main__':
         logger=wandb_logger,
     )
 
-    trainer.fit(model=model, datamodule=datamodule)
+    # trainer.fit(model=model, datamodule=datamodule)
 
     # trainer.test(model, ckpt_path=r"D:\HISLab\DATASET\StripSkullCT_Simulation\RESULT\MODEL\last.ckpt",
     #              datamodule=datamodule)
