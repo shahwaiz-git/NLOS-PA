@@ -8,7 +8,7 @@ from scipy.io import loadmat
 import pytorch_lightning as pl
 
 from torch.utils.data import Dataset, DataLoader, random_split
-from torchvision.transforms import ToTensor
+from torchvision.transforms import ToTensor, Normalize
 
 
 class SimuDataset(Dataset):
@@ -27,6 +27,12 @@ class SimuDataset(Dataset):
         mixed_signal = torch.tensor(loadmat(join(self.mixed_signal_dir, name))['mixed_signal'])
         direct_signal = torch.tensor(loadmat(join(self.direct_signal_dir, name))['direct_signal'])
         target = ToTensor()(loadmat(join(self.target_dir, name))['target'])
+
+        mixed_signal = ((mixed_signal - torch.min(mixed_signal,dim=1,keepdim=True).values) /
+                        (torch.max(mixed_signal,dim=1,keepdim=True).values - torch.min(mixed_signal,dim=1,keepdim=True).values))
+
+        direct_signal = ((direct_signal - torch.min(direct_signal,dim=1,keepdim=True).values) /
+                        (torch.max(direct_signal,dim=1,keepdim=True).values - torch.min(direct_signal,dim=1,keepdim=True).values))
         target /= torch.max(target)
         return mixed_signal, direct_signal, target, name
 

@@ -72,7 +72,10 @@ class UNet2D(nn.Module):
         self.up2 = Up(32)
         self.up3 = Up(16)
         self.up4 = Up(8)
-        self.out = nn.Conv2d(4, out_channels=n_classes, kernel_size=(3, 3), padding=(1, 1))
+        self.out = nn.Sequential(
+            nn.Conv2d(4, out_channels=n_classes, kernel_size=(3, 3), padding=(1, 1)),
+            # nn.Tanh()
+        )
 
     def forward(self, x):
         x = self.down1(x)
@@ -95,4 +98,4 @@ if __name__ == '__main__':
 
     net = UNet2D().to("cuda")
 
-    summary(net, (1, 256, 256), device="cuda", batch_size=64)
+    summary(net, (1, 256, 256), device="cuda", batch_size=32)
