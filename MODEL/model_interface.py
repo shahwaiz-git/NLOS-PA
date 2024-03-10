@@ -46,7 +46,7 @@ class MInterface(pl.LightningModule):
         self.manual_backward(loss2)
         opt2.step()
 
-        self.log_dict({'train loss1': loss1, 'train loss2': loss2, 'train loss': loss1 + loss2},
+        self.log_dict({'train_loss1': loss1, 'train_loss2': loss2, 'train_loss': loss1 + loss2},
                       on_step=False, on_epoch=True, prog_bar=True, batch_size=self.hparams.batch_size)
 
     def evaluate(self, batch, stage):
@@ -58,7 +58,8 @@ class MInterface(pl.LightningModule):
         loss2 = self.loss_function2((target-direct_image_hat).float(), reflected_image_hat.float())
         psnr = PSNR(target, image_hat)
         ssim = SSIM(target, image_hat)
-        self.log_dict({f"{stage} loss1": loss1, f'{stage} loss2': loss2, f'{stage} loss': loss1 + loss2,
+
+        self.log_dict({f"{stage}_loss1": loss1, f'{stage}_loss2': loss2, f'{stage}_loss': loss1 + loss2,
                        f"{stage}_PSNR": psnr, f"{stage}_SSIM": ssim},
                       on_step=False, prog_bar=True, on_epoch=True, batch_size=self.hparams.batch_size)
 
@@ -73,8 +74,8 @@ class MInterface(pl.LightningModule):
         self.evaluate(batch, 'test')
 
     def predict_step(self, x):
-        signal, y_hat = self.forward(x)
-        return signal, y_hat
+        direct_signal_hat, direct_image_hat, reflected_image_hat = self.forward(x)
+        return direct_signal_hat, direct_image_hat, reflected_image_hat
 
     def configure_optimizers(self):
         opt1 = torch.optim.Adam(self.unet1d.parameters(), lr=self.hparams.lr1)

@@ -32,7 +32,7 @@ parser.add_argument('--train_size', default=0.8, type=float)
 parser.add_argument('--val_size', default=0.1, type=float)  # included in train_size
 parser.add_argument('--max_epochs', default=300, type=int)
 parser.add_argument('--min_epochs', default=100, type=int)
-parser.add_argument('--batch_size', default=1, type=int)
+parser.add_argument('--batch_size', default=32, type=int)
 parser.add_argument('--num_workers', default=2, type=int)
 parser.add_argument('--seed', default=1121, type=int)
 parser.add_argument('--lr1', default=1e-3, type=float)
@@ -51,16 +51,15 @@ args.save_dir = join(args.base_dir, 'RESULT')
 callback_checkpoint = callbacks.ModelCheckpoint(
     save_top_k=3, save_last=True,
     monitor="val_SSIM", mode='max',
-    dirpath=join(args.save_dir, 'MODEL'),
-    filename="{epoch:02d}-{val loss:.3f}-{val_PSNR:.3f}-{val_SSIM:.3f}",
+    dirpath=join(args.save_dir, 'MODEL'), filename="{epoch:02d}-{val_loss:.3f}-{val_PSNR:.3f}-{val_SSIM:.3f}",
     save_weights_only=True,
+    verbose=True,
 )
 
 callback_early_stop = callbacks.EarlyStopping(
-    monitor="val_SSIM",
-    mode='max',
-    patience=20,
-    verbose=False,
+    monitor="val_SSIM", mode='max',
+    patience=args.max_epochs//10,
+    verbose=True,
 )
 
 # ---------------------------------wandb----------------------------------
@@ -77,12 +76,10 @@ if __name__ == '__main__':
         min_epochs=args.min_epochs,
         max_epochs=args.max_epochs,
         callbacks=[callback_checkpoint, callback_early_stop],
-        logger=wandb_logger,
+        # logger=wandb_logger,
     )
 
     # trainer.fit(model=model, datamodule=datamodule)
+    # trainer.save_checkpoint(join(args.save_dir, 'MODEL\\last.ckpt'))
 
-    # trainer.test(model, ckpt_path=r"D:\HISLab\DATASET\StripSkullCT_Simulation\RESULT\MODEL\last.ckpt",
-    #              datamodule=datamodule)
-
-    trainer.test(model, datamodule=datamodule)
+    trainer.test(model, datamodule=datamodule, ckpt_path='last')

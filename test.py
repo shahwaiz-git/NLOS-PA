@@ -2,34 +2,34 @@ import numpy
 import numpy as np
 import scipy
 import matplotlib.pyplot as plt
-from MODEL.DAS import DAS
 from torchvision.transforms import ToTensor
 from PIL import Image
 from pytorch_lightning import Trainer
 from MODEL import MInterface
 import torch
-import os
 
 sensor_mask_dir = "D:\HISLab\DATASET\StripSkullCT_Simulation\sensor_mask_idx.mat"
-model = MInterface.load_from_checkpoint(r"D:\HISLab\DATASET\StripSkullCT_Simulation\RESULT\MODEL\epoch-epoch=93-val_loss-val_loss=0.002-val_PSNR-val_PSNR=26.605-val_SSIM-val_SSIM=0.444.ckpt",
-                                        sensor_mask_dir=sensor_mask_dir)
+model = MInterface.load_from_checkpoint(r"D:\HISLab\DATASET\StripSkullCT_Simulation\RESULT\MODEL\last.ckpt",
+                                        sensor_mask_dir=sensor_mask_dir).to('cuda')
 
-sensor = np.array(scipy.io.loadmat(r"D:\缓存站\matlab.mat")['sensor_data'])
-p0 = np.array(scipy.io.loadmat(r"D:\缓存站\p0.mat")['p0'])
+sensor_data = np.array(scipy.io.loadmat(r"D:\HISLab\DATASET\StripSkullCT_Simulation\test\mixed_signal\130150_100170.mat")['sensor_data'])
+p0 = np.array(scipy.io.loadmat(r"D:\HISLab\DATASET\StripSkullCT_Simulation\test\target\130150_100170.mat")['p0'])
 
-sensor_tensor = ToTensor()(sensor).unsqueeze(0).type(torch.float).to('cuda')
+sensor_data = torch.tensor(sensor_data, device='cuda')
+mixed_signal = ((sensor_data - torch.min(sensor_data, dim=1, keepdim=True).values) /
+                (torch.max(sensor_data, dim=1, keepdim=True).values - torch.min(sensor_data, dim=1,
+                                                                                 keepdim=True).values)).unsqueeze(0)
 
 with torch.no_grad():
-    p0_hat = model(sensor_tensor)
+    direct_signal_hat, direct_image_hat, reflected_image_hat = model(mixed_signal)
 
 plt.figure(figsize=(10,8))
-plt.subplot(2,2,1)
-plt.imshow(p0, cmap='jet')
-plt.subplot(2,2,3)
-plt.imshow(p0_hat[0][0].cpu().numpy(), cmap='jet')
-plt.subplot(2,2,4)
-plt.imshow(p0_hat[0][1].cpu().numpy(), cmap='jet')
-plt.subplot(2,2,2)
-plt.imshow(p0_hat.mean(dim=(0,1)).cpu().numpy(), cmap='jet')
-plt.colorbar()
+plt.subplot(1,2,1)
+plt.title('target',fontsize=14)
+plt.imshow(p0/8,cmap='viridis')
+
+plt.subplot(1,2,2)
+plt.title('ours',fontsize=14)
+plt.imshow((direct_image_hat+reflected_image_hat)[0][0].cpu(),cmap='viridis')
+
 plt.show()

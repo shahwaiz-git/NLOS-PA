@@ -22,7 +22,7 @@ def PSNR(y, y_hat):
 
 def SSIM(y, y_hat):
     assert y.shape == y_hat.shape
-    psnr_lst = [structural_similarity(yi.cpu().numpy()[0], yi_hat.cpu().numpy()[0], data_range=1.0)
+    psnr_lst = [structural_similarity(yi.cpu().numpy()[0], yi_hat.cpu().numpy()[0], data_range=1.0, win_size=255)
                 for yi, yi_hat in zip(y, y_hat)]
     return np.mean(psnr_lst)
 
