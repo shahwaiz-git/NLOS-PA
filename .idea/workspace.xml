@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="499d4161-e95a-446e-9f4b-63ea55533d07" name="更改" comment="0310">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MODEL/UNet1D.py" beforeDir="false" afterPath="$PROJECT_DIR$/MODEL/UNet1D.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MODEL/UNet2D.py" beforeDir="false" afterPath="$PROJECT_DIR$/MODEL/UNet2D.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="499d4161-e95a-446e-9f4b-63ea55533d07" name="更改" comment="0313 for reproduce" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -320,7 +315,7 @@
       <workItem from="1710033737050" duration="1002000" />
       <workItem from="1710231729800" duration="2000" />
       <workItem from="1710235622126" duration="2230000" />
-      <workItem from="1710307592620" duration="925000" />
+      <workItem from="1710307592620" duration="1401000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -522,7 +517,23 @@
       <option name="project" value="LOCAL" />
       <updated>1710033766135</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="0313 for reproduce">
+      <option name="closed" value="true" />
+      <created>1710308680758</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1710308680758</updated>
+    </task>
+    <task id="LOCAL-00027" summary="0313 for reproduce">
+      <option name="closed" value="true" />
+      <created>1710308780425</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1710308780425</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -560,7 +571,8 @@
     <MESSAGE value="init" />
     <MESSAGE value="Multiple Optimizers" />
     <MESSAGE value="0310" />
-    <option name="LAST_COMMIT_MESSAGE" value="0310" />
+    <MESSAGE value="0313 for reproduce" />
+    <option name="LAST_COMMIT_MESSAGE" value="0313 for reproduce" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

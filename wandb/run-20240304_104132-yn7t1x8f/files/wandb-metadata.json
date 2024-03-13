@@ -1,0 +1,58 @@
+{
+    "os": "Windows-10-10.0.22631-SP0",
+    "python": "3.8.18",
+    "heartbeatAt": "2024-03-04T02:41:36.646883",
+    "startedAt": "2024-03-04T02:41:32.220087",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--batch_size",
+        "64",
+        "--lr",
+        "1e-4"
+    ],
+    "state": "running",
+    "program": "main.py",
+    "codePathLocal": "main.py",
+    "codePath": "main.py",
+    "git": {
+        "remote": "git@github.com:/shahwaiz-git/NLOS-PA.git",
+        "commit": "ef8a1b5b13f7ac3d414c0de126def03704c301b3"
+    },
+    "email": "1908657939@qq.com",
+    "root": "D:/HISLab/\u6bd5\u8bbe/CODE",
+    "host": "Shahwaiz",
+    "username": "19086",
+    "executable": "E:\\Anaconda\\envs\\unet\\python.exe",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 3201.0,
+        "min": 0.0,
+        "max": 3201.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3201.0,
+            "min": 0.0,
+            "max": 3201.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 246.99901962280273,
+            "used": 137.7162208557129
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+            "memory_total": 6442450944
+        }
+    ],
+    "memory": {
+        "total": 15.247127532958984
+    }
+}

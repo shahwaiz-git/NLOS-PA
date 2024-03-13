@@ -1,0 +1,129 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.18
+    framework: lightning
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    m:
+    - 1: trainer/global_step
+      6:
+      - 3
+    - 1: val loss1
+      5: 1
+      6:
+      - 1
+    - 1: val loss2
+      5: 1
+      6:
+      - 1
+    - 1: val loss
+      5: 1
+      6:
+      - 1
+    - 1: val_PSNR
+      5: 1
+      6:
+      - 1
+    - 1: val_SSIM
+      5: 1
+      6:
+      - 1
+    - 1: epoch
+      5: 1
+      6:
+      - 1
+    - 1: train loss1
+      5: 1
+      6:
+      - 1
+    - 1: train loss2
+      5: 1
+      6:
+      - 1
+    - 1: train loss
+      5: 1
+      6:
+      - 1
+    python_version: 3.8.18
+    start_time: 1709692765
+    t:
+      1:
+      - 1
+      - 9
+      - 41
+      - 55
+      2:
+      - 1
+      - 9
+      - 41
+      - 55
+      3:
+      - 7
+      4: 3.8.18
+      5: 0.12.18
+      8:
+      - 3
+      - 5
+base_dir:
+  desc: null
+  value: D:\HISLab\DATASET\StripSkullCT_Simulation
+batch_size:
+  desc: null
+  value: 32
+channels:
+  desc: null
+  value: 50
+direct_signal_dir:
+  desc: null
+  value: D:\HISLab\DATASET\StripSkullCT_Simulation\direct_signal
+dt:
+  desc: null
+  value: 2.0e-07
+loss:
+  desc: null
+  value: mse
+lr1:
+  desc: null
+  value: 0.001
+lr2:
+  desc: null
+  value: 0.0001
+max_epochs:
+  desc: null
+  value: 300
+min_epochs:
+  desc: null
+  value: 100
+mixed_signal_dir:
+  desc: null
+  value: D:\HISLab\DATASET\StripSkullCT_Simulation\mixed_signal
+model_name:
+  desc: null
+  value: UNet-DAS
+n_classes:
+  desc: null
+  value: 1
+num_workers:
+  desc: null
+  value: 4
+save_dir:
+  desc: null
+  value: D:\HISLab\DATASET\StripSkullCT_Simulation\RESULT
+seed:
+  desc: null
+  value: 1121
+sensor_mask_dir:
+  desc: null
+  value: D:\HISLab\DATASET\StripSkullCT_Simulation\sensor_mask_idx.mat
+target_dir:
+  desc: null
+  value: D:\HISLab\DATASET\StripSkullCT_Simulation\target
+train_size:
+  desc: null
+  value: 0.8
+val_size:
+  desc: null
+  value: 0.1

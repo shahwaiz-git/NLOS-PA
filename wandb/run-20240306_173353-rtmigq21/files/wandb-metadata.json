@@ -1,0 +1,37 @@
+{
+    "os": "Windows-10-10.0.22631-SP0",
+    "python": "3.8.18",
+    "heartbeatAt": "2024-03-06T09:33:57.936560",
+    "startedAt": "2024-03-06T09:33:53.131425",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [
+        "--batch_size",
+        "32",
+        "--lr1",
+        "1e-4",
+        "--lr2",
+        "1e-4",
+        "--num_workers",
+        "4",
+        "--min_epochs",
+        "3",
+        "--max_epochs",
+        "5"
+    ],
+    "state": "running",
+    "program": "main.py",
+    "codePath": "main.py",
+    "git": {
+        "remote": "git@github.com:/shahwaiz-git/NLOS-PA.git",
+        "commit": "a498b36c1757b34aee9b806c5639b150c5523d02"
+    },
+    "email": "1908657939@qq.com",
+    "root": "D:/HISLab/\u6bd5\u8bbe/CODE",
+    "host": "Shahwaiz",
+    "username": "19086",
+    "executable": "E:\\Anaconda\\envs\\unet\\python.exe"
+}

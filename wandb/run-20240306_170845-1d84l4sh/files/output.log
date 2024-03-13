@@ -1,0 +1,4 @@
+
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Testing DataLoader 0:   0%|          | 0/7 [00:00<?, ?it/s]
+E:\Anaconda\envs\unet\lib\site-packages\pytorch_lightning\trainer\call.py:44: Detected KeyboardInterrupt, attempting graceful shutdown...
