@@ -79,7 +79,7 @@ if __name__ == '__main__':
         # logger=wandb_logger,
     )
 
-    # trainer.fit(model=model, datamodule=datamodule)
-    # trainer.save_checkpoint(join(args.save_dir, 'MODEL\\last.ckpt'))
+    trainer.fit(model=model, datamodule=datamodule)
+    trainer.save_checkpoint(join(args.save_dir, 'MODEL\\last.ckpt'))
 
     trainer.test(model, datamodule=datamodule, ckpt_path='last')

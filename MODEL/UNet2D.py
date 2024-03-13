@@ -94,8 +94,8 @@ class UNet2D(nn.Module):
 
 
 if __name__ == '__main__':
-    from torchsummary import summary
+    from torchinfo import summary
 
     net = UNet2D().to("cuda")
 
-    summary(net, (1, 256, 256), device="cuda", batch_size=32)
+    summary(net, (32, 1, 256, 256), device="cuda")

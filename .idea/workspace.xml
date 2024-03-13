@@ -4,32 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="499d4161-e95a-446e-9f4b-63ea55533d07" name="更改" comment="Multiple Optimizers">
-      <change beforePath="$PROJECT_DIR$/.idea/CODE.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CODE.iml" afterDir="false" />
+    <list default="true" id="499d4161-e95a-446e-9f4b-63ea55533d07" name="更改" comment="0310">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DATA/data_interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/DATA/data_interface.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MODEL/model_interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/MODEL/model_interface.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightning_logs/version_30/events.out.tfevents.1709177487.Shahwaiz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightning_logs/version_30/hparams.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightning_logs/version_31/events.out.tfevents.1709190362.Shahwaiz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightning_logs/version_31/events.out.tfevents.1709190522.Shahwaiz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightning_logs/version_31/hparams.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightning_logs/version_32/events.out.tfevents.1709193658.Shahwaiz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightning_logs/version_32/hparams.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightning_logs/version_33/events.out.tfevents.1709193801.Shahwaiz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightning_logs/version_33/hparams.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightning_logs/version_34/events.out.tfevents.1709193924.Shahwaiz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightning_logs/version_34/hparams.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightning_logs/version_35/events.out.tfevents.1709294436.Shahwaiz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightning_logs/version_35/hparams.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightning_logs/version_36/events.out.tfevents.1709294666.Shahwaiz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightning_logs/version_36/hparams.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightning_logs/version_37/events.out.tfevents.1709294948.Shahwaiz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightning_logs/version_37/hparams.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lightning_logs/version_38/hparams.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MODEL/UNet1D.py" beforeDir="false" afterPath="$PROJECT_DIR$/MODEL/UNet1D.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MODEL/UNet2D.py" beforeDir="false" afterPath="$PROJECT_DIR$/MODEL/UNet2D.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utlis.py" beforeDir="false" afterPath="$PROJECT_DIR$/utlis.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,46 +60,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.DAS.executor": "Debug",
-    "Python.TRM.executor": "Run",
-    "Python.UNet1D.executor": "Run",
-    "Python.UNet2D.executor": "Run",
-    "Python.bmode_reconstruction_example.executor": "Run",
-    "Python.example_array_as_a_sensor.executor": "Run",
-    "Python.example_array_as_a_source.executor": "Run",
-    "Python.example_at_linear_array_transducer.executor": "Run",
-    "Python.main.executor": "Debug",
-    "Python.model_interface.executor": "Run",
-    "Python.mydataset.executor": "Run",
-    "Python.test.executor": "Run",
-    "Python.unet_model.executor": "Run",
-    "Python.utlis.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "WebServerToolWindowPanel.toolwindow.highlight.mappings": "true",
-    "WebServerToolWindowPanel.toolwindow.highlight.symlinks": "true",
-    "WebServerToolWindowPanel.toolwindow.show.date": "false",
-    "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
-    "WebServerToolWindowPanel.toolwindow.show.size": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/HISLab/毕设/CODE/seperate_train",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.DAS.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.TRM.executor&quot;: &quot;Run&quot;,
+    &quot;Python.UNet1D.executor&quot;: &quot;Run&quot;,
+    &quot;Python.UNet2D.executor&quot;: &quot;Run&quot;,
+    &quot;Python.bmode_reconstruction_example.executor&quot;: &quot;Run&quot;,
+    &quot;Python.example_array_as_a_sensor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.example_array_as_a_source.executor&quot;: &quot;Run&quot;,
+    &quot;Python.example_at_linear_array_transducer.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.model_interface.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mydataset.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.unet_model.executor&quot;: &quot;Run&quot;,
+    &quot;Python.utlis.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/HISLab/毕设/CODE/seperate_train&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\HISLab\毕设\CODE\DATA" />
@@ -132,7 +111,7 @@
       <recent name="D:\HISLab\毕设\CODE\DATA" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test">
+  <component name="RunManager" selected="Python.UNet1D">
     <configuration name="DAS" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CODE" />
       <option name="ENV_FILES" value="" />
@@ -250,19 +229,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.test" />
       <item itemvalue="Python.DAS" />
       <item itemvalue="Python.UNet1D" />
       <item itemvalue="Python.UNet2D" />
       <item itemvalue="Python.main" />
+      <item itemvalue="Python.test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.UNet1D" />
+        <item itemvalue="Python.UNet2D" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.DAS" />
-        <item itemvalue="Python.UNet2D" />
-        <item itemvalue="Python.UNet1D" />
       </list>
     </recent_temporary>
   </component>
@@ -338,6 +317,10 @@
       <workItem from="1709646595458" duration="22000" />
       <workItem from="1709647764383" duration="24549000" />
       <workItem from="1709797270780" duration="12945000" />
+      <workItem from="1710033737050" duration="1002000" />
+      <workItem from="1710231729800" duration="2000" />
+      <workItem from="1710235622126" duration="2230000" />
+      <workItem from="1710307592620" duration="925000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -531,7 +514,15 @@
       <option name="project" value="LOCAL" />
       <updated>1709713591581</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="0310">
+      <option name="closed" value="true" />
+      <created>1710033766135</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1710033766135</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -568,17 +559,11 @@
     <MESSAGE value="UNET2D更改后提交" />
     <MESSAGE value="init" />
     <MESSAGE value="Multiple Optimizers" />
-    <option name="LAST_COMMIT_MESSAGE" value="Multiple Optimizers" />
+    <MESSAGE value="0310" />
+    <option name="LAST_COMMIT_MESSAGE" value="0310" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>84</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -595,8 +580,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CODE$DAS.coverage" NAME="DAS 覆盖结果" MODIFIED="1709710127887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MODEL" />
-    <SUITE FILE_PATH="coverage/CODE$UNet.coverage" NAME="UNet 覆盖结果" MODIFIED="1703137109790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MODEL" />
     <SUITE FILE_PATH="coverage/CODE$model_interface.coverage" NAME="model_interface 覆盖结果" MODIFIED="1709289903350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MODEL" />
+    <SUITE FILE_PATH="coverage/CODE$UNet.coverage" NAME="UNet 覆盖结果" MODIFIED="1703137109790" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MODEL" />
     <SUITE FILE_PATH="coverage/CODE$mydataset.coverage" NAME="mydataset 覆盖结果" MODIFIED="1703738874845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DATA" />
     <SUITE FILE_PATH="coverage/CODE$main.coverage" NAME="main 覆盖结果" MODIFIED="1709816778595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CODE$memo.coverage" NAME="memo 覆盖结果" MODIFIED="1703056628395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -604,10 +589,10 @@
     <SUITE FILE_PATH="coverage/CODE$unet_model.coverage" NAME="unet_model 覆盖结果" MODIFIED="1709361351864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../MODEL/Github/Pytorch-UNet/unet" />
     <SUITE FILE_PATH="coverage/CODE$bmode_reconstruction_example.coverage" NAME="bmode_reconstruction_example 覆盖结果" MODIFIED="1703491909918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../MODEL/Github/k-wave-python-master/examples" />
     <SUITE FILE_PATH="coverage/CODE$setup_build.coverage" NAME="setup_build 覆盖结果" MODIFIED="1702820477182" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../../缓存站/h5py-master/h5py-master" />
-    <SUITE FILE_PATH="coverage/CODE$UNet2D.coverage" NAME="UNet2D 覆盖结果" MODIFIED="1709630473554" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MODEL" />
+    <SUITE FILE_PATH="coverage/CODE$UNet2D.coverage" NAME="UNet2D 覆盖结果" MODIFIED="1710236334340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MODEL" />
     <SUITE FILE_PATH="coverage/CODE$example_array_as_a_sensor.coverage" NAME="example_array_as_a_sensor 覆盖结果" MODIFIED="1703491948025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../MODEL/Github/k-wave-python-master/examples" />
     <SUITE FILE_PATH="coverage/CODE$example_array_as_a_source.coverage" NAME="example_array_as_a_source 覆盖结果" MODIFIED="1703491900733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../../MODEL/Github/k-wave-python-master/examples" />
-    <SUITE FILE_PATH="coverage/CODE$UNet1D.coverage" NAME="UNet1D 覆盖结果" MODIFIED="1709627232252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MODEL" />
+    <SUITE FILE_PATH="coverage/CODE$UNet1D.coverage" NAME="UNet1D 覆盖结果" MODIFIED="1710236351914" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MODEL" />
     <SUITE FILE_PATH="coverage/CODE$utlis.coverage" NAME="utlis 覆盖结果" MODIFIED="1709369906375" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CODE$TRM.coverage" NAME="TRM 覆盖结果" MODIFIED="1703487979814" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MODEL" />
     <SUITE FILE_PATH="coverage/CODE$test.coverage" NAME="test 覆盖结果" MODIFIED="1709819044829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

@@ -79,6 +79,6 @@ if __name__ == '__main__':
     # out = net(input)
     # print(out.shape)
 
-    from torchsummary import summary
-    net = UNet1D().to("cuda")
-    summary(net, (50, 1024), device="cuda", batch_size=64)
+    from torchinfo import summary
+    net = UNet1D(channels=256).to("cuda")
+    summary(net, (64, 256, 3001), device="cuda")
