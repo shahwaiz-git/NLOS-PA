@@ -1,0 +1,1 @@
+{"test loss1": 0.2953796684741974, "test loss2": 0.2417350560426712, "test loss": 0.5371149182319641, "test_PSNR": 6.1666035652160645, "test_SSIM": 0.01664787530899048, "epoch": 0, "trainer/global_step": 0, "_timestamp": 1709705154, "_runtime": 202, "_step": 0, "_wandb": {"runtime": 198}}

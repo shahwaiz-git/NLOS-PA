@@ -1,0 +1,13 @@
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name           | Type    | Params
+-------------------------------------------
+0 | das            | DAS     | 0
+1 | unet1d         | UNet1D  | 42.1 K
+2 | unet2d         | UNet2D  | 133 K
+3 | loss_function1 | MSELoss | 0
+4 | loss_function2 | MSELoss | 0
+-------------------------------------------
+175 K     Trainable params
+0         Non-trainable params
+175 K     Total params
+0.702     Total estimated model params size (MB)

@@ -1,0 +1,52 @@
+2024-03-06 15:33:39,139 INFO    MainThread:64088 [internal.py:wandb_internal():90] W&B internal server running at pid: 64088, started at: 2024-03-06 15:33:39.139084
+2024-03-06 15:33:39,141 INFO    WriterThread:64088 [datastore.py:open_for_write():75] open: .\wandb\run-20240306_153337-2rlcm0zf\run-2rlcm0zf.wandb
+2024-03-06 15:33:39,144 DEBUG   SenderThread:64088 [sender.py:send():235] send: header
+2024-03-06 15:33:39,144 DEBUG   SenderThread:64088 [sender.py:send():235] send: run
+2024-03-06 15:33:39,146 INFO    SenderThread:64088 [sender.py:_maybe_setup_resume():492] checking resume status for None/UNet-DAS/2rlcm0zf
+2024-03-06 15:33:43,570 ERROR   SenderThread:64088 [retry.py:__call__():126] Retry attempt failed:
+urllib3.exceptions.SSLError: TLS/SSL connection has been closed (EOF) (_ssl.c:1131)
+
+The above exception was the direct cause of the following exception:
+
+urllib3.exceptions.ProxyError: ('Unable to connect to proxy', SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1131)')))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\unet\lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ProxyError('Unable to connect to proxy', SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1131)'))))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\19086\AppData\Roaming\Python\Python38\site-packages\wandb\sdk\lib\retry.py", line 102, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "C:\Users\19086\AppData\Roaming\Python\Python38\site-packages\wandb\sdk\internal\internal_api.py", line 140, in execute
+    return self.client.execute(*args, **kwargs)
+  File "C:\Users\19086\AppData\Roaming\Python\Python38\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "C:\Users\19086\AppData\Roaming\Python\Python38\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "C:\Users\19086\AppData\Roaming\Python\Python38\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\transport\requests.py", line 38, in execute
+    request = requests.post(self.url, **post_args)
+  File "E:\Anaconda\envs\unet\lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "E:\Anaconda\envs\unet\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "E:\Anaconda\envs\unet\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "E:\Anaconda\envs\unet\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "E:\Anaconda\envs\unet\lib\site-packages\requests\adapters.py", line 513, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ProxyError('Unable to connect to proxy', SSLError(SSLZeroReturnError(6, 'TLS/SSL connection has been closed (EOF) (_ssl.c:1131)'))))
+2024-03-06 15:33:50,234 WARNING MainThread:64088 [internal.py:wandb_internal():153] Internal process interrupt: 1
+2024-03-06 15:33:52,634 WARNING MainThread:64088 [internal.py:wandb_internal():153] Internal process interrupt: 2
+2024-03-06 15:33:52,634 ERROR   MainThread:64088 [internal.py:wandb_internal():156] Internal process interrupted.
+2024-03-06 15:33:53,251 INFO    WriterThread:64088 [datastore.py:close():279] close: .\wandb\run-20240306_153337-2rlcm0zf\run-2rlcm0zf.wandb
+2024-03-06 15:33:53,251 INFO    HandlerThread:64088 [handler.py:finish():806] shutting down handler

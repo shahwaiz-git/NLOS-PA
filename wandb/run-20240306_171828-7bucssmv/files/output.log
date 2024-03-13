@@ -1,0 +1,66 @@
+
+Sanity Checking: |                                                                                                                                             | 0/? [00:00<?, ?it/s]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name           | Type    | Params
+-------------------------------------------
+0 | das            | DAS     | 0
+1 | unet1d         | UNet1D  | 163 K
+2 | unet2d         | UNet2D  | 133 K
+3 | loss_function1 | MSELoss | 0
+4 | loss_function2 | MSELoss | 0
+-------------------------------------------
+297 K     Trainable params
+0         Non-trainable params
+297 K     Total params
+
+
+E:\Anaconda\envs\unet\lib\site-packages\pytorch_lightning\loops\fit_loop.py:293: The number of training batches (49) is smaller than the logging interval Trainer(log_every_n_steps=50). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+
+
+
+
+
+Epoch 0: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 49/49 [00:12<00:00,  3.90it/s, v_num=ssmv]
+
+
+
+
+
+
+Epoch 1: 100%|█| 49/49 [00:11<00:00,  4.15it/s, v_num=ssmv, val loss1=0.245, val loss2=0.141, val loss=0.386, val_PSNR=8.510, val_SSIM=0.0104, train loss1=0.275, train loss2=0.194,
+
+
+
+
+
+
+Epoch 2: 100%|█| 49/49 [00:11<00:00,  4.13it/s, v_num=ssmv, val loss1=0.0545, val loss2=0.151, val loss=0.206, val_PSNR=8.210, val_SSIM=0.00924, train loss1=0.155, train loss2=0.154
+
+
+
+
+
+
+Epoch 3: 100%|█| 49/49 [00:11<00:00,  4.14it/s, v_num=ssmv, val loss1=0.0297, val loss2=0.0481, val loss=0.0778, val_PSNR=13.20, val_SSIM=0.0159, train loss1=0.0358, train loss2=0.1
+
+
+
+
+
+
+Epoch 4: 100%|█| 49/49 [00:11<00:00,  4.14it/s, v_num=ssmv, val loss1=0.0141, val loss2=0.0288, val loss=0.0429, val_PSNR=15.40, val_SSIM=0.0339, train loss1=0.0206, train loss2=0.0
+
+
+`Trainer.fit` stopped: `max_epochs=5` reached.
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+
+Testing DataLoader 0: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 7/7 [00:03<00:00,  2.28it/s]
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       Test metric             DataLoader 0
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+        test loss          0.025720102712512016
+       test loss1          0.012818614020943642
+       test loss2           0.0129014877602458
+        test_PSNR           18.894969940185547
+        test_SSIM           0.08720241487026215
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────

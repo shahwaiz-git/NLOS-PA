@@ -1,0 +1,924 @@
+2024-03-06 17:33:54,295 INFO    MainThread:75196 [internal.py:wandb_internal():90] W&B internal server running at pid: 75196, started at: 2024-03-06 17:33:54.294670
+2024-03-06 17:33:54,297 INFO    WriterThread:75196 [datastore.py:open_for_write():75] open: .\wandb\run-20240306_173353-rtmigq21\run-rtmigq21.wandb
+2024-03-06 17:33:54,300 DEBUG   SenderThread:75196 [sender.py:send():235] send: header
+2024-03-06 17:33:54,300 DEBUG   SenderThread:75196 [sender.py:send():235] send: run
+2024-03-06 17:33:54,302 INFO    SenderThread:75196 [sender.py:_maybe_setup_resume():492] checking resume status for None/UNet-DAS/rtmigq21
+2024-03-06 17:33:56,964 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: check_version
+2024-03-06 17:33:56,973 INFO    SenderThread:75196 [dir_watcher.py:__init__():205] watching files in: .\wandb\run-20240306_173353-rtmigq21\files
+2024-03-06 17:33:56,973 INFO    SenderThread:75196 [sender.py:_start_run_threads():812] run started: rtmigq21 with start time 1709717633
+2024-03-06 17:33:56,973 DEBUG   SenderThread:75196 [sender.py:send():235] send: summary
+2024-03-06 17:33:56,974 INFO    SenderThread:75196 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2024-03-06 17:33:56,974 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: check_version
+2024-03-06 17:33:57,908 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: run_start
+2024-03-06 17:33:57,936 DEBUG   HandlerThread:75196 [meta.py:__init__():35] meta init
+2024-03-06 17:33:57,936 DEBUG   HandlerThread:75196 [meta.py:__init__():49] meta init done
+2024-03-06 17:33:57,936 DEBUG   HandlerThread:75196 [meta.py:probe():209] probe
+2024-03-06 17:33:57,956 DEBUG   HandlerThread:75196 [meta.py:_setup_git():199] setup git
+2024-03-06 17:33:57,995 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_created():256] file/dir created: .\wandb\run-20240306_173353-rtmigq21\files\wandb-summary.json
+2024-03-06 17:33:58,112 DEBUG   HandlerThread:75196 [meta.py:_setup_git():206] setup git done
+2024-03-06 17:33:58,112 DEBUG   HandlerThread:75196 [meta.py:_save_pip():53] save pip
+2024-03-06 17:33:58,113 DEBUG   HandlerThread:75196 [meta.py:_save_pip():67] save pip done
+2024-03-06 17:33:58,113 DEBUG   HandlerThread:75196 [meta.py:_save_conda():74] save conda
+2024-03-06 17:33:59,000 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_created():256] file/dir created: .\wandb\run-20240306_173353-rtmigq21\files\conda-environment.yaml
+2024-03-06 17:33:59,000 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_created():256] file/dir created: .\wandb\run-20240306_173353-rtmigq21\files\requirements.txt
+2024-03-06 17:34:01,384 DEBUG   HandlerThread:75196 [meta.py:_save_conda():84] save conda done
+2024-03-06 17:34:01,384 DEBUG   HandlerThread:75196 [meta.py:probe():247] probe done
+2024-03-06 17:34:01,439 DEBUG   SenderThread:75196 [sender.py:send():235] send: files
+2024-03-06 17:34:01,439 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: stop_status
+2024-03-06 17:34:01,439 INFO    SenderThread:75196 [sender.py:_save_file():949] saving file wandb-metadata.json with policy now
+2024-03-06 17:34:01,440 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: stop_status
+2024-03-06 17:34:02,022 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\conda-environment.yaml
+2024-03-06 17:34:02,022 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_created():256] file/dir created: .\wandb\run-20240306_173353-rtmigq21\files\wandb-metadata.json
+2024-03-06 17:34:02,022 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_created():256] file/dir created: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:34:02,772 DEBUG   SenderThread:75196 [sender.py:send():235] send: telemetry
+2024-03-06 17:34:02,772 DEBUG   SenderThread:75196 [sender.py:send():235] send: metric
+2024-03-06 17:34:02,772 DEBUG   SenderThread:75196 [sender.py:send():235] send: telemetry
+2024-03-06 17:34:02,773 DEBUG   SenderThread:75196 [sender.py:send():235] send: metric
+2024-03-06 17:34:02,773 WARNING SenderThread:75196 [sender.py:send_metric():905] Seen metric with glob (shouldn't happen)
+2024-03-06 17:34:02,773 DEBUG   SenderThread:75196 [sender.py:send():235] send: config
+2024-03-06 17:34:03,327 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/wandb-metadata.json?Expires=1709804043&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=pptFpx6Tjn7I%2B6hz8Sq6hXZR3hoB2L03Lqo04XvJ2FuV2a6INRcbQPiYkCf%2Fxq02Ur7nJCJDofoPBj76aEq1SmnHIZ7oIcRxlkoPT6zpWdfpowpjWP9OSmLUOeJ2ehUzUFNQKqV0dZxZ3srhF3ewbT3UMG5nho7kITsCd02ExhUZ7wRQ%2BCnlKM53vubJHCxg5xjS68K7M3Ndcz%2FDP6BBoTVqZUcOb8pdq5e04WUn9pqEyqAfMAK7ahuw%2FdXVvEcpYN27m9ut5FYcN25IPEp2Y23DNw9gvYD2PpYTsBTffTiJ57Zy0MqnsxuCM50KJkUe34OMtCg6xDWwWgMXB%2B2DLQ%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:34:03,327 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '967'}
+2024-03-06 17:34:03,327 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:34:04,043 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:34:05,073 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/wandb-metadata.json?Expires=1709804043&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=pptFpx6Tjn7I%2B6hz8Sq6hXZR3hoB2L03Lqo04XvJ2FuV2a6INRcbQPiYkCf%2Fxq02Ur7nJCJDofoPBj76aEq1SmnHIZ7oIcRxlkoPT6zpWdfpowpjWP9OSmLUOeJ2ehUzUFNQKqV0dZxZ3srhF3ewbT3UMG5nho7kITsCd02ExhUZ7wRQ%2BCnlKM53vubJHCxg5xjS68K7M3Ndcz%2FDP6BBoTVqZUcOb8pdq5e04WUn9pqEyqAfMAK7ahuw%2FdXVvEcpYN27m9ut5FYcN25IPEp2Y23DNw9gvYD2PpYTsBTffTiJ57Zy0MqnsxuCM50KJkUe34OMtCg6xDWwWgMXB%2B2DLQ%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:34:05,073 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '967'}
+2024-03-06 17:34:05,073 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:34:07,845 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/wandb-metadata.json?Expires=1709804043&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=pptFpx6Tjn7I%2B6hz8Sq6hXZR3hoB2L03Lqo04XvJ2FuV2a6INRcbQPiYkCf%2Fxq02Ur7nJCJDofoPBj76aEq1SmnHIZ7oIcRxlkoPT6zpWdfpowpjWP9OSmLUOeJ2ehUzUFNQKqV0dZxZ3srhF3ewbT3UMG5nho7kITsCd02ExhUZ7wRQ%2BCnlKM53vubJHCxg5xjS68K7M3Ndcz%2FDP6BBoTVqZUcOb8pdq5e04WUn9pqEyqAfMAK7ahuw%2FdXVvEcpYN27m9ut5FYcN25IPEp2Y23DNw9gvYD2PpYTsBTffTiJ57Zy0MqnsxuCM50KJkUe34OMtCg6xDWwWgMXB%2B2DLQ%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:34:07,846 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '967'}
+2024-03-06 17:34:07,846 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:34:07,846 ERROR   Thread-17 :75196 [retry.py:__call__():126] Retry attempt failed:
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\connection.py", line 653, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\connection.py", line 806, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\util\ssl_.py", line 465, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\util\ssl_.py", line 509, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "E:\Anaconda\envs\unet\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "E:\Anaconda\envs\unet\lib\ssl.py", line 1073, in _create
+    self.do_handshake()
+  File "E:\Anaconda\envs\unet\lib\ssl.py", line 1342, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\unet\lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\util\retry.py", line 470, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\connection.py", line 653, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\connection.py", line 806, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\util\ssl_.py", line 465, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\util\ssl_.py", line 509, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "E:\Anaconda\envs\unet\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "E:\Anaconda\envs\unet\lib\ssl.py", line 1073, in _create
+    self.do_handshake()
+  File "E:\Anaconda\envs\unet\lib\ssl.py", line 1342, in do_handshake
+    self._sslobj.do_handshake()
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\19086\AppData\Roaming\Python\Python38\site-packages\wandb\sdk\internal\internal_api.py", line 1637, in upload_file
+    response = requests.put(url, data=progress, headers=extra_headers)
+  File "E:\Anaconda\envs\unet\lib\site-packages\requests\api.py", line 130, in put
+    return request("put", url, data=data, **kwargs)
+  File "E:\Anaconda\envs\unet\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "E:\Anaconda\envs\unet\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "E:\Anaconda\envs\unet\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "E:\Anaconda\envs\unet\lib\site-packages\requests\adapters.py", line 501, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\19086\AppData\Roaming\Python\Python38\site-packages\wandb\sdk\lib\retry.py", line 102, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "C:\Users\19086\AppData\Roaming\Python\Python38\site-packages\wandb\sdk\internal\internal_api.py", line 1653, in upload_file
+    raise e.with_traceback(sys.exc_info()[2])
+  File "C:\Users\19086\AppData\Roaming\Python\Python38\site-packages\wandb\sdk\internal\internal_api.py", line 1637, in upload_file
+    response = requests.put(url, data=progress, headers=extra_headers)
+  File "E:\Anaconda\envs\unet\lib\site-packages\requests\api.py", line 130, in put
+    return request("put", url, data=data, **kwargs)
+  File "E:\Anaconda\envs\unet\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "E:\Anaconda\envs\unet\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "E:\Anaconda\envs\unet\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "E:\Anaconda\envs\unet\lib\site-packages\requests\adapters.py", line 501, in send
+    raise ConnectionError(err, request=request)
+wandb.sdk.lib.retry.TransientError: None
+2024-03-06 17:34:13,253 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/wandb-metadata.json?Expires=1709804043&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=pptFpx6Tjn7I%2B6hz8Sq6hXZR3hoB2L03Lqo04XvJ2FuV2a6INRcbQPiYkCf%2Fxq02Ur7nJCJDofoPBj76aEq1SmnHIZ7oIcRxlkoPT6zpWdfpowpjWP9OSmLUOeJ2ehUzUFNQKqV0dZxZ3srhF3ewbT3UMG5nho7kITsCd02ExhUZ7wRQ%2BCnlKM53vubJHCxg5xjS68K7M3Ndcz%2FDP6BBoTVqZUcOb8pdq5e04WUn9pqEyqAfMAK7ahuw%2FdXVvEcpYN27m9ut5FYcN25IPEp2Y23DNw9gvYD2PpYTsBTffTiJ57Zy0MqnsxuCM50KJkUe34OMtCg6xDWwWgMXB%2B2DLQ%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:34:13,254 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '967'}
+2024-03-06 17:34:13,254 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:34:17,773 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: stop_status
+2024-03-06 17:34:17,773 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: stop_status
+2024-03-06 17:34:21,852 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/wandb-metadata.json?Expires=1709804043&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=pptFpx6Tjn7I%2B6hz8Sq6hXZR3hoB2L03Lqo04XvJ2FuV2a6INRcbQPiYkCf%2Fxq02Ur7nJCJDofoPBj76aEq1SmnHIZ7oIcRxlkoPT6zpWdfpowpjWP9OSmLUOeJ2ehUzUFNQKqV0dZxZ3srhF3ewbT3UMG5nho7kITsCd02ExhUZ7wRQ%2BCnlKM53vubJHCxg5xjS68K7M3Ndcz%2FDP6BBoTVqZUcOb8pdq5e04WUn9pqEyqAfMAK7ahuw%2FdXVvEcpYN27m9ut5FYcN25IPEp2Y23DNw9gvYD2PpYTsBTffTiJ57Zy0MqnsxuCM50KJkUe34OMtCg6xDWwWgMXB%2B2DLQ%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:34:21,853 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '967'}
+2024-03-06 17:34:21,853 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:34:22,221 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:34:24,241 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:34:27,263 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\config.yaml
+2024-03-06 17:34:29,081 DEBUG   SenderThread:75196 [sender.py:send():235] send: stats
+2024-03-06 17:34:34,085 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: stop_status
+2024-03-06 17:34:34,085 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: stop_status
+2024-03-06 17:34:41,055 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/wandb-metadata.json?Expires=1709804043&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=pptFpx6Tjn7I%2B6hz8Sq6hXZR3hoB2L03Lqo04XvJ2FuV2a6INRcbQPiYkCf%2Fxq02Ur7nJCJDofoPBj76aEq1SmnHIZ7oIcRxlkoPT6zpWdfpowpjWP9OSmLUOeJ2ehUzUFNQKqV0dZxZ3srhF3ewbT3UMG5nho7kITsCd02ExhUZ7wRQ%2BCnlKM53vubJHCxg5xjS68K7M3Ndcz%2FDP6BBoTVqZUcOb8pdq5e04WUn9pqEyqAfMAK7ahuw%2FdXVvEcpYN27m9ut5FYcN25IPEp2Y23DNw9gvYD2PpYTsBTffTiJ57Zy0MqnsxuCM50KJkUe34OMtCg6xDWwWgMXB%2B2DLQ%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:34:41,055 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '967'}
+2024-03-06 17:34:41,055 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:34:44,424 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:34:46,442 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:34:48,460 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:34:50,297 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: stop_status
+2024-03-06 17:34:50,297 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: stop_status
+2024-03-06 17:34:50,485 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:34:52,503 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:34:54,521 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:34:56,540 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:34:57,192 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-06 17:34:57,193 DEBUG   SenderThread:75196 [sender.py:send():235] send: metric
+2024-03-06 17:34:57,194 DEBUG   SenderThread:75196 [sender.py:send():235] send: metric
+2024-03-06 17:34:57,194 DEBUG   SenderThread:75196 [sender.py:send():235] send: metric
+2024-03-06 17:34:57,194 DEBUG   SenderThread:75196 [sender.py:send():235] send: metric
+2024-03-06 17:34:57,194 DEBUG   SenderThread:75196 [sender.py:send():235] send: metric
+2024-03-06 17:34:57,194 DEBUG   SenderThread:75196 [sender.py:send():235] send: metric
+2024-03-06 17:34:57,194 DEBUG   SenderThread:75196 [sender.py:send():235] send: history
+2024-03-06 17:34:57,194 DEBUG   SenderThread:75196 [sender.py:send():235] send: summary
+2024-03-06 17:34:57,195 INFO    SenderThread:75196 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2024-03-06 17:34:57,212 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-06 17:34:57,212 DEBUG   SenderThread:75196 [sender.py:send():235] send: metric
+2024-03-06 17:34:57,213 DEBUG   SenderThread:75196 [sender.py:send():235] send: metric
+2024-03-06 17:34:57,213 DEBUG   SenderThread:75196 [sender.py:send():235] send: metric
+2024-03-06 17:34:57,213 DEBUG   SenderThread:75196 [sender.py:send():235] send: history
+2024-03-06 17:34:57,213 DEBUG   SenderThread:75196 [sender.py:send():235] send: summary
+2024-03-06 17:34:57,214 INFO    SenderThread:75196 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2024-03-06 17:34:57,554 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\wandb-summary.json
+2024-03-06 17:34:58,561 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:35:00,577 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:35:02,383 DEBUG   SenderThread:75196 [sender.py:send():235] send: stats
+2024-03-06 17:35:02,588 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:35:04,604 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:35:06,636 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:35:06,682 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: stop_status
+2024-03-06 17:35:06,682 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: stop_status
+2024-03-06 17:35:08,655 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:35:10,674 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:35:11,175 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-06 17:35:11,176 DEBUG   SenderThread:75196 [sender.py:send():235] send: history
+2024-03-06 17:35:11,176 DEBUG   SenderThread:75196 [sender.py:send():235] send: summary
+2024-03-06 17:35:11,177 INFO    SenderThread:75196 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2024-03-06 17:35:11,178 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-06 17:35:11,179 DEBUG   SenderThread:75196 [sender.py:send():235] send: history
+2024-03-06 17:35:11,179 DEBUG   SenderThread:75196 [sender.py:send():235] send: summary
+2024-03-06 17:35:11,179 INFO    SenderThread:75196 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2024-03-06 17:35:11,688 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\wandb-summary.json
+2024-03-06 17:35:12,691 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:35:14,699 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:35:16,591 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/wandb-metadata.json?Expires=1709804043&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=pptFpx6Tjn7I%2B6hz8Sq6hXZR3hoB2L03Lqo04XvJ2FuV2a6INRcbQPiYkCf%2Fxq02Ur7nJCJDofoPBj76aEq1SmnHIZ7oIcRxlkoPT6zpWdfpowpjWP9OSmLUOeJ2ehUzUFNQKqV0dZxZ3srhF3ewbT3UMG5nho7kITsCd02ExhUZ7wRQ%2BCnlKM53vubJHCxg5xjS68K7M3Ndcz%2FDP6BBoTVqZUcOb8pdq5e04WUn9pqEyqAfMAK7ahuw%2FdXVvEcpYN27m9ut5FYcN25IPEp2Y23DNw9gvYD2PpYTsBTffTiJ57Zy0MqnsxuCM50KJkUe34OMtCg6xDWwWgMXB%2B2DLQ%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:35:16,591 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '967'}
+2024-03-06 17:35:16,591 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:35:16,719 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:35:18,730 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:35:19,744 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:35:21,757 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:35:22,976 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: stop_status
+2024-03-06 17:35:22,976 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: stop_status
+2024-03-06 17:35:23,763 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:35:25,221 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-06 17:35:25,221 DEBUG   SenderThread:75196 [sender.py:send():235] send: history
+2024-03-06 17:35:25,222 DEBUG   SenderThread:75196 [sender.py:send():235] send: summary
+2024-03-06 17:35:25,222 INFO    SenderThread:75196 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2024-03-06 17:35:25,225 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-06 17:35:25,225 DEBUG   SenderThread:75196 [sender.py:send():235] send: history
+2024-03-06 17:35:25,226 DEBUG   SenderThread:75196 [sender.py:send():235] send: summary
+2024-03-06 17:35:25,226 INFO    SenderThread:75196 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2024-03-06 17:35:25,775 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:35:25,776 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\wandb-summary.json
+2024-03-06 17:35:27,797 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:35:28,809 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\config.yaml
+2024-03-06 17:35:29,811 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:35:31,825 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:35:33,838 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:35:35,712 DEBUG   SenderThread:75196 [sender.py:send():235] send: stats
+2024-03-06 17:35:35,867 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:35:37,899 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:35:39,264 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-06 17:35:39,265 DEBUG   SenderThread:75196 [sender.py:send():235] send: history
+2024-03-06 17:35:39,265 DEBUG   SenderThread:75196 [sender.py:send():235] send: summary
+2024-03-06 17:35:39,266 INFO    SenderThread:75196 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2024-03-06 17:35:39,268 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-06 17:35:39,268 DEBUG   SenderThread:75196 [sender.py:send():235] send: history
+2024-03-06 17:35:39,269 DEBUG   SenderThread:75196 [sender.py:send():235] send: summary
+2024-03-06 17:35:39,269 INFO    SenderThread:75196 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2024-03-06 17:35:39,919 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:35:39,919 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\wandb-summary.json
+2024-03-06 17:35:40,011 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: stop_status
+2024-03-06 17:35:40,011 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: stop_status
+2024-03-06 17:35:41,929 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:35:43,952 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:35:45,970 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:35:47,982 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:35:49,994 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:35:52,009 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:35:53,579 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-06 17:35:53,579 DEBUG   SenderThread:75196 [sender.py:send():235] send: history
+2024-03-06 17:35:53,580 DEBUG   SenderThread:75196 [sender.py:send():235] send: summary
+2024-03-06 17:35:53,581 INFO    SenderThread:75196 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2024-03-06 17:35:53,582 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-06 17:35:53,583 DEBUG   SenderThread:75196 [sender.py:send():235] send: history
+2024-03-06 17:35:53,583 DEBUG   SenderThread:75196 [sender.py:send():235] send: summary
+2024-03-06 17:35:53,585 INFO    SenderThread:75196 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2024-03-06 17:35:54,021 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:35:54,021 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\wandb-summary.json
+2024-03-06 17:35:54,990 DEBUG   SenderThread:75196 [sender.py:send():235] send: config
+2024-03-06 17:35:56,042 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:35:56,744 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: stop_status
+2024-03-06 17:35:56,744 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: stop_status
+2024-03-06 17:36:01,086 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\config.yaml
+2024-03-06 17:36:08,805 DEBUG   SenderThread:75196 [sender.py:send():235] send: stats
+2024-03-06 17:36:13,162 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: stop_status
+2024-03-06 17:36:13,162 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: stop_status
+2024-03-06 17:36:16,210 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:36:18,218 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:36:18,672 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: partial_history
+2024-03-06 17:36:18,673 DEBUG   SenderThread:75196 [sender.py:send():235] send: metric
+2024-03-06 17:36:18,674 DEBUG   SenderThread:75196 [sender.py:send():235] send: metric
+2024-03-06 17:36:18,674 DEBUG   SenderThread:75196 [sender.py:send():235] send: metric
+2024-03-06 17:36:18,674 DEBUG   SenderThread:75196 [sender.py:send():235] send: metric
+2024-03-06 17:36:18,674 DEBUG   SenderThread:75196 [sender.py:send():235] send: metric
+2024-03-06 17:36:18,674 DEBUG   SenderThread:75196 [sender.py:send():235] send: history
+2024-03-06 17:36:18,674 DEBUG   SenderThread:75196 [sender.py:send():235] send: summary
+2024-03-06 17:36:18,675 INFO    SenderThread:75196 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2024-03-06 17:36:19,220 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\wandb-summary.json
+2024-03-06 17:36:19,313 DEBUG   SenderThread:75196 [sender.py:send():235] send: telemetry
+2024-03-06 17:36:19,768 DEBUG   SenderThread:75196 [sender.py:send():235] send: exit
+2024-03-06 17:36:19,768 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:19,768 INFO    SenderThread:75196 [sender.py:send_exit():371] handling exit code: 0
+2024-03-06 17:36:19,768 INFO    SenderThread:75196 [sender.py:send_exit():373] handling runtime: 141
+2024-03-06 17:36:19,769 INFO    SenderThread:75196 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2024-03-06 17:36:19,769 INFO    SenderThread:75196 [sender.py:send_exit():379] send defer
+2024-03-06 17:36:19,770 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:19,770 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: defer
+2024-03-06 17:36:19,770 INFO    HandlerThread:75196 [handler.py:handle_request_defer():164] handle defer: 0
+2024-03-06 17:36:19,770 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: defer
+2024-03-06 17:36:19,770 INFO    SenderThread:75196 [sender.py:send_request_defer():388] handle sender defer: 0
+2024-03-06 17:36:19,770 INFO    SenderThread:75196 [sender.py:transition_state():392] send defer: 1
+2024-03-06 17:36:19,771 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: defer
+2024-03-06 17:36:19,771 INFO    HandlerThread:75196 [handler.py:handle_request_defer():164] handle defer: 1
+2024-03-06 17:36:19,933 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: defer
+2024-03-06 17:36:19,933 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:19,933 INFO    SenderThread:75196 [sender.py:send_request_defer():388] handle sender defer: 1
+2024-03-06 17:36:19,933 INFO    SenderThread:75196 [sender.py:transition_state():392] send defer: 2
+2024-03-06 17:36:19,934 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:19,934 DEBUG   SenderThread:75196 [sender.py:send():235] send: stats
+2024-03-06 17:36:19,934 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: defer
+2024-03-06 17:36:19,934 INFO    HandlerThread:75196 [handler.py:handle_request_defer():164] handle defer: 2
+2024-03-06 17:36:19,934 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: defer
+2024-03-06 17:36:19,935 INFO    SenderThread:75196 [sender.py:send_request_defer():388] handle sender defer: 2
+2024-03-06 17:36:19,935 INFO    SenderThread:75196 [sender.py:transition_state():392] send defer: 3
+2024-03-06 17:36:19,935 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: defer
+2024-03-06 17:36:19,935 INFO    HandlerThread:75196 [handler.py:handle_request_defer():164] handle defer: 3
+2024-03-06 17:36:19,935 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: defer
+2024-03-06 17:36:19,935 INFO    SenderThread:75196 [sender.py:send_request_defer():388] handle sender defer: 3
+2024-03-06 17:36:19,935 INFO    SenderThread:75196 [sender.py:transition_state():392] send defer: 4
+2024-03-06 17:36:19,935 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: defer
+2024-03-06 17:36:19,935 INFO    HandlerThread:75196 [handler.py:handle_request_defer():164] handle defer: 4
+2024-03-06 17:36:19,937 DEBUG   SenderThread:75196 [sender.py:send():235] send: summary
+2024-03-06 17:36:19,937 INFO    SenderThread:75196 [sender.py:_save_file():949] saving file wandb-summary.json with policy end
+2024-03-06 17:36:19,938 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: defer
+2024-03-06 17:36:19,938 INFO    SenderThread:75196 [sender.py:send_request_defer():388] handle sender defer: 4
+2024-03-06 17:36:19,938 INFO    SenderThread:75196 [sender.py:transition_state():392] send defer: 5
+2024-03-06 17:36:19,938 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: defer
+2024-03-06 17:36:19,938 INFO    HandlerThread:75196 [handler.py:handle_request_defer():164] handle defer: 5
+2024-03-06 17:36:19,938 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: defer
+2024-03-06 17:36:19,938 INFO    SenderThread:75196 [sender.py:send_request_defer():388] handle sender defer: 5
+2024-03-06 17:36:20,042 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:20,225 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\output.log
+2024-03-06 17:36:20,225 INFO    Thread-11 :75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\wandb-summary.json
+2024-03-06 17:36:21,237 INFO    SenderThread:75196 [sender.py:transition_state():392] send defer: 6
+2024-03-06 17:36:21,237 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:21,238 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: defer
+2024-03-06 17:36:21,238 INFO    HandlerThread:75196 [handler.py:handle_request_defer():164] handle defer: 6
+2024-03-06 17:36:21,238 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: defer
+2024-03-06 17:36:21,238 INFO    SenderThread:75196 [sender.py:send_request_defer():388] handle sender defer: 6
+2024-03-06 17:36:21,238 INFO    SenderThread:75196 [dir_watcher.py:finish():336] shutting down directory watcher
+2024-03-06 17:36:21,352 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:22,241 INFO    SenderThread:75196 [dir_watcher.py:_on_file_modified():269] file/dir modified: .\wandb\run-20240306_173353-rtmigq21\files\config.yaml
+2024-03-06 17:36:22,242 INFO    SenderThread:75196 [dir_watcher.py:finish():366] scan: .\wandb\run-20240306_173353-rtmigq21\files
+2024-03-06 17:36:22,242 INFO    SenderThread:75196 [dir_watcher.py:finish():380] scan save: .\wandb\run-20240306_173353-rtmigq21\files\conda-environment.yaml conda-environment.yaml
+2024-03-06 17:36:22,242 INFO    SenderThread:75196 [dir_watcher.py:finish():380] scan save: .\wandb\run-20240306_173353-rtmigq21\files\config.yaml config.yaml
+2024-03-06 17:36:22,243 INFO    SenderThread:75196 [dir_watcher.py:finish():380] scan save: .\wandb\run-20240306_173353-rtmigq21\files\output.log output.log
+2024-03-06 17:36:22,248 INFO    SenderThread:75196 [dir_watcher.py:finish():380] scan save: .\wandb\run-20240306_173353-rtmigq21\files\requirements.txt requirements.txt
+2024-03-06 17:36:22,251 INFO    SenderThread:75196 [dir_watcher.py:finish():380] scan save: .\wandb\run-20240306_173353-rtmigq21\files\wandb-metadata.json wandb-metadata.json
+2024-03-06 17:36:22,252 INFO    SenderThread:75196 [dir_watcher.py:finish():380] scan save: .\wandb\run-20240306_173353-rtmigq21\files\wandb-summary.json wandb-summary.json
+2024-03-06 17:36:22,253 INFO    SenderThread:75196 [sender.py:transition_state():392] send defer: 7
+2024-03-06 17:36:22,254 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:22,255 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: defer
+2024-03-06 17:36:22,256 INFO    HandlerThread:75196 [handler.py:handle_request_defer():164] handle defer: 7
+2024-03-06 17:36:22,257 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: defer
+2024-03-06 17:36:22,257 INFO    SenderThread:75196 [sender.py:send_request_defer():388] handle sender defer: 7
+2024-03-06 17:36:22,257 INFO    SenderThread:75196 [file_pusher.py:finish():145] shutting down file pusher
+2024-03-06 17:36:22,362 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:22,362 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:22,467 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:22,467 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:22,575 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:22,575 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:22,680 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:22,680 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:22,787 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:22,787 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:22,894 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:22,894 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:23,002 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:23,002 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:23,109 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:23,109 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:23,215 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:23,215 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:23,323 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:23,323 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:23,430 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:23,430 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:23,538 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:23,538 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:23,645 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:23,645 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:23,751 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:23,751 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:23,857 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:23,857 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:23,964 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:23,964 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:24,069 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:24,069 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:24,162 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/output.log?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=M5Aayia3jyPbgs4GWzvNKzIsnGnFQEUJuZQqVTjvH8UvsjXd0yml7TmDdDJ%2B5CriPK8aUm4vdzQU31pWJPMLX6MeVfJd2DWOYn5Vsanpl9VgYA8dTrWxzlM3SlgJfidIOuFQE7xaLeNkrZs%2BRb43U5CKHiNRv7CHABET4BvFsDiJ8E8oS0C%2BQkrTV1w28JUC5JRdU62XZtoXLUC%2BGEauS%2F8Xcg0aG64na%2FBsm5L0hHpb0%2BdPpvdmQcaSbs2fKM2BVSxcfiaR1FYAi8SrTJ%2Bwhs0TMRA3aNdfgXdtnriLsdLtSDKc%2FL9VILrLiAFRIHj2PX6wChvw6ObTeDbiJxojag%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:36:24,162 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '4432'}
+2024-03-06 17:36:24,162 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:36:24,174 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:24,174 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:24,227 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/requirements.txt?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=PSKflJP6pQu7%2BONHlN%2BAUyvgigKjNmC9p1tP2I6ZqTPRMfzKm2G1QQfmNj0oEdPIGOXfuJTzcYQPFu5Snmhxh%2FZldmy%2BBl%2Fezxkg3A%2B6PtINK0OGPnzSERDPu4Kt8xv6CCT4yKKxZw1iYhMpmXb0kTw7NBsO7FKHWZi7yQdsMMyBU1RP9MvlCTppbBx8L%2FOxDx1yTWKF1PLi7o64A4%2F3OfnbGbOA4v9GIgb49ggeExvj1rLKpOyy9aZh8TCd7jzK3kljcFEMEeBPPU0mMj13jOKFi%2BADDKXfhJ1oI1%2FdZusM6LLvGh3g78d3FB9mO6UXc4teDneUMlcOVKI8oS2nPQ%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:36:24,227 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1252'}
+2024-03-06 17:36:24,227 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:36:24,280 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:24,280 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:24,284 ERROR   Thread-22 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/wandb-summary.json?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=vEE8rJJowKaf%2BumNNhIo3Bx1fbeTgpx%2FwraMwigN3pqs3NIjApOQJUGWOhNh8igi9OnzfgQRdB4ZpbQab4RmjFhpHLuXxLedmAvYLYuwH9IXCCiMH2UkSzgFKZN%2BN4VfqZRQsaJtA%2BPdT%2Bihye7c42KiXAunxfUWVjm1TSSdzMib%2BGLcudRiSw8La%2FS4xFQoc52Or1WzGps52DOOPZmvkTaiO8Cm3T8WC5JI8U2HTDwV%2FKpr4la7LjCsTz43n%2BWQ%2FquWm%2FZn6tyCYEMNA2h5l%2Fzce%2BlkQNu22dJ6O5Me1b65QBSsTn9F0tZdL2n9zbvY%2BWaAcdpzGWrD9tLPFFHTUw%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:36:24,284 ERROR   Thread-22 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '573'}
+2024-03-06 17:36:24,284 ERROR   Thread-22 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:36:24,387 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:24,387 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:24,494 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:24,494 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:24,600 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:24,600 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:24,672 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/conda-environment.yaml?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=M8N4YhFdHgIDFKzWevv6yVaiSoG9BhXnHPf3Yq6lDyzjV7x%2B49olovOdpBpIJjsD5pgVh8pHWPLulSxZzqOYRTtvF7%2F4aW5M7dOo3SRdTsQ%2FCrsxnNUjuAKkmuZoMNJCPALuaEROcZwNTTUXSDjJAPC1YqepTyHYI%2BOzQNmyd5zC4aLrOQJgm7Ee2x3MKR9rReQKzX6658KmagvXlKyWcwq8RsMdwtosdlnjUqCx%2BYNSSDZB7hDUynUL0VTF97XKVoPRyRYLNamvbQBYcLLfzO8Mtjbx87DVLg89%2BKm0zLnjHqrX99pRO%2BBaXJEG1gtMJv4dE%2B7ynuSOCD%2BJIjA1Aw%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:36:24,672 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1975'}
+2024-03-06 17:36:24,672 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:36:24,706 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:24,706 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:24,812 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:24,812 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:24,917 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:24,917 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:25,025 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:25,025 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:25,130 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:25,130 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:25,237 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:25,237 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:25,343 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:25,343 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:25,450 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:25,450 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:25,559 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:25,559 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:25,667 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:25,667 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:25,774 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:25,774 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:25,826 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/output.log?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=M5Aayia3jyPbgs4GWzvNKzIsnGnFQEUJuZQqVTjvH8UvsjXd0yml7TmDdDJ%2B5CriPK8aUm4vdzQU31pWJPMLX6MeVfJd2DWOYn5Vsanpl9VgYA8dTrWxzlM3SlgJfidIOuFQE7xaLeNkrZs%2BRb43U5CKHiNRv7CHABET4BvFsDiJ8E8oS0C%2BQkrTV1w28JUC5JRdU62XZtoXLUC%2BGEauS%2F8Xcg0aG64na%2FBsm5L0hHpb0%2BdPpvdmQcaSbs2fKM2BVSxcfiaR1FYAi8SrTJ%2Bwhs0TMRA3aNdfgXdtnriLsdLtSDKc%2FL9VILrLiAFRIHj2PX6wChvw6ObTeDbiJxojag%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:36:25,826 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '4432'}
+2024-03-06 17:36:25,826 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:36:25,882 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:25,882 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:25,925 ERROR   Thread-22 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/wandb-summary.json?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=vEE8rJJowKaf%2BumNNhIo3Bx1fbeTgpx%2FwraMwigN3pqs3NIjApOQJUGWOhNh8igi9OnzfgQRdB4ZpbQab4RmjFhpHLuXxLedmAvYLYuwH9IXCCiMH2UkSzgFKZN%2BN4VfqZRQsaJtA%2BPdT%2Bihye7c42KiXAunxfUWVjm1TSSdzMib%2BGLcudRiSw8La%2FS4xFQoc52Or1WzGps52DOOPZmvkTaiO8Cm3T8WC5JI8U2HTDwV%2FKpr4la7LjCsTz43n%2BWQ%2FquWm%2FZn6tyCYEMNA2h5l%2Fzce%2BlkQNu22dJ6O5Me1b65QBSsTn9F0tZdL2n9zbvY%2BWaAcdpzGWrD9tLPFFHTUw%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:36:25,925 ERROR   Thread-22 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '573'}
+2024-03-06 17:36:25,925 ERROR   Thread-22 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:36:25,987 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:25,987 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:26,095 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:26,095 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:26,103 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/requirements.txt?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=PSKflJP6pQu7%2BONHlN%2BAUyvgigKjNmC9p1tP2I6ZqTPRMfzKm2G1QQfmNj0oEdPIGOXfuJTzcYQPFu5Snmhxh%2FZldmy%2BBl%2Fezxkg3A%2B6PtINK0OGPnzSERDPu4Kt8xv6CCT4yKKxZw1iYhMpmXb0kTw7NBsO7FKHWZi7yQdsMMyBU1RP9MvlCTppbBx8L%2FOxDx1yTWKF1PLi7o64A4%2F3OfnbGbOA4v9GIgb49ggeExvj1rLKpOyy9aZh8TCd7jzK3kljcFEMEeBPPU0mMj13jOKFi%2BADDKXfhJ1oI1%2FdZusM6LLvGh3g78d3FB9mO6UXc4teDneUMlcOVKI8oS2nPQ%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:36:26,103 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1252'}
+2024-03-06 17:36:26,104 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:36:26,203 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:26,203 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:26,311 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:26,311 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:26,316 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/config.yaml?Expires=1709804185&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=AfxsHZCmGLwbIXYpzOLcMqq9HTk2JgOaQ1pW7LeFyUFKLTOA9%2Bbw3wmxOmkug2UUXXy5s1nlpG61UV1jqqdle5UstzrRIzVco5JrWobAh4Y9EJOzUQufzV0JQQ0Ktpe%2B865h9CkuGhXCiO%2FHFTbXXTgjySH8rLzXpvd7ehBbBHuUnwGrJiwEcj70Gmc1%2FeV5nhEO7GwAGwZjhXTjr4oEgmndymGOXELtlXWTnHJ17CwEeq4tGzicKfmsX%2BLqyOJ7TlS9GZsA7XSOzQcuYYF0UCfRXNa1vLvsaGMZ1r0LWt41Jc20PjUHUyXOChv3FK1AjDIXFu2Lw9xQxC4qMn0UzA%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:36:26,316 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '2317'}
+2024-03-06 17:36:26,316 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:36:26,403 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/conda-environment.yaml?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=M8N4YhFdHgIDFKzWevv6yVaiSoG9BhXnHPf3Yq6lDyzjV7x%2B49olovOdpBpIJjsD5pgVh8pHWPLulSxZzqOYRTtvF7%2F4aW5M7dOo3SRdTsQ%2FCrsxnNUjuAKkmuZoMNJCPALuaEROcZwNTTUXSDjJAPC1YqepTyHYI%2BOzQNmyd5zC4aLrOQJgm7Ee2x3MKR9rReQKzX6658KmagvXlKyWcwq8RsMdwtosdlnjUqCx%2BYNSSDZB7hDUynUL0VTF97XKVoPRyRYLNamvbQBYcLLfzO8Mtjbx87DVLg89%2BKm0zLnjHqrX99pRO%2BBaXJEG1gtMJv4dE%2B7ynuSOCD%2BJIjA1Aw%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:36:26,403 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1975'}
+2024-03-06 17:36:26,403 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:36:26,418 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:26,418 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:26,524 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:26,524 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:26,631 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:26,631 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:26,737 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:26,737 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:26,844 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:26,844 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:26,949 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:26,949 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:27,056 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:27,056 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:27,163 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:27,163 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:27,268 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:27,268 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:27,376 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:27,376 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:27,484 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:27,484 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:27,592 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:27,592 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:27,699 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:27,699 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:27,806 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:27,806 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:27,913 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:27,913 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:28,016 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/config.yaml?Expires=1709804185&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=AfxsHZCmGLwbIXYpzOLcMqq9HTk2JgOaQ1pW7LeFyUFKLTOA9%2Bbw3wmxOmkug2UUXXy5s1nlpG61UV1jqqdle5UstzrRIzVco5JrWobAh4Y9EJOzUQufzV0JQQ0Ktpe%2B865h9CkuGhXCiO%2FHFTbXXTgjySH8rLzXpvd7ehBbBHuUnwGrJiwEcj70Gmc1%2FeV5nhEO7GwAGwZjhXTjr4oEgmndymGOXELtlXWTnHJ17CwEeq4tGzicKfmsX%2BLqyOJ7TlS9GZsA7XSOzQcuYYF0UCfRXNa1vLvsaGMZ1r0LWt41Jc20PjUHUyXOChv3FK1AjDIXFu2Lw9xQxC4qMn0UzA%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:36:28,017 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '2317'}
+2024-03-06 17:36:28,017 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:36:28,017 ERROR   Thread-19 :75196 [retry.py:__call__():126] Retry attempt failed:
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\connection.py", line 653, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\connection.py", line 806, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\util\ssl_.py", line 465, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\util\ssl_.py", line 509, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "E:\Anaconda\envs\unet\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "E:\Anaconda\envs\unet\lib\ssl.py", line 1073, in _create
+    self.do_handshake()
+  File "E:\Anaconda\envs\unet\lib\ssl.py", line 1342, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Anaconda\envs\unet\lib\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\util\retry.py", line 470, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\connectionpool.py", line 491, in _make_request
+    raise new_e
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\connectionpool.py", line 467, in _make_request
+    self._validate_conn(conn)
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\connectionpool.py", line 1099, in _validate_conn
+    conn.connect()
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\connection.py", line 653, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\connection.py", line 806, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\util\ssl_.py", line 465, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "E:\Anaconda\envs\unet\lib\site-packages\urllib3\util\ssl_.py", line 509, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "E:\Anaconda\envs\unet\lib\ssl.py", line 500, in wrap_socket
+    return self.sslsocket_class._create(
+  File "E:\Anaconda\envs\unet\lib\ssl.py", line 1073, in _create
+    self.do_handshake()
+  File "E:\Anaconda\envs\unet\lib\ssl.py", line 1342, in do_handshake
+    self._sslobj.do_handshake()
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\19086\AppData\Roaming\Python\Python38\site-packages\wandb\sdk\internal\internal_api.py", line 1637, in upload_file
+    response = requests.put(url, data=progress, headers=extra_headers)
+  File "E:\Anaconda\envs\unet\lib\site-packages\requests\api.py", line 130, in put
+    return request("put", url, data=data, **kwargs)
+  File "E:\Anaconda\envs\unet\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "E:\Anaconda\envs\unet\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "E:\Anaconda\envs\unet\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "E:\Anaconda\envs\unet\lib\site-packages\requests\adapters.py", line 501, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\19086\AppData\Roaming\Python\Python38\site-packages\wandb\sdk\lib\retry.py", line 102, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "C:\Users\19086\AppData\Roaming\Python\Python38\site-packages\wandb\sdk\internal\internal_api.py", line 1653, in upload_file
+    raise e.with_traceback(sys.exc_info()[2])
+  File "C:\Users\19086\AppData\Roaming\Python\Python38\site-packages\wandb\sdk\internal\internal_api.py", line 1637, in upload_file
+    response = requests.put(url, data=progress, headers=extra_headers)
+  File "E:\Anaconda\envs\unet\lib\site-packages\requests\api.py", line 130, in put
+    return request("put", url, data=data, **kwargs)
+  File "E:\Anaconda\envs\unet\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "E:\Anaconda\envs\unet\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "E:\Anaconda\envs\unet\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "E:\Anaconda\envs\unet\lib\site-packages\requests\adapters.py", line 501, in send
+    raise ConnectionError(err, request=request)
+wandb.sdk.lib.retry.TransientError: None
+2024-03-06 17:36:28,019 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:28,020 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:28,126 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:28,126 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:28,232 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:28,232 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:28,338 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:28,338 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:28,444 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:28,444 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:28,550 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:28,550 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:28,656 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:28,656 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:28,761 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:28,761 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:28,795 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/output.log?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=M5Aayia3jyPbgs4GWzvNKzIsnGnFQEUJuZQqVTjvH8UvsjXd0yml7TmDdDJ%2B5CriPK8aUm4vdzQU31pWJPMLX6MeVfJd2DWOYn5Vsanpl9VgYA8dTrWxzlM3SlgJfidIOuFQE7xaLeNkrZs%2BRb43U5CKHiNRv7CHABET4BvFsDiJ8E8oS0C%2BQkrTV1w28JUC5JRdU62XZtoXLUC%2BGEauS%2F8Xcg0aG64na%2FBsm5L0hHpb0%2BdPpvdmQcaSbs2fKM2BVSxcfiaR1FYAi8SrTJ%2Bwhs0TMRA3aNdfgXdtnriLsdLtSDKc%2FL9VILrLiAFRIHj2PX6wChvw6ObTeDbiJxojag%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:36:28,796 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '4432'}
+2024-03-06 17:36:28,796 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:36:28,809 ERROR   Thread-22 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/wandb-summary.json?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=vEE8rJJowKaf%2BumNNhIo3Bx1fbeTgpx%2FwraMwigN3pqs3NIjApOQJUGWOhNh8igi9OnzfgQRdB4ZpbQab4RmjFhpHLuXxLedmAvYLYuwH9IXCCiMH2UkSzgFKZN%2BN4VfqZRQsaJtA%2BPdT%2Bihye7c42KiXAunxfUWVjm1TSSdzMib%2BGLcudRiSw8La%2FS4xFQoc52Or1WzGps52DOOPZmvkTaiO8Cm3T8WC5JI8U2HTDwV%2FKpr4la7LjCsTz43n%2BWQ%2FquWm%2FZn6tyCYEMNA2h5l%2Fzce%2BlkQNu22dJ6O5Me1b65QBSsTn9F0tZdL2n9zbvY%2BWaAcdpzGWrD9tLPFFHTUw%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:36:28,809 ERROR   Thread-22 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '573'}
+2024-03-06 17:36:28,809 ERROR   Thread-22 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:36:28,868 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:28,868 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:28,974 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:28,974 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:29,074 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/requirements.txt?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=PSKflJP6pQu7%2BONHlN%2BAUyvgigKjNmC9p1tP2I6ZqTPRMfzKm2G1QQfmNj0oEdPIGOXfuJTzcYQPFu5Snmhxh%2FZldmy%2BBl%2Fezxkg3A%2B6PtINK0OGPnzSERDPu4Kt8xv6CCT4yKKxZw1iYhMpmXb0kTw7NBsO7FKHWZi7yQdsMMyBU1RP9MvlCTppbBx8L%2FOxDx1yTWKF1PLi7o64A4%2F3OfnbGbOA4v9GIgb49ggeExvj1rLKpOyy9aZh8TCd7jzK3kljcFEMEeBPPU0mMj13jOKFi%2BADDKXfhJ1oI1%2FdZusM6LLvGh3g78d3FB9mO6UXc4teDneUMlcOVKI8oS2nPQ%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:36:29,074 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1252'}
+2024-03-06 17:36:29,074 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:36:29,080 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:29,080 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:29,186 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/conda-environment.yaml?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=M8N4YhFdHgIDFKzWevv6yVaiSoG9BhXnHPf3Yq6lDyzjV7x%2B49olovOdpBpIJjsD5pgVh8pHWPLulSxZzqOYRTtvF7%2F4aW5M7dOo3SRdTsQ%2FCrsxnNUjuAKkmuZoMNJCPALuaEROcZwNTTUXSDjJAPC1YqepTyHYI%2BOzQNmyd5zC4aLrOQJgm7Ee2x3MKR9rReQKzX6658KmagvXlKyWcwq8RsMdwtosdlnjUqCx%2BYNSSDZB7hDUynUL0VTF97XKVoPRyRYLNamvbQBYcLLfzO8Mtjbx87DVLg89%2BKm0zLnjHqrX99pRO%2BBaXJEG1gtMJv4dE%2B7ynuSOCD%2BJIjA1Aw%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:36:29,186 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1975'}
+2024-03-06 17:36:29,186 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:36:29,187 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:29,187 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:29,294 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:29,294 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:29,403 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:29,403 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:29,508 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:29,508 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:29,615 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:29,615 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:29,722 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:29,723 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:29,829 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:29,829 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:29,935 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:29,935 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:30,042 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:30,042 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:30,148 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:30,149 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:30,253 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:30,253 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:30,360 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:30,360 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:30,466 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:30,466 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:30,574 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:30,575 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:30,680 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:30,680 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:30,788 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:30,788 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:30,896 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:30,896 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:31,002 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:31,002 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:31,077 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/config.yaml?Expires=1709804185&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=AfxsHZCmGLwbIXYpzOLcMqq9HTk2JgOaQ1pW7LeFyUFKLTOA9%2Bbw3wmxOmkug2UUXXy5s1nlpG61UV1jqqdle5UstzrRIzVco5JrWobAh4Y9EJOzUQufzV0JQQ0Ktpe%2B865h9CkuGhXCiO%2FHFTbXXTgjySH8rLzXpvd7ehBbBHuUnwGrJiwEcj70Gmc1%2FeV5nhEO7GwAGwZjhXTjr4oEgmndymGOXELtlXWTnHJ17CwEeq4tGzicKfmsX%2BLqyOJ7TlS9GZsA7XSOzQcuYYF0UCfRXNa1vLvsaGMZ1r0LWt41Jc20PjUHUyXOChv3FK1AjDIXFu2Lw9xQxC4qMn0UzA%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:36:31,077 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '2317'}
+2024-03-06 17:36:31,077 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:36:31,108 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:31,108 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:31,215 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:31,215 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:31,323 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:31,323 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:31,431 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:31,431 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:31,538 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:31,538 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:31,645 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:31,645 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:31,754 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:31,754 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:31,860 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:31,860 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:31,967 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:31,967 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:32,073 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:32,073 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:32,181 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:32,181 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:32,290 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:32,290 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:32,397 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:32,397 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:32,506 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:32,506 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:32,587 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/wandb-metadata.json?Expires=1709804043&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=pptFpx6Tjn7I%2B6hz8Sq6hXZR3hoB2L03Lqo04XvJ2FuV2a6INRcbQPiYkCf%2Fxq02Ur7nJCJDofoPBj76aEq1SmnHIZ7oIcRxlkoPT6zpWdfpowpjWP9OSmLUOeJ2ehUzUFNQKqV0dZxZ3srhF3ewbT3UMG5nho7kITsCd02ExhUZ7wRQ%2BCnlKM53vubJHCxg5xjS68K7M3Ndcz%2FDP6BBoTVqZUcOb8pdq5e04WUn9pqEyqAfMAK7ahuw%2FdXVvEcpYN27m9ut5FYcN25IPEp2Y23DNw9gvYD2PpYTsBTffTiJ57Zy0MqnsxuCM50KJkUe34OMtCg6xDWwWgMXB%2B2DLQ%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:36:32,587 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '967'}
+2024-03-06 17:36:32,587 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:36:32,612 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:32,612 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:32,723 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:32,723 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:32,828 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:32,828 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:32,936 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:32,936 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:33,044 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:33,044 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:33,149 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:33,149 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:33,256 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:33,256 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:33,371 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:33,372 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:33,473 ERROR   Thread-22 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/wandb-summary.json?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=vEE8rJJowKaf%2BumNNhIo3Bx1fbeTgpx%2FwraMwigN3pqs3NIjApOQJUGWOhNh8igi9OnzfgQRdB4ZpbQab4RmjFhpHLuXxLedmAvYLYuwH9IXCCiMH2UkSzgFKZN%2BN4VfqZRQsaJtA%2BPdT%2Bihye7c42KiXAunxfUWVjm1TSSdzMib%2BGLcudRiSw8La%2FS4xFQoc52Or1WzGps52DOOPZmvkTaiO8Cm3T8WC5JI8U2HTDwV%2FKpr4la7LjCsTz43n%2BWQ%2FquWm%2FZn6tyCYEMNA2h5l%2Fzce%2BlkQNu22dJ6O5Me1b65QBSsTn9F0tZdL2n9zbvY%2BWaAcdpzGWrD9tLPFFHTUw%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:36:33,473 ERROR   Thread-22 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '573'}
+2024-03-06 17:36:33,473 ERROR   Thread-22 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:36:33,491 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:33,491 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:33,597 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:33,597 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:33,706 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:33,706 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:33,815 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:33,815 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:33,922 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:33,922 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:34,031 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:34,031 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:34,098 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/output.log?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=M5Aayia3jyPbgs4GWzvNKzIsnGnFQEUJuZQqVTjvH8UvsjXd0yml7TmDdDJ%2B5CriPK8aUm4vdzQU31pWJPMLX6MeVfJd2DWOYn5Vsanpl9VgYA8dTrWxzlM3SlgJfidIOuFQE7xaLeNkrZs%2BRb43U5CKHiNRv7CHABET4BvFsDiJ8E8oS0C%2BQkrTV1w28JUC5JRdU62XZtoXLUC%2BGEauS%2F8Xcg0aG64na%2FBsm5L0hHpb0%2BdPpvdmQcaSbs2fKM2BVSxcfiaR1FYAi8SrTJ%2Bwhs0TMRA3aNdfgXdtnriLsdLtSDKc%2FL9VILrLiAFRIHj2PX6wChvw6ObTeDbiJxojag%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:36:34,099 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '4432'}
+2024-03-06 17:36:34,099 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:36:34,139 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:34,139 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:34,245 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:34,245 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:34,251 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/requirements.txt?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=PSKflJP6pQu7%2BONHlN%2BAUyvgigKjNmC9p1tP2I6ZqTPRMfzKm2G1QQfmNj0oEdPIGOXfuJTzcYQPFu5Snmhxh%2FZldmy%2BBl%2Fezxkg3A%2B6PtINK0OGPnzSERDPu4Kt8xv6CCT4yKKxZw1iYhMpmXb0kTw7NBsO7FKHWZi7yQdsMMyBU1RP9MvlCTppbBx8L%2FOxDx1yTWKF1PLi7o64A4%2F3OfnbGbOA4v9GIgb49ggeExvj1rLKpOyy9aZh8TCd7jzK3kljcFEMEeBPPU0mMj13jOKFi%2BADDKXfhJ1oI1%2FdZusM6LLvGh3g78d3FB9mO6UXc4teDneUMlcOVKI8oS2nPQ%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:36:34,251 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1252'}
+2024-03-06 17:36:34,251 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:36:34,351 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:34,351 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:34,456 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:34,456 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:34,565 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:34,565 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:34,591 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/conda-environment.yaml?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=M8N4YhFdHgIDFKzWevv6yVaiSoG9BhXnHPf3Yq6lDyzjV7x%2B49olovOdpBpIJjsD5pgVh8pHWPLulSxZzqOYRTtvF7%2F4aW5M7dOo3SRdTsQ%2FCrsxnNUjuAKkmuZoMNJCPALuaEROcZwNTTUXSDjJAPC1YqepTyHYI%2BOzQNmyd5zC4aLrOQJgm7Ee2x3MKR9rReQKzX6658KmagvXlKyWcwq8RsMdwtosdlnjUqCx%2BYNSSDZB7hDUynUL0VTF97XKVoPRyRYLNamvbQBYcLLfzO8Mtjbx87DVLg89%2BKm0zLnjHqrX99pRO%2BBaXJEG1gtMJv4dE%2B7ynuSOCD%2BJIjA1Aw%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:36:34,591 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1975'}
+2024-03-06 17:36:34,591 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:36:34,673 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:34,673 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:34,780 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:34,780 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:34,887 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:34,887 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:34,992 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:34,992 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:35,099 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:35,099 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:35,205 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:35,205 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:35,312 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:35,312 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:35,418 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:35,418 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:35,524 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:35,524 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:35,631 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:35,631 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:35,741 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:35,741 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:35,851 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:35,851 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:35,958 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:35,958 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:36,062 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/config.yaml?Expires=1709804185&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=AfxsHZCmGLwbIXYpzOLcMqq9HTk2JgOaQ1pW7LeFyUFKLTOA9%2Bbw3wmxOmkug2UUXXy5s1nlpG61UV1jqqdle5UstzrRIzVco5JrWobAh4Y9EJOzUQufzV0JQQ0Ktpe%2B865h9CkuGhXCiO%2FHFTbXXTgjySH8rLzXpvd7ehBbBHuUnwGrJiwEcj70Gmc1%2FeV5nhEO7GwAGwZjhXTjr4oEgmndymGOXELtlXWTnHJ17CwEeq4tGzicKfmsX%2BLqyOJ7TlS9GZsA7XSOzQcuYYF0UCfRXNa1vLvsaGMZ1r0LWt41Jc20PjUHUyXOChv3FK1AjDIXFu2Lw9xQxC4qMn0UzA%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:36:36,062 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '2317'}
+2024-03-06 17:36:36,062 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:36:36,064 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:36,064 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:36,170 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:36,170 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:36,277 DEBUG   HandlerThread:75196 [handler.py:handle_request():141] handle_request: poll_exit
+2024-03-06 17:36:36,278 DEBUG   SenderThread:75196 [sender.py:send_request():249] send_request: poll_exit
+2024-03-06 17:36:36,363 WARNING MainThread:75196 [internal.py:wandb_internal():153] Internal process interrupt: 1
+2024-03-06 17:36:37,388 WARNING MainThread:75196 [internal.py:is_dead():387] Internal process exiting, parent pid 76580 disappeared
+2024-03-06 17:36:37,388 ERROR   MainThread:75196 [internal.py:wandb_internal():149] Internal process shutdown.
+2024-03-06 17:36:38,074 INFO    WriterThread:75196 [datastore.py:close():279] close: .\wandb\run-20240306_173353-rtmigq21\run-rtmigq21.wandb
+2024-03-06 17:36:38,300 INFO    SenderThread:75196 [sender.py:finish():1111] shutting down sender
+2024-03-06 17:36:38,300 INFO    HandlerThread:75196 [handler.py:finish():806] shutting down handler
+2024-03-06 17:36:38,300 INFO    SenderThread:75196 [file_pusher.py:finish():145] shutting down file pusher
+2024-03-06 17:36:38,300 INFO    SenderThread:75196 [file_pusher.py:join():150] waiting for file pusher
+2024-03-06 17:36:42,143 ERROR   Thread-22 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/wandb-summary.json?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=vEE8rJJowKaf%2BumNNhIo3Bx1fbeTgpx%2FwraMwigN3pqs3NIjApOQJUGWOhNh8igi9OnzfgQRdB4ZpbQab4RmjFhpHLuXxLedmAvYLYuwH9IXCCiMH2UkSzgFKZN%2BN4VfqZRQsaJtA%2BPdT%2Bihye7c42KiXAunxfUWVjm1TSSdzMib%2BGLcudRiSw8La%2FS4xFQoc52Or1WzGps52DOOPZmvkTaiO8Cm3T8WC5JI8U2HTDwV%2FKpr4la7LjCsTz43n%2BWQ%2FquWm%2FZn6tyCYEMNA2h5l%2Fzce%2BlkQNu22dJ6O5Me1b65QBSsTn9F0tZdL2n9zbvY%2BWaAcdpzGWrD9tLPFFHTUw%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:36:42,144 ERROR   Thread-22 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '573'}
+2024-03-06 17:36:42,144 ERROR   Thread-22 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:36:42,820 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/output.log?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=M5Aayia3jyPbgs4GWzvNKzIsnGnFQEUJuZQqVTjvH8UvsjXd0yml7TmDdDJ%2B5CriPK8aUm4vdzQU31pWJPMLX6MeVfJd2DWOYn5Vsanpl9VgYA8dTrWxzlM3SlgJfidIOuFQE7xaLeNkrZs%2BRb43U5CKHiNRv7CHABET4BvFsDiJ8E8oS0C%2BQkrTV1w28JUC5JRdU62XZtoXLUC%2BGEauS%2F8Xcg0aG64na%2FBsm5L0hHpb0%2BdPpvdmQcaSbs2fKM2BVSxcfiaR1FYAi8SrTJ%2Bwhs0TMRA3aNdfgXdtnriLsdLtSDKc%2FL9VILrLiAFRIHj2PX6wChvw6ObTeDbiJxojag%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:36:42,820 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '4432'}
+2024-03-06 17:36:42,820 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:36:43,642 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/conda-environment.yaml?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=M8N4YhFdHgIDFKzWevv6yVaiSoG9BhXnHPf3Yq6lDyzjV7x%2B49olovOdpBpIJjsD5pgVh8pHWPLulSxZzqOYRTtvF7%2F4aW5M7dOo3SRdTsQ%2FCrsxnNUjuAKkmuZoMNJCPALuaEROcZwNTTUXSDjJAPC1YqepTyHYI%2BOzQNmyd5zC4aLrOQJgm7Ee2x3MKR9rReQKzX6658KmagvXlKyWcwq8RsMdwtosdlnjUqCx%2BYNSSDZB7hDUynUL0VTF97XKVoPRyRYLNamvbQBYcLLfzO8Mtjbx87DVLg89%2BKm0zLnjHqrX99pRO%2BBaXJEG1gtMJv4dE%2B7ynuSOCD%2BJIjA1Aw%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:36:43,642 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1975'}
+2024-03-06 17:36:43,643 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:36:43,724 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/requirements.txt?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=PSKflJP6pQu7%2BONHlN%2BAUyvgigKjNmC9p1tP2I6ZqTPRMfzKm2G1QQfmNj0oEdPIGOXfuJTzcYQPFu5Snmhxh%2FZldmy%2BBl%2Fezxkg3A%2B6PtINK0OGPnzSERDPu4Kt8xv6CCT4yKKxZw1iYhMpmXb0kTw7NBsO7FKHWZi7yQdsMMyBU1RP9MvlCTppbBx8L%2FOxDx1yTWKF1PLi7o64A4%2F3OfnbGbOA4v9GIgb49ggeExvj1rLKpOyy9aZh8TCd7jzK3kljcFEMEeBPPU0mMj13jOKFi%2BADDKXfhJ1oI1%2FdZusM6LLvGh3g78d3FB9mO6UXc4teDneUMlcOVKI8oS2nPQ%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:36:43,724 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1252'}
+2024-03-06 17:36:43,724 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:36:46,583 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/config.yaml?Expires=1709804185&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=AfxsHZCmGLwbIXYpzOLcMqq9HTk2JgOaQ1pW7LeFyUFKLTOA9%2Bbw3wmxOmkug2UUXXy5s1nlpG61UV1jqqdle5UstzrRIzVco5JrWobAh4Y9EJOzUQufzV0JQQ0Ktpe%2B865h9CkuGhXCiO%2FHFTbXXTgjySH8rLzXpvd7ehBbBHuUnwGrJiwEcj70Gmc1%2FeV5nhEO7GwAGwZjhXTjr4oEgmndymGOXELtlXWTnHJ17CwEeq4tGzicKfmsX%2BLqyOJ7TlS9GZsA7XSOzQcuYYF0UCfRXNa1vLvsaGMZ1r0LWt41Jc20PjUHUyXOChv3FK1AjDIXFu2Lw9xQxC4qMn0UzA%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:36:46,583 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '2317'}
+2024-03-06 17:36:46,583 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:37:00,358 ERROR   Thread-22 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/wandb-summary.json?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=vEE8rJJowKaf%2BumNNhIo3Bx1fbeTgpx%2FwraMwigN3pqs3NIjApOQJUGWOhNh8igi9OnzfgQRdB4ZpbQab4RmjFhpHLuXxLedmAvYLYuwH9IXCCiMH2UkSzgFKZN%2BN4VfqZRQsaJtA%2BPdT%2Bihye7c42KiXAunxfUWVjm1TSSdzMib%2BGLcudRiSw8La%2FS4xFQoc52Or1WzGps52DOOPZmvkTaiO8Cm3T8WC5JI8U2HTDwV%2FKpr4la7LjCsTz43n%2BWQ%2FquWm%2FZn6tyCYEMNA2h5l%2Fzce%2BlkQNu22dJ6O5Me1b65QBSsTn9F0tZdL2n9zbvY%2BWaAcdpzGWrD9tLPFFHTUw%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:37:00,359 ERROR   Thread-22 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '573'}
+2024-03-06 17:37:00,359 ERROR   Thread-22 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:37:02,797 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/requirements.txt?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=PSKflJP6pQu7%2BONHlN%2BAUyvgigKjNmC9p1tP2I6ZqTPRMfzKm2G1QQfmNj0oEdPIGOXfuJTzcYQPFu5Snmhxh%2FZldmy%2BBl%2Fezxkg3A%2B6PtINK0OGPnzSERDPu4Kt8xv6CCT4yKKxZw1iYhMpmXb0kTw7NBsO7FKHWZi7yQdsMMyBU1RP9MvlCTppbBx8L%2FOxDx1yTWKF1PLi7o64A4%2F3OfnbGbOA4v9GIgb49ggeExvj1rLKpOyy9aZh8TCd7jzK3kljcFEMEeBPPU0mMj13jOKFi%2BADDKXfhJ1oI1%2FdZusM6LLvGh3g78d3FB9mO6UXc4teDneUMlcOVKI8oS2nPQ%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:37:02,797 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1252'}
+2024-03-06 17:37:02,798 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:37:03,080 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/conda-environment.yaml?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=M8N4YhFdHgIDFKzWevv6yVaiSoG9BhXnHPf3Yq6lDyzjV7x%2B49olovOdpBpIJjsD5pgVh8pHWPLulSxZzqOYRTtvF7%2F4aW5M7dOo3SRdTsQ%2FCrsxnNUjuAKkmuZoMNJCPALuaEROcZwNTTUXSDjJAPC1YqepTyHYI%2BOzQNmyd5zC4aLrOQJgm7Ee2x3MKR9rReQKzX6658KmagvXlKyWcwq8RsMdwtosdlnjUqCx%2BYNSSDZB7hDUynUL0VTF97XKVoPRyRYLNamvbQBYcLLfzO8Mtjbx87DVLg89%2BKm0zLnjHqrX99pRO%2BBaXJEG1gtMJv4dE%2B7ynuSOCD%2BJIjA1Aw%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:37:03,080 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1975'}
+2024-03-06 17:37:03,080 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:37:03,247 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/output.log?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=M5Aayia3jyPbgs4GWzvNKzIsnGnFQEUJuZQqVTjvH8UvsjXd0yml7TmDdDJ%2B5CriPK8aUm4vdzQU31pWJPMLX6MeVfJd2DWOYn5Vsanpl9VgYA8dTrWxzlM3SlgJfidIOuFQE7xaLeNkrZs%2BRb43U5CKHiNRv7CHABET4BvFsDiJ8E8oS0C%2BQkrTV1w28JUC5JRdU62XZtoXLUC%2BGEauS%2F8Xcg0aG64na%2FBsm5L0hHpb0%2BdPpvdmQcaSbs2fKM2BVSxcfiaR1FYAi8SrTJ%2Bwhs0TMRA3aNdfgXdtnriLsdLtSDKc%2FL9VILrLiAFRIHj2PX6wChvw6ObTeDbiJxojag%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:37:03,248 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '4432'}
+2024-03-06 17:37:03,248 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:37:03,882 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/config.yaml?Expires=1709804185&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=AfxsHZCmGLwbIXYpzOLcMqq9HTk2JgOaQ1pW7LeFyUFKLTOA9%2Bbw3wmxOmkug2UUXXy5s1nlpG61UV1jqqdle5UstzrRIzVco5JrWobAh4Y9EJOzUQufzV0JQQ0Ktpe%2B865h9CkuGhXCiO%2FHFTbXXTgjySH8rLzXpvd7ehBbBHuUnwGrJiwEcj70Gmc1%2FeV5nhEO7GwAGwZjhXTjr4oEgmndymGOXELtlXWTnHJ17CwEeq4tGzicKfmsX%2BLqyOJ7TlS9GZsA7XSOzQcuYYF0UCfRXNa1vLvsaGMZ1r0LWt41Jc20PjUHUyXOChv3FK1AjDIXFu2Lw9xQxC4qMn0UzA%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:37:03,883 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '2317'}
+2024-03-06 17:37:03,883 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:37:36,304 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/output.log?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=M5Aayia3jyPbgs4GWzvNKzIsnGnFQEUJuZQqVTjvH8UvsjXd0yml7TmDdDJ%2B5CriPK8aUm4vdzQU31pWJPMLX6MeVfJd2DWOYn5Vsanpl9VgYA8dTrWxzlM3SlgJfidIOuFQE7xaLeNkrZs%2BRb43U5CKHiNRv7CHABET4BvFsDiJ8E8oS0C%2BQkrTV1w28JUC5JRdU62XZtoXLUC%2BGEauS%2F8Xcg0aG64na%2FBsm5L0hHpb0%2BdPpvdmQcaSbs2fKM2BVSxcfiaR1FYAi8SrTJ%2Bwhs0TMRA3aNdfgXdtnriLsdLtSDKc%2FL9VILrLiAFRIHj2PX6wChvw6ObTeDbiJxojag%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:37:36,304 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '4432'}
+2024-03-06 17:37:36,304 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:37:39,228 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/requirements.txt?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=PSKflJP6pQu7%2BONHlN%2BAUyvgigKjNmC9p1tP2I6ZqTPRMfzKm2G1QQfmNj0oEdPIGOXfuJTzcYQPFu5Snmhxh%2FZldmy%2BBl%2Fezxkg3A%2B6PtINK0OGPnzSERDPu4Kt8xv6CCT4yKKxZw1iYhMpmXb0kTw7NBsO7FKHWZi7yQdsMMyBU1RP9MvlCTppbBx8L%2FOxDx1yTWKF1PLi7o64A4%2F3OfnbGbOA4v9GIgb49ggeExvj1rLKpOyy9aZh8TCd7jzK3kljcFEMEeBPPU0mMj13jOKFi%2BADDKXfhJ1oI1%2FdZusM6LLvGh3g78d3FB9mO6UXc4teDneUMlcOVKI8oS2nPQ%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:37:39,228 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1252'}
+2024-03-06 17:37:39,228 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:37:39,539 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/config.yaml?Expires=1709804185&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=AfxsHZCmGLwbIXYpzOLcMqq9HTk2JgOaQ1pW7LeFyUFKLTOA9%2Bbw3wmxOmkug2UUXXy5s1nlpG61UV1jqqdle5UstzrRIzVco5JrWobAh4Y9EJOzUQufzV0JQQ0Ktpe%2B865h9CkuGhXCiO%2FHFTbXXTgjySH8rLzXpvd7ehBbBHuUnwGrJiwEcj70Gmc1%2FeV5nhEO7GwAGwZjhXTjr4oEgmndymGOXELtlXWTnHJ17CwEeq4tGzicKfmsX%2BLqyOJ7TlS9GZsA7XSOzQcuYYF0UCfRXNa1vLvsaGMZ1r0LWt41Jc20PjUHUyXOChv3FK1AjDIXFu2Lw9xQxC4qMn0UzA%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:37:39,539 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '2317'}
+2024-03-06 17:37:39,539 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:37:39,669 ERROR   Thread-22 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/wandb-summary.json?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=vEE8rJJowKaf%2BumNNhIo3Bx1fbeTgpx%2FwraMwigN3pqs3NIjApOQJUGWOhNh8igi9OnzfgQRdB4ZpbQab4RmjFhpHLuXxLedmAvYLYuwH9IXCCiMH2UkSzgFKZN%2BN4VfqZRQsaJtA%2BPdT%2Bihye7c42KiXAunxfUWVjm1TSSdzMib%2BGLcudRiSw8La%2FS4xFQoc52Or1WzGps52DOOPZmvkTaiO8Cm3T8WC5JI8U2HTDwV%2FKpr4la7LjCsTz43n%2BWQ%2FquWm%2FZn6tyCYEMNA2h5l%2Fzce%2BlkQNu22dJ6O5Me1b65QBSsTn9F0tZdL2n9zbvY%2BWaAcdpzGWrD9tLPFFHTUw%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:37:39,670 ERROR   Thread-22 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '573'}
+2024-03-06 17:37:39,670 ERROR   Thread-22 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:37:41,155 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/conda-environment.yaml?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=M8N4YhFdHgIDFKzWevv6yVaiSoG9BhXnHPf3Yq6lDyzjV7x%2B49olovOdpBpIJjsD5pgVh8pHWPLulSxZzqOYRTtvF7%2F4aW5M7dOo3SRdTsQ%2FCrsxnNUjuAKkmuZoMNJCPALuaEROcZwNTTUXSDjJAPC1YqepTyHYI%2BOzQNmyd5zC4aLrOQJgm7Ee2x3MKR9rReQKzX6658KmagvXlKyWcwq8RsMdwtosdlnjUqCx%2BYNSSDZB7hDUynUL0VTF97XKVoPRyRYLNamvbQBYcLLfzO8Mtjbx87DVLg89%2BKm0zLnjHqrX99pRO%2BBaXJEG1gtMJv4dE%2B7ynuSOCD%2BJIjA1Aw%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:37:41,155 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1975'}
+2024-03-06 17:37:41,156 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:38:46,937 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/output.log?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=M5Aayia3jyPbgs4GWzvNKzIsnGnFQEUJuZQqVTjvH8UvsjXd0yml7TmDdDJ%2B5CriPK8aUm4vdzQU31pWJPMLX6MeVfJd2DWOYn5Vsanpl9VgYA8dTrWxzlM3SlgJfidIOuFQE7xaLeNkrZs%2BRb43U5CKHiNRv7CHABET4BvFsDiJ8E8oS0C%2BQkrTV1w28JUC5JRdU62XZtoXLUC%2BGEauS%2F8Xcg0aG64na%2FBsm5L0hHpb0%2BdPpvdmQcaSbs2fKM2BVSxcfiaR1FYAi8SrTJ%2Bwhs0TMRA3aNdfgXdtnriLsdLtSDKc%2FL9VILrLiAFRIHj2PX6wChvw6ObTeDbiJxojag%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:38:46,937 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '4432'}
+2024-03-06 17:38:46,937 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:38:48,045 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/wandb-metadata.json?Expires=1709804043&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=pptFpx6Tjn7I%2B6hz8Sq6hXZR3hoB2L03Lqo04XvJ2FuV2a6INRcbQPiYkCf%2Fxq02Ur7nJCJDofoPBj76aEq1SmnHIZ7oIcRxlkoPT6zpWdfpowpjWP9OSmLUOeJ2ehUzUFNQKqV0dZxZ3srhF3ewbT3UMG5nho7kITsCd02ExhUZ7wRQ%2BCnlKM53vubJHCxg5xjS68K7M3Ndcz%2FDP6BBoTVqZUcOb8pdq5e04WUn9pqEyqAfMAK7ahuw%2FdXVvEcpYN27m9ut5FYcN25IPEp2Y23DNw9gvYD2PpYTsBTffTiJ57Zy0MqnsxuCM50KJkUe34OMtCg6xDWwWgMXB%2B2DLQ%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:38:48,045 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '967'}
+2024-03-06 17:38:48,046 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:38:48,795 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/conda-environment.yaml?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=M8N4YhFdHgIDFKzWevv6yVaiSoG9BhXnHPf3Yq6lDyzjV7x%2B49olovOdpBpIJjsD5pgVh8pHWPLulSxZzqOYRTtvF7%2F4aW5M7dOo3SRdTsQ%2FCrsxnNUjuAKkmuZoMNJCPALuaEROcZwNTTUXSDjJAPC1YqepTyHYI%2BOzQNmyd5zC4aLrOQJgm7Ee2x3MKR9rReQKzX6658KmagvXlKyWcwq8RsMdwtosdlnjUqCx%2BYNSSDZB7hDUynUL0VTF97XKVoPRyRYLNamvbQBYcLLfzO8Mtjbx87DVLg89%2BKm0zLnjHqrX99pRO%2BBaXJEG1gtMJv4dE%2B7ynuSOCD%2BJIjA1Aw%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:38:48,795 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1975'}
+2024-03-06 17:38:48,795 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:38:50,640 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/config.yaml?Expires=1709804185&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=AfxsHZCmGLwbIXYpzOLcMqq9HTk2JgOaQ1pW7LeFyUFKLTOA9%2Bbw3wmxOmkug2UUXXy5s1nlpG61UV1jqqdle5UstzrRIzVco5JrWobAh4Y9EJOzUQufzV0JQQ0Ktpe%2B865h9CkuGhXCiO%2FHFTbXXTgjySH8rLzXpvd7ehBbBHuUnwGrJiwEcj70Gmc1%2FeV5nhEO7GwAGwZjhXTjr4oEgmndymGOXELtlXWTnHJ17CwEeq4tGzicKfmsX%2BLqyOJ7TlS9GZsA7XSOzQcuYYF0UCfRXNa1vLvsaGMZ1r0LWt41Jc20PjUHUyXOChv3FK1AjDIXFu2Lw9xQxC4qMn0UzA%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:38:50,640 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '2317'}
+2024-03-06 17:38:50,640 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:38:53,188 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/requirements.txt?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=PSKflJP6pQu7%2BONHlN%2BAUyvgigKjNmC9p1tP2I6ZqTPRMfzKm2G1QQfmNj0oEdPIGOXfuJTzcYQPFu5Snmhxh%2FZldmy%2BBl%2Fezxkg3A%2B6PtINK0OGPnzSERDPu4Kt8xv6CCT4yKKxZw1iYhMpmXb0kTw7NBsO7FKHWZi7yQdsMMyBU1RP9MvlCTppbBx8L%2FOxDx1yTWKF1PLi7o64A4%2F3OfnbGbOA4v9GIgb49ggeExvj1rLKpOyy9aZh8TCd7jzK3kljcFEMEeBPPU0mMj13jOKFi%2BADDKXfhJ1oI1%2FdZusM6LLvGh3g78d3FB9mO6UXc4teDneUMlcOVKI8oS2nPQ%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:38:53,188 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1252'}
+2024-03-06 17:38:53,188 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:38:58,036 ERROR   Thread-22 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/wandb-summary.json?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=vEE8rJJowKaf%2BumNNhIo3Bx1fbeTgpx%2FwraMwigN3pqs3NIjApOQJUGWOhNh8igi9OnzfgQRdB4ZpbQab4RmjFhpHLuXxLedmAvYLYuwH9IXCCiMH2UkSzgFKZN%2BN4VfqZRQsaJtA%2BPdT%2Bihye7c42KiXAunxfUWVjm1TSSdzMib%2BGLcudRiSw8La%2FS4xFQoc52Or1WzGps52DOOPZmvkTaiO8Cm3T8WC5JI8U2HTDwV%2FKpr4la7LjCsTz43n%2BWQ%2FquWm%2FZn6tyCYEMNA2h5l%2Fzce%2BlkQNu22dJ6O5Me1b65QBSsTn9F0tZdL2n9zbvY%2BWaAcdpzGWrD9tLPFFHTUw%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:38:58,036 ERROR   Thread-22 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '573'}
+2024-03-06 17:38:58,037 ERROR   Thread-22 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:41:00,726 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/output.log?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=M5Aayia3jyPbgs4GWzvNKzIsnGnFQEUJuZQqVTjvH8UvsjXd0yml7TmDdDJ%2B5CriPK8aUm4vdzQU31pWJPMLX6MeVfJd2DWOYn5Vsanpl9VgYA8dTrWxzlM3SlgJfidIOuFQE7xaLeNkrZs%2BRb43U5CKHiNRv7CHABET4BvFsDiJ8E8oS0C%2BQkrTV1w28JUC5JRdU62XZtoXLUC%2BGEauS%2F8Xcg0aG64na%2FBsm5L0hHpb0%2BdPpvdmQcaSbs2fKM2BVSxcfiaR1FYAi8SrTJ%2Bwhs0TMRA3aNdfgXdtnriLsdLtSDKc%2FL9VILrLiAFRIHj2PX6wChvw6ObTeDbiJxojag%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:41:00,727 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '4432'}
+2024-03-06 17:41:00,727 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:41:03,444 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/conda-environment.yaml?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=M8N4YhFdHgIDFKzWevv6yVaiSoG9BhXnHPf3Yq6lDyzjV7x%2B49olovOdpBpIJjsD5pgVh8pHWPLulSxZzqOYRTtvF7%2F4aW5M7dOo3SRdTsQ%2FCrsxnNUjuAKkmuZoMNJCPALuaEROcZwNTTUXSDjJAPC1YqepTyHYI%2BOzQNmyd5zC4aLrOQJgm7Ee2x3MKR9rReQKzX6658KmagvXlKyWcwq8RsMdwtosdlnjUqCx%2BYNSSDZB7hDUynUL0VTF97XKVoPRyRYLNamvbQBYcLLfzO8Mtjbx87DVLg89%2BKm0zLnjHqrX99pRO%2BBaXJEG1gtMJv4dE%2B7ynuSOCD%2BJIjA1Aw%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:41:03,445 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1975'}
+2024-03-06 17:41:03,445 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:41:18,815 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/requirements.txt?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=PSKflJP6pQu7%2BONHlN%2BAUyvgigKjNmC9p1tP2I6ZqTPRMfzKm2G1QQfmNj0oEdPIGOXfuJTzcYQPFu5Snmhxh%2FZldmy%2BBl%2Fezxkg3A%2B6PtINK0OGPnzSERDPu4Kt8xv6CCT4yKKxZw1iYhMpmXb0kTw7NBsO7FKHWZi7yQdsMMyBU1RP9MvlCTppbBx8L%2FOxDx1yTWKF1PLi7o64A4%2F3OfnbGbOA4v9GIgb49ggeExvj1rLKpOyy9aZh8TCd7jzK3kljcFEMEeBPPU0mMj13jOKFi%2BADDKXfhJ1oI1%2FdZusM6LLvGh3g78d3FB9mO6UXc4teDneUMlcOVKI8oS2nPQ%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:41:18,815 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1252'}
+2024-03-06 17:41:18,815 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:41:19,320 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/config.yaml?Expires=1709804185&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=AfxsHZCmGLwbIXYpzOLcMqq9HTk2JgOaQ1pW7LeFyUFKLTOA9%2Bbw3wmxOmkug2UUXXy5s1nlpG61UV1jqqdle5UstzrRIzVco5JrWobAh4Y9EJOzUQufzV0JQQ0Ktpe%2B865h9CkuGhXCiO%2FHFTbXXTgjySH8rLzXpvd7ehBbBHuUnwGrJiwEcj70Gmc1%2FeV5nhEO7GwAGwZjhXTjr4oEgmndymGOXELtlXWTnHJ17CwEeq4tGzicKfmsX%2BLqyOJ7TlS9GZsA7XSOzQcuYYF0UCfRXNa1vLvsaGMZ1r0LWt41Jc20PjUHUyXOChv3FK1AjDIXFu2Lw9xQxC4qMn0UzA%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:41:19,320 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '2317'}
+2024-03-06 17:41:19,320 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:41:28,720 ERROR   Thread-22 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/wandb-summary.json?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=vEE8rJJowKaf%2BumNNhIo3Bx1fbeTgpx%2FwraMwigN3pqs3NIjApOQJUGWOhNh8igi9OnzfgQRdB4ZpbQab4RmjFhpHLuXxLedmAvYLYuwH9IXCCiMH2UkSzgFKZN%2BN4VfqZRQsaJtA%2BPdT%2Bihye7c42KiXAunxfUWVjm1TSSdzMib%2BGLcudRiSw8La%2FS4xFQoc52Or1WzGps52DOOPZmvkTaiO8Cm3T8WC5JI8U2HTDwV%2FKpr4la7LjCsTz43n%2BWQ%2FquWm%2FZn6tyCYEMNA2h5l%2Fzce%2BlkQNu22dJ6O5Me1b65QBSsTn9F0tZdL2n9zbvY%2BWaAcdpzGWrD9tLPFFHTUw%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:41:28,720 ERROR   Thread-22 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '573'}
+2024-03-06 17:41:28,720 ERROR   Thread-22 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:43:27,777 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/wandb-metadata.json?Expires=1709804043&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=pptFpx6Tjn7I%2B6hz8Sq6hXZR3hoB2L03Lqo04XvJ2FuV2a6INRcbQPiYkCf%2Fxq02Ur7nJCJDofoPBj76aEq1SmnHIZ7oIcRxlkoPT6zpWdfpowpjWP9OSmLUOeJ2ehUzUFNQKqV0dZxZ3srhF3ewbT3UMG5nho7kITsCd02ExhUZ7wRQ%2BCnlKM53vubJHCxg5xjS68K7M3Ndcz%2FDP6BBoTVqZUcOb8pdq5e04WUn9pqEyqAfMAK7ahuw%2FdXVvEcpYN27m9ut5FYcN25IPEp2Y23DNw9gvYD2PpYTsBTffTiJ57Zy0MqnsxuCM50KJkUe34OMtCg6xDWwWgMXB%2B2DLQ%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:43:27,777 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '967'}
+2024-03-06 17:43:27,777 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:45:20,883 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/conda-environment.yaml?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=M8N4YhFdHgIDFKzWevv6yVaiSoG9BhXnHPf3Yq6lDyzjV7x%2B49olovOdpBpIJjsD5pgVh8pHWPLulSxZzqOYRTtvF7%2F4aW5M7dOo3SRdTsQ%2FCrsxnNUjuAKkmuZoMNJCPALuaEROcZwNTTUXSDjJAPC1YqepTyHYI%2BOzQNmyd5zC4aLrOQJgm7Ee2x3MKR9rReQKzX6658KmagvXlKyWcwq8RsMdwtosdlnjUqCx%2BYNSSDZB7hDUynUL0VTF97XKVoPRyRYLNamvbQBYcLLfzO8Mtjbx87DVLg89%2BKm0zLnjHqrX99pRO%2BBaXJEG1gtMJv4dE%2B7ynuSOCD%2BJIjA1Aw%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:45:20,883 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1975'}
+2024-03-06 17:45:20,883 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:45:25,150 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/output.log?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=M5Aayia3jyPbgs4GWzvNKzIsnGnFQEUJuZQqVTjvH8UvsjXd0yml7TmDdDJ%2B5CriPK8aUm4vdzQU31pWJPMLX6MeVfJd2DWOYn5Vsanpl9VgYA8dTrWxzlM3SlgJfidIOuFQE7xaLeNkrZs%2BRb43U5CKHiNRv7CHABET4BvFsDiJ8E8oS0C%2BQkrTV1w28JUC5JRdU62XZtoXLUC%2BGEauS%2F8Xcg0aG64na%2FBsm5L0hHpb0%2BdPpvdmQcaSbs2fKM2BVSxcfiaR1FYAi8SrTJ%2Bwhs0TMRA3aNdfgXdtnriLsdLtSDKc%2FL9VILrLiAFRIHj2PX6wChvw6ObTeDbiJxojag%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:45:25,150 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '4432'}
+2024-03-06 17:45:25,150 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:45:53,948 ERROR   Thread-22 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/wandb-summary.json?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=vEE8rJJowKaf%2BumNNhIo3Bx1fbeTgpx%2FwraMwigN3pqs3NIjApOQJUGWOhNh8igi9OnzfgQRdB4ZpbQab4RmjFhpHLuXxLedmAvYLYuwH9IXCCiMH2UkSzgFKZN%2BN4VfqZRQsaJtA%2BPdT%2Bihye7c42KiXAunxfUWVjm1TSSdzMib%2BGLcudRiSw8La%2FS4xFQoc52Or1WzGps52DOOPZmvkTaiO8Cm3T8WC5JI8U2HTDwV%2FKpr4la7LjCsTz43n%2BWQ%2FquWm%2FZn6tyCYEMNA2h5l%2Fzce%2BlkQNu22dJ6O5Me1b65QBSsTn9F0tZdL2n9zbvY%2BWaAcdpzGWrD9tLPFFHTUw%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:45:53,949 ERROR   Thread-22 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '573'}
+2024-03-06 17:45:53,949 ERROR   Thread-22 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:45:58,065 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/config.yaml?Expires=1709804185&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=AfxsHZCmGLwbIXYpzOLcMqq9HTk2JgOaQ1pW7LeFyUFKLTOA9%2Bbw3wmxOmkug2UUXXy5s1nlpG61UV1jqqdle5UstzrRIzVco5JrWobAh4Y9EJOzUQufzV0JQQ0Ktpe%2B865h9CkuGhXCiO%2FHFTbXXTgjySH8rLzXpvd7ehBbBHuUnwGrJiwEcj70Gmc1%2FeV5nhEO7GwAGwZjhXTjr4oEgmndymGOXELtlXWTnHJ17CwEeq4tGzicKfmsX%2BLqyOJ7TlS9GZsA7XSOzQcuYYF0UCfRXNa1vLvsaGMZ1r0LWt41Jc20PjUHUyXOChv3FK1AjDIXFu2Lw9xQxC4qMn0UzA%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:45:58,065 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '2317'}
+2024-03-06 17:45:58,065 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:46:20,431 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/requirements.txt?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=PSKflJP6pQu7%2BONHlN%2BAUyvgigKjNmC9p1tP2I6ZqTPRMfzKm2G1QQfmNj0oEdPIGOXfuJTzcYQPFu5Snmhxh%2FZldmy%2BBl%2Fezxkg3A%2B6PtINK0OGPnzSERDPu4Kt8xv6CCT4yKKxZw1iYhMpmXb0kTw7NBsO7FKHWZi7yQdsMMyBU1RP9MvlCTppbBx8L%2FOxDx1yTWKF1PLi7o64A4%2F3OfnbGbOA4v9GIgb49ggeExvj1rLKpOyy9aZh8TCd7jzK3kljcFEMEeBPPU0mMj13jOKFi%2BADDKXfhJ1oI1%2FdZusM6LLvGh3g78d3FB9mO6UXc4teDneUMlcOVKI8oS2nPQ%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:46:20,431 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1252'}
+2024-03-06 17:46:20,431 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:49:12,501 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/wandb-metadata.json?Expires=1709804043&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=pptFpx6Tjn7I%2B6hz8Sq6hXZR3hoB2L03Lqo04XvJ2FuV2a6INRcbQPiYkCf%2Fxq02Ur7nJCJDofoPBj76aEq1SmnHIZ7oIcRxlkoPT6zpWdfpowpjWP9OSmLUOeJ2ehUzUFNQKqV0dZxZ3srhF3ewbT3UMG5nho7kITsCd02ExhUZ7wRQ%2BCnlKM53vubJHCxg5xjS68K7M3Ndcz%2FDP6BBoTVqZUcOb8pdq5e04WUn9pqEyqAfMAK7ahuw%2FdXVvEcpYN27m9ut5FYcN25IPEp2Y23DNw9gvYD2PpYTsBTffTiJ57Zy0MqnsxuCM50KJkUe34OMtCg6xDWwWgMXB%2B2DLQ%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:49:12,502 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '967'}
+2024-03-06 17:49:12,502 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:51:00,559 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/conda-environment.yaml?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=M8N4YhFdHgIDFKzWevv6yVaiSoG9BhXnHPf3Yq6lDyzjV7x%2B49olovOdpBpIJjsD5pgVh8pHWPLulSxZzqOYRTtvF7%2F4aW5M7dOo3SRdTsQ%2FCrsxnNUjuAKkmuZoMNJCPALuaEROcZwNTTUXSDjJAPC1YqepTyHYI%2BOzQNmyd5zC4aLrOQJgm7Ee2x3MKR9rReQKzX6658KmagvXlKyWcwq8RsMdwtosdlnjUqCx%2BYNSSDZB7hDUynUL0VTF97XKVoPRyRYLNamvbQBYcLLfzO8Mtjbx87DVLg89%2BKm0zLnjHqrX99pRO%2BBaXJEG1gtMJv4dE%2B7ynuSOCD%2BJIjA1Aw%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:51:00,560 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1975'}
+2024-03-06 17:51:00,560 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:51:01,499 INFO    Thread-22 :75196 [upload_job.py:push():132] Uploaded file .\wandb\run-20240306_173353-rtmigq21\files\wandb-summary.json
+2024-03-06 17:51:06,313 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/output.log?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=M5Aayia3jyPbgs4GWzvNKzIsnGnFQEUJuZQqVTjvH8UvsjXd0yml7TmDdDJ%2B5CriPK8aUm4vdzQU31pWJPMLX6MeVfJd2DWOYn5Vsanpl9VgYA8dTrWxzlM3SlgJfidIOuFQE7xaLeNkrZs%2BRb43U5CKHiNRv7CHABET4BvFsDiJ8E8oS0C%2BQkrTV1w28JUC5JRdU62XZtoXLUC%2BGEauS%2F8Xcg0aG64na%2FBsm5L0hHpb0%2BdPpvdmQcaSbs2fKM2BVSxcfiaR1FYAi8SrTJ%2Bwhs0TMRA3aNdfgXdtnriLsdLtSDKc%2FL9VILrLiAFRIHj2PX6wChvw6ObTeDbiJxojag%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:51:06,313 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '4432'}
+2024-03-06 17:51:06,313 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:51:20,094 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/config.yaml?Expires=1709804185&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=AfxsHZCmGLwbIXYpzOLcMqq9HTk2JgOaQ1pW7LeFyUFKLTOA9%2Bbw3wmxOmkug2UUXXy5s1nlpG61UV1jqqdle5UstzrRIzVco5JrWobAh4Y9EJOzUQufzV0JQQ0Ktpe%2B865h9CkuGhXCiO%2FHFTbXXTgjySH8rLzXpvd7ehBbBHuUnwGrJiwEcj70Gmc1%2FeV5nhEO7GwAGwZjhXTjr4oEgmndymGOXELtlXWTnHJ17CwEeq4tGzicKfmsX%2BLqyOJ7TlS9GZsA7XSOzQcuYYF0UCfRXNa1vLvsaGMZ1r0LWt41Jc20PjUHUyXOChv3FK1AjDIXFu2Lw9xQxC4qMn0UzA%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:51:20,094 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '2317'}
+2024-03-06 17:51:20,094 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:51:38,140 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/requirements.txt?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=PSKflJP6pQu7%2BONHlN%2BAUyvgigKjNmC9p1tP2I6ZqTPRMfzKm2G1QQfmNj0oEdPIGOXfuJTzcYQPFu5Snmhxh%2FZldmy%2BBl%2Fezxkg3A%2B6PtINK0OGPnzSERDPu4Kt8xv6CCT4yKKxZw1iYhMpmXb0kTw7NBsO7FKHWZi7yQdsMMyBU1RP9MvlCTppbBx8L%2FOxDx1yTWKF1PLi7o64A4%2F3OfnbGbOA4v9GIgb49ggeExvj1rLKpOyy9aZh8TCd7jzK3kljcFEMEeBPPU0mMj13jOKFi%2BADDKXfhJ1oI1%2FdZusM6LLvGh3g78d3FB9mO6UXc4teDneUMlcOVKI8oS2nPQ%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:51:38,140 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1252'}
+2024-03-06 17:51:38,140 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:54:20,133 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/wandb-metadata.json?Expires=1709804043&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=pptFpx6Tjn7I%2B6hz8Sq6hXZR3hoB2L03Lqo04XvJ2FuV2a6INRcbQPiYkCf%2Fxq02Ur7nJCJDofoPBj76aEq1SmnHIZ7oIcRxlkoPT6zpWdfpowpjWP9OSmLUOeJ2ehUzUFNQKqV0dZxZ3srhF3ewbT3UMG5nho7kITsCd02ExhUZ7wRQ%2BCnlKM53vubJHCxg5xjS68K7M3Ndcz%2FDP6BBoTVqZUcOb8pdq5e04WUn9pqEyqAfMAK7ahuw%2FdXVvEcpYN27m9ut5FYcN25IPEp2Y23DNw9gvYD2PpYTsBTffTiJ57Zy0MqnsxuCM50KJkUe34OMtCg6xDWwWgMXB%2B2DLQ%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:54:20,134 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '967'}
+2024-03-06 17:54:20,134 ERROR   Thread-17 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:56:20,729 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/conda-environment.yaml?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=M8N4YhFdHgIDFKzWevv6yVaiSoG9BhXnHPf3Yq6lDyzjV7x%2B49olovOdpBpIJjsD5pgVh8pHWPLulSxZzqOYRTtvF7%2F4aW5M7dOo3SRdTsQ%2FCrsxnNUjuAKkmuZoMNJCPALuaEROcZwNTTUXSDjJAPC1YqepTyHYI%2BOzQNmyd5zC4aLrOQJgm7Ee2x3MKR9rReQKzX6658KmagvXlKyWcwq8RsMdwtosdlnjUqCx%2BYNSSDZB7hDUynUL0VTF97XKVoPRyRYLNamvbQBYcLLfzO8Mtjbx87DVLg89%2BKm0zLnjHqrX99pRO%2BBaXJEG1gtMJv4dE%2B7ynuSOCD%2BJIjA1Aw%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:56:20,729 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1975'}
+2024-03-06 17:56:20,729 ERROR   Thread-18 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:56:28,858 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/output.log?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=M5Aayia3jyPbgs4GWzvNKzIsnGnFQEUJuZQqVTjvH8UvsjXd0yml7TmDdDJ%2B5CriPK8aUm4vdzQU31pWJPMLX6MeVfJd2DWOYn5Vsanpl9VgYA8dTrWxzlM3SlgJfidIOuFQE7xaLeNkrZs%2BRb43U5CKHiNRv7CHABET4BvFsDiJ8E8oS0C%2BQkrTV1w28JUC5JRdU62XZtoXLUC%2BGEauS%2F8Xcg0aG64na%2FBsm5L0hHpb0%2BdPpvdmQcaSbs2fKM2BVSxcfiaR1FYAi8SrTJ%2Bwhs0TMRA3aNdfgXdtnriLsdLtSDKc%2FL9VILrLiAFRIHj2PX6wChvw6ObTeDbiJxojag%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:56:28,858 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '4432'}
+2024-03-06 17:56:28,858 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:56:46,068 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/config.yaml?Expires=1709804185&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=AfxsHZCmGLwbIXYpzOLcMqq9HTk2JgOaQ1pW7LeFyUFKLTOA9%2Bbw3wmxOmkug2UUXXy5s1nlpG61UV1jqqdle5UstzrRIzVco5JrWobAh4Y9EJOzUQufzV0JQQ0Ktpe%2B865h9CkuGhXCiO%2FHFTbXXTgjySH8rLzXpvd7ehBbBHuUnwGrJiwEcj70Gmc1%2FeV5nhEO7GwAGwZjhXTjr4oEgmndymGOXELtlXWTnHJ17CwEeq4tGzicKfmsX%2BLqyOJ7TlS9GZsA7XSOzQcuYYF0UCfRXNa1vLvsaGMZ1r0LWt41Jc20PjUHUyXOChv3FK1AjDIXFu2Lw9xQxC4qMn0UzA%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:56:46,068 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '2317'}
+2024-03-06 17:56:46,068 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 17:57:30,027 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/requirements.txt?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=PSKflJP6pQu7%2BONHlN%2BAUyvgigKjNmC9p1tP2I6ZqTPRMfzKm2G1QQfmNj0oEdPIGOXfuJTzcYQPFu5Snmhxh%2FZldmy%2BBl%2Fezxkg3A%2B6PtINK0OGPnzSERDPu4Kt8xv6CCT4yKKxZw1iYhMpmXb0kTw7NBsO7FKHWZi7yQdsMMyBU1RP9MvlCTppbBx8L%2FOxDx1yTWKF1PLi7o64A4%2F3OfnbGbOA4v9GIgb49ggeExvj1rLKpOyy9aZh8TCd7jzK3kljcFEMEeBPPU0mMj13jOKFi%2BADDKXfhJ1oI1%2FdZusM6LLvGh3g78d3FB9mO6UXc4teDneUMlcOVKI8oS2nPQ%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 17:57:30,028 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1252'}
+2024-03-06 17:57:30,028 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 18:00:17,443 INFO    Thread-17 :75196 [upload_job.py:push():132] Uploaded file C:\Users\19086\AppData\Local\Temp\tmpnoq5a8mxwandb\2qj8pnxz-wandb-metadata.json
+2024-03-06 18:01:25,825 INFO    Thread-18 :75196 [upload_job.py:push():132] Uploaded file .\wandb\run-20240306_173353-rtmigq21\files\conda-environment.yaml
+2024-03-06 18:01:35,521 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/output.log?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=M5Aayia3jyPbgs4GWzvNKzIsnGnFQEUJuZQqVTjvH8UvsjXd0yml7TmDdDJ%2B5CriPK8aUm4vdzQU31pWJPMLX6MeVfJd2DWOYn5Vsanpl9VgYA8dTrWxzlM3SlgJfidIOuFQE7xaLeNkrZs%2BRb43U5CKHiNRv7CHABET4BvFsDiJ8E8oS0C%2BQkrTV1w28JUC5JRdU62XZtoXLUC%2BGEauS%2F8Xcg0aG64na%2FBsm5L0hHpb0%2BdPpvdmQcaSbs2fKM2BVSxcfiaR1FYAi8SrTJ%2Bwhs0TMRA3aNdfgXdtnriLsdLtSDKc%2FL9VILrLiAFRIHj2PX6wChvw6ObTeDbiJxojag%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 18:01:35,521 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '4432'}
+2024-03-06 18:01:35,521 ERROR   Thread-20 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 18:02:00,785 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/config.yaml?Expires=1709804185&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=AfxsHZCmGLwbIXYpzOLcMqq9HTk2JgOaQ1pW7LeFyUFKLTOA9%2Bbw3wmxOmkug2UUXXy5s1nlpG61UV1jqqdle5UstzrRIzVco5JrWobAh4Y9EJOzUQufzV0JQQ0Ktpe%2B865h9CkuGhXCiO%2FHFTbXXTgjySH8rLzXpvd7ehBbBHuUnwGrJiwEcj70Gmc1%2FeV5nhEO7GwAGwZjhXTjr4oEgmndymGOXELtlXWTnHJ17CwEeq4tGzicKfmsX%2BLqyOJ7TlS9GZsA7XSOzQcuYYF0UCfRXNa1vLvsaGMZ1r0LWt41Jc20PjUHUyXOChv3FK1AjDIXFu2Lw9xQxC4qMn0UzA%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 18:02:00,785 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '2317'}
+2024-03-06 18:02:00,785 ERROR   Thread-19 :75196 [internal_api.py:upload_file():1644] upload_file response body: 
+2024-03-06 18:02:47,864 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1640] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/shahwaiz/UNet-DAS/rtmigq21/requirements.txt?Expires=1709804184&GoogleAccessId=gorilla-files-url-signer-man%40wandb-production.iam.gserviceaccount.com&Signature=PSKflJP6pQu7%2BONHlN%2BAUyvgigKjNmC9p1tP2I6ZqTPRMfzKm2G1QQfmNj0oEdPIGOXfuJTzcYQPFu5Snmhxh%2FZldmy%2BBl%2Fezxkg3A%2B6PtINK0OGPnzSERDPu4Kt8xv6CCT4yKKxZw1iYhMpmXb0kTw7NBsO7FKHWZi7yQdsMMyBU1RP9MvlCTppbBx8L%2FOxDx1yTWKF1PLi7o64A4%2F3OfnbGbOA4v9GIgb49ggeExvj1rLKpOyy9aZh8TCd7jzK3kljcFEMEeBPPU0mMj13jOKFi%2BADDKXfhJ1oI1%2FdZusM6LLvGh3g78d3FB9mO6UXc4teDneUMlcOVKI8oS2nPQ%3D%3D: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+2024-03-06 18:02:47,865 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1642] upload_file request headers: {'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '1252'}
+2024-03-06 18:02:47,865 ERROR   Thread-21 :75196 [internal_api.py:upload_file():1644] upload_file response body: 

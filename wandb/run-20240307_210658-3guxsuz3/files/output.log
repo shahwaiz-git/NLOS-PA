@@ -1,0 +1,6 @@
+
+Loading `train_dataloader` to estimate number of stepping batches.
+Traceback (most recent call last):
+  File "D:\HISLab\毕设\CODE\main.py", line 85, in <module>
+    trainer.test(model, datamodule=datamodule, ckpt_path='last')
+KeyboardInterrupt

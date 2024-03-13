@@ -1,0 +1,31 @@
+
+Sanity Checking: |          | 0/? [00:00<?, ?it/s]
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name           | Type    | Params
+-------------------------------------------
+0 | das            | DAS     | 0
+1 | unet1d         | UNet1D  | 163 K
+2 | unet2d         | UNet2D  | 133 K
+3 | loss_function1 | MSELoss | 0
+4 | loss_function2 | MSELoss | 0
+-------------------------------------------
+297 K     Trainable params
+0         Non-trainable params
+297 K     Total params
+
+Sanity Checking DataLoader 0:   0%|          | 0/2 [00:00<?, ?it/s]
+E:\Anaconda\envs\unet\lib\site-packages\pytorch_lightning\trainer\call.py:44: Detected KeyboardInterrupt, attempting graceful shutdown...
+
+
+
+
+Testing: |          | 195/? [00:08<00:00, 22.23it/s]00:00<?, ?it/s]
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       Test metric             DataLoader 0
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+        test loss           0.5371149182319641
+       test loss1           0.2953796684741974
+       test loss2           0.2417350560426712
+        test_PSNR           6.1666035652160645
+        test_SSIM           0.01664787530899048
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────

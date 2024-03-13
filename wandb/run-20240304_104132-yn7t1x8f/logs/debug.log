@@ -1,0 +1,28 @@
+2024-03-04 10:41:32,225 INFO    MainThread:365228 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-03-04 10:41:32,225 INFO    MainThread:365228 [wandb_setup.py:_flush():76] Configure stats pid to 365228
+2024-03-04 10:41:32,225 INFO    MainThread:365228 [wandb_setup.py:_flush():76] Loading settings from C:\Users\19086\.config\wandb\settings
+2024-03-04 10:41:32,225 INFO    MainThread:365228 [wandb_setup.py:_flush():76] Loading settings from D:\HISLab\±œ…Ë\CODE\wandb\settings
+2024-03-04 10:41:32,225 INFO    MainThread:365228 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-03-04 10:41:32,226 INFO    MainThread:365228 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-03-04 10:41:32,226 INFO    MainThread:365228 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'main.py', 'program_abspath': 'D:\\HISLab\\±œ…Ë\\CODE\\main.py', 'program': 'main.py'}
+2024-03-04 10:41:32,226 INFO    MainThread:365228 [wandb_init.py:_log_setup():526] Logging user logs to .\wandb\run-20240304_104132-yn7t1x8f\logs\debug.log
+2024-03-04 10:41:32,226 INFO    MainThread:365228 [wandb_init.py:_log_setup():527] Logging internal logs to .\wandb\run-20240304_104132-yn7t1x8f\logs\debug-internal.log
+2024-03-04 10:41:32,226 INFO    MainThread:365228 [wandb_init.py:init():566] calling init triggers
+2024-03-04 10:41:32,226 INFO    MainThread:365228 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {}
+2024-03-04 10:41:32,226 INFO    MainThread:365228 [wandb_init.py:init():616] starting backend
+2024-03-04 10:41:32,226 INFO    MainThread:365228 [wandb_init.py:init():620] setting up manager
+2024-03-04 10:41:32,229 INFO    MainThread:365228 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2024-03-04 10:41:32,232 INFO    MainThread:365228 [wandb_init.py:init():628] backend started and connected
+2024-03-04 10:41:32,236 INFO    MainThread:365228 [wandb_init.py:init():720] updated telemetry
+2024-03-04 10:41:32,310 INFO    MainThread:365228 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-03-04 10:41:34,471 INFO    MainThread:365228 [wandb_run.py:_on_init():2262] communicating current version
+2024-03-04 10:41:36,388 INFO    MainThread:365228 [wandb_run.py:_on_init():2271] got version response 
+2024-03-04 10:41:36,388 INFO    MainThread:365228 [wandb_init.py:init():804] starting run threads in backend
+2024-03-04 10:41:41,054 INFO    MainThread:365228 [wandb_run.py:_console_start():2241] atexit reg
+2024-03-04 10:41:41,054 INFO    MainThread:365228 [wandb_run.py:_redirect():2096] redirect: wrap_raw
+2024-03-04 10:41:41,055 INFO    MainThread:365228 [wandb_run.py:_redirect():2161] Wrapping output streams.
+2024-03-04 10:41:41,055 INFO    MainThread:365228 [wandb_run.py:_redirect():2186] Redirects installed.
+2024-03-04 10:41:41,055 INFO    MainThread:365228 [wandb_init.py:init():847] run started, returning control to user process
+2024-03-04 10:41:41,230 INFO    MainThread:365228 [wandb_run.py:_config_callback():1343] config_cb None None {'model_name': 'UNet-DAS', 'base_dir': 'D:\\HISLab\\DATASET\\StripSkullCT_Simulation', 'mixed_signal_dir': 'D:\\HISLab\\DATASET\\StripSkullCT_Simulation\\mixed_signal', 'direct_signal_dir': 'D:\\HISLab\\DATASET\\StripSkullCT_Simulation\\direct_signal', 'target_dir': 'D:\\HISLab\\DATASET\\StripSkullCT_Simulation\\target', 'sensor_mask_dir': 'D:\\HISLab\\DATASET\\StripSkullCT_Simulation\\sensor_mask_idx.mat', 'save_dir': 'D:\\HISLab\\DATASET\\StripSkullCT_Simulation\\RESULT', 'n_classes': 1, 'channels': 25, 'dt': 2e-07, 'train_size': 0.8, 'val_size': 0.1, 'max_epochs': 300, 'batch_size': 64, 'num_workers': 10, 'seed': 1121, 'lr': 0.0001, 'loss': 'mse'}
+2024-03-04 10:45:44,188 WARNING MsgRouterThr:365228 [router.py:message_loop():77] message_loop has been closed

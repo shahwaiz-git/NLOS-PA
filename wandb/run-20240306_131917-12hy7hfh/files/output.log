@@ -1,0 +1,552 @@
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name           | Type    | Params
+-------------------------------------------
+0 | das            | DAS     | 0
+1 | unet1d         | UNet1D  | 163 K
+2 | unet2d         | UNet2D  | 133 K
+3 | loss_function1 | MSELoss | 0
+4 | loss_function2 | MSELoss | 0
+-------------------------------------------
+297 K     Trainable params
+0         Non-trainable params
+297 K     Total params
+1.188     Total estimated model params size (MB)
+
+
+E:\Anaconda\envs\unet\lib\site-packages\pytorch_lightning\loops\fit_loop.py:293: The number of training batches (49) is smaller than the logging interval Trainer(log_every_n_steps=50). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+
+
+
+
+
+Epoch 0: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 49/49 [00:13<00:00,  3.76it/s, v_num=7hfh]
+
+
+
+
+
+
+Epoch 1: 100%|█| 49/49 [00:12<00:00,  3.98it/s, v_num=7hfh, val loss1=0.0306, val loss2=0.325, val loss=0.355, val_PSNR=4.890, val_SSIM=0.0128, train loss1=0.0896, train loss2=0.360
+
+
+
+
+
+
+
+Epoch 2: 100%|█| 49/49 [00:12<00:00,  3.96it/s, v_num=7hfh, val loss1=0.0301, val loss2=0.248, val loss=0.279, val_PSNR=6.050, val_SSIM=0.00889, train loss1=0.0302, train loss2=0.29
+
+
+
+
+
+
+Epoch 3: 100%|█| 49/49 [00:12<00:00,  4.04it/s, v_num=7hfh, val loss1=0.0301, val loss2=0.174, val loss=0.205, val_PSNR=7.580, val_SSIM=0.0126, train loss1=0.0301, train loss2=0.211
+
+
+
+
+
+
+Epoch 4: 100%|█| 49/49 [00:11<00:00,  4.10it/s, v_num=7hfh, val loss1=0.0301, val loss2=0.129, val loss=0.160, val_PSNR=8.880, val_SSIM=0.0179, train loss1=0.0301, train loss2=0.153
+
+
+
+
+
+
+Epoch 5: 100%|█| 49/49 [00:11<00:00,  4.10it/s, v_num=7hfh, val loss1=0.0301, val loss2=0.0999, val loss=0.130, val_PSNR=10.00, val_SSIM=0.0235, train loss1=0.0301, train loss2=0.11
+
+
+
+
+
+
+Epoch 6: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=7hfh, val loss1=0.0301, val loss2=0.0792, val loss=0.109, val_PSNR=11.00, val_SSIM=0.0285, train loss1=0.0301, train loss2=0.08
+
+
+
+
+
+
+Epoch 7: 100%|█| 49/49 [00:11<00:00,  4.09it/s, v_num=7hfh, val loss1=0.0262, val loss2=0.128, val loss=0.154, val_PSNR=8.930, val_SSIM=0.00113, train loss1=0.0288, train loss2=0.10
+
+
+
+
+
+
+Epoch 8: 100%|█| 49/49 [00:11<00:00,  4.09it/s, v_num=7hfh, val loss1=0.0139, val loss2=0.0391, val loss=0.0531, val_PSNR=14.10, val_SSIM=0.0547, train loss1=0.0223, train loss2=0.0
+
+
+
+
+
+
+Epoch 9: 100%|█| 49/49 [00:11<00:00,  4.10it/s, v_num=7hfh, val loss1=0.0124, val loss2=0.0193, val loss=0.0316, val_PSNR=17.20, val_SSIM=0.0536, train loss1=0.0128, train loss2=0.0
+
+
+
+
+
+
+Epoch 10: 100%|█| 49/49 [00:11<00:00,  4.09it/s, v_num=7hfh, val loss1=0.0117, val loss2=0.0102, val loss=0.022, val_PSNR=19.90, val_SSIM=0.183, train loss1=0.012, train loss2=0.013
+
+
+
+
+
+
+Epoch 11: 100%|█| 49/49 [00:12<00:00,  4.08it/s, v_num=7hfh, val loss1=0.0113, val loss2=0.00882, val loss=0.0201, val_PSNR=20.50, val_SSIM=0.174, train loss1=0.0115, train loss2=0.
+
+
+
+
+
+
+Epoch 12: 100%|█| 49/49 [00:11<00:00,  4.09it/s, v_num=7hfh, val loss1=0.0105, val loss2=0.00854, val loss=0.0191, val_PSNR=20.70, val_SSIM=0.152, train loss1=0.0109, train loss2=0.
+
+
+
+
+
+
+Epoch 13: 100%|█| 49/49 [00:11<00:00,  4.09it/s, v_num=7hfh, val loss1=0.0101, val loss2=0.0104, val loss=0.0205, val_PSNR=19.90, val_SSIM=0.128, train loss1=0.0103, train loss2=0.0
+
+
+
+
+
+
+Epoch 14: 100%|█| 49/49 [00:11<00:00,  4.09it/s, v_num=7hfh, val loss1=0.00898, val loss2=0.0116, val loss=0.0206, val_PSNR=19.40, val_SSIM=0.164, train loss1=0.00986, train loss2=0
+
+
+
+
+
+
+
+Epoch 15: 100%|█| 49/49 [00:11<00:00,  4.08it/s, v_num=7hfh, val loss1=0.00876, val loss2=0.014, val loss=0.0228, val_PSNR=18.60, val_SSIM=0.169, train loss1=0.00911, train loss2=0.
+
+
+
+
+
+
+Epoch 16: 100%|█| 49/49 [00:12<00:00,  3.98it/s, v_num=7hfh, val loss1=0.00737, val loss2=0.00591, val loss=0.0133, val_PSNR=22.30, val_SSIM=0.230, train loss1=0.00814, train loss2=
+
+
+
+
+
+
+Epoch 17: 100%|█| 49/49 [00:12<00:00,  3.98it/s, v_num=7hfh, val loss1=0.00724, val loss2=0.00754, val loss=0.0148, val_PSNR=21.30, val_SSIM=0.149, train loss1=0.00726, train loss2=
+
+
+
+
+
+
+Epoch 18: 100%|█| 49/49 [00:12<00:00,  3.98it/s, v_num=7hfh, val loss1=0.00713, val loss2=0.00852, val loss=0.0157, val_PSNR=20.80, val_SSIM=0.154, train loss1=0.00683, train loss2=
+
+
+
+
+
+
+Epoch 19: 100%|█| 49/49 [00:12<00:00,  4.00it/s, v_num=7hfh, val loss1=0.00653, val loss2=0.00493, val loss=0.0115, val_PSNR=23.10, val_SSIM=0.312, train loss1=0.00678, train loss2=
+
+
+
+
+
+
+
+Epoch 20: 100%|█| 49/49 [00:12<00:00,  3.99it/s, v_num=7hfh, val loss1=0.00691, val loss2=0.00722, val loss=0.0141, val_PSNR=21.50, val_SSIM=0.297, train loss1=0.00652, train loss2=
+
+
+
+
+
+
+Epoch 21: 100%|█| 49/49 [00:12<00:00,  3.92it/s, v_num=7hfh, val loss1=0.00635, val loss2=0.00546, val loss=0.0118, val_PSNR=22.60, val_SSIM=0.270, train loss1=0.00638, train loss2=
+
+
+
+
+
+
+Epoch 22: 100%|█| 49/49 [00:12<00:00,  3.98it/s, v_num=7hfh, val loss1=0.00614, val loss2=0.00477, val loss=0.0109, val_PSNR=23.20, val_SSIM=0.334, train loss1=0.0063, train loss2=0
+
+
+
+
+
+
+
+Epoch 23: 100%|█| 49/49 [00:12<00:00,  3.98it/s, v_num=7hfh, val loss1=0.00637, val loss2=0.0062, val loss=0.0126, val_PSNR=22.10, val_SSIM=0.224, train loss1=0.00623, train loss2=0
+
+
+
+
+
+
+Epoch 24: 100%|█| 49/49 [00:12<00:00,  4.00it/s, v_num=7hfh, val loss1=0.00602, val loss2=0.00441, val loss=0.0104, val_PSNR=23.60, val_SSIM=0.328, train loss1=0.00602, train loss2=
+
+
+
+
+
+
+Epoch 25: 100%|█| 49/49 [00:12<00:00,  3.99it/s, v_num=7hfh, val loss1=0.00584, val loss2=0.00501, val loss=0.0108, val_PSNR=23.00, val_SSIM=0.311, train loss1=0.00601, train loss2=
+
+
+
+
+
+
+Epoch 26: 100%|█| 49/49 [00:12<00:00,  3.99it/s, v_num=7hfh, val loss1=0.00573, val loss2=0.00446, val loss=0.0102, val_PSNR=23.50, val_SSIM=0.360, train loss1=0.00581, train loss2=
+
+
+
+
+
+
+
+Epoch 27: 100%|█| 49/49 [00:12<00:00,  3.99it/s, v_num=7hfh, val loss1=0.00539, val loss2=0.00407, val loss=0.00946, val_PSNR=23.90, val_SSIM=0.399, train loss1=0.00565, train loss2
+
+
+
+
+
+
+Epoch 28: 100%|█| 49/49 [00:12<00:00,  4.05it/s, v_num=7hfh, val loss1=0.00523, val loss2=0.00431, val loss=0.00954, val_PSNR=23.70, val_SSIM=0.376, train loss1=0.00558, train loss2
+
+
+
+
+
+
+Epoch 29: 100%|█| 49/49 [00:12<00:00,  4.05it/s, v_num=7hfh, val loss1=0.00513, val loss2=0.00428, val loss=0.00941, val_PSNR=23.70, val_SSIM=0.385, train loss1=0.00525, train loss2
+
+
+
+
+
+
+Epoch 30: 100%|█| 49/49 [00:12<00:00,  4.04it/s, v_num=7hfh, val loss1=0.00562, val loss2=0.0066, val loss=0.0122, val_PSNR=21.90, val_SSIM=0.161, train loss1=0.005, train loss2=0.0
+
+
+
+
+
+
+Epoch 31: 100%|█| 49/49 [00:12<00:00,  4.04it/s, v_num=7hfh, val loss1=0.00506, val loss2=0.00446, val loss=0.00952, val_PSNR=23.60, val_SSIM=0.344, train loss1=0.00481, train loss2
+
+
+
+
+
+
+Epoch 32: 100%|█| 49/49 [00:12<00:00,  4.05it/s, v_num=7hfh, val loss1=0.00426, val loss2=0.00395, val loss=0.00821, val_PSNR=24.00, val_SSIM=0.393, train loss1=0.00469, train loss2
+
+
+
+
+
+
+Epoch 33: 100%|█| 49/49 [00:12<00:00,  4.03it/s, v_num=7hfh, val loss1=0.00458, val loss2=0.00418, val loss=0.00876, val_PSNR=23.80, val_SSIM=0.319, train loss1=0.00424, train loss2
+
+
+
+
+
+
+
+Epoch 34: 100%|█| 49/49 [00:12<00:00,  4.04it/s, v_num=7hfh, val loss1=0.00423, val loss2=0.0041, val loss=0.00833, val_PSNR=23.90, val_SSIM=0.343, train loss1=0.00418, train loss2=
+
+
+
+
+
+
+Epoch 35: 100%|█| 49/49 [00:12<00:00,  4.03it/s, v_num=7hfh, val loss1=0.0039, val loss2=0.00374, val loss=0.00763, val_PSNR=24.30, val_SSIM=0.403, train loss1=0.004, train loss2=0.
+
+
+
+
+
+
+Epoch 36: 100%|█| 49/49 [00:12<00:00,  4.05it/s, v_num=7hfh, val loss1=0.00372, val loss2=0.00381, val loss=0.00753, val_PSNR=24.20, val_SSIM=0.382, train loss1=0.00386, train loss2
+
+
+
+
+
+
+Epoch 37: 100%|█| 49/49 [00:12<00:00,  4.03it/s, v_num=7hfh, val loss1=0.0037, val loss2=0.00365, val loss=0.00734, val_PSNR=24.40, val_SSIM=0.374, train loss1=0.00385, train loss2=
+
+
+
+
+
+
+Epoch 38: 100%|█| 49/49 [00:12<00:00,  4.03it/s, v_num=7hfh, val loss1=0.0038, val loss2=0.00376, val loss=0.00755, val_PSNR=24.30, val_SSIM=0.367, train loss1=0.00401, train loss2=
+
+
+
+
+
+
+Epoch 39: 100%|█| 49/49 [00:12<00:00,  4.05it/s, v_num=7hfh, val loss1=0.00355, val loss2=0.00328, val loss=0.00683, val_PSNR=24.90, val_SSIM=0.433, train loss1=0.00362, train loss2
+
+
+
+
+
+
+Epoch 40: 100%|█| 49/49 [00:12<00:00,  4.03it/s, v_num=7hfh, val loss1=0.00345, val loss2=0.00311, val loss=0.00656, val_PSNR=25.10, val_SSIM=0.409, train loss1=0.00354, train loss2
+
+
+
+
+
+
+
+Epoch 41: 100%|█| 49/49 [00:12<00:00,  4.01it/s, v_num=7hfh, val loss1=0.0034, val loss2=0.00295, val loss=0.00635, val_PSNR=25.40, val_SSIM=0.427, train loss1=0.00348, train loss2=
+
+
+
+
+
+
+Epoch 42: 100%|█| 49/49 [00:12<00:00,  4.00it/s, v_num=7hfh, val loss1=0.0034, val loss2=0.00366, val loss=0.00706, val_PSNR=24.40, val_SSIM=0.395, train loss1=0.00345, train loss2=
+
+
+
+
+
+
+
+Epoch 43: 100%|█| 49/49 [00:12<00:00,  4.00it/s, v_num=7hfh, val loss1=0.0034, val loss2=0.00443, val loss=0.00783, val_PSNR=23.60, val_SSIM=0.294, train loss1=0.00339, train loss2=
+
+
+
+
+
+Epoch 44: 100%|█| 49/49 [00:11<00:00,  4.10it/s, v_num=7hfh, val loss1=0.0033, val loss2=0.00316, val loss=0.00646, val_PSNR=25.10, val_SSIM=0.407, train loss1=0.00335, train loss2=
+
+
+
+
+
+
+Epoch 45: 100%|█| 49/49 [00:11<00:00,  4.08it/s, v_num=7hfh, val loss1=0.00327, val loss2=0.00323, val loss=0.0065, val_PSNR=25.00, val_SSIM=0.402, train loss1=0.00355, train loss2=
+
+
+
+
+
+
+Epoch 46: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=7hfh, val loss1=0.0032, val loss2=0.0032, val loss=0.00639, val_PSNR=25.10, val_SSIM=0.445, train loss1=0.00318, train loss2=0
+
+
+
+
+
+
+
+Epoch 47: 100%|█| 49/49 [00:11<00:00,  4.13it/s, v_num=7hfh, val loss1=0.00314, val loss2=0.00337, val loss=0.00651, val_PSNR=24.80, val_SSIM=0.292, train loss1=0.00313, train loss2
+
+
+
+
+
+Epoch 48: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=7hfh, val loss1=0.00295, val loss2=0.00272, val loss=0.00567, val_PSNR=25.70, val_SSIM=0.465, train loss1=0.00301, train loss2
+
+
+
+
+
+
+Epoch 49: 100%|█| 49/49 [00:11<00:00,  4.14it/s, v_num=7hfh, val loss1=0.00305, val loss2=0.00308, val loss=0.00613, val_PSNR=25.20, val_SSIM=0.413, train loss1=0.00297, train loss2
+
+
+
+
+
+
+Epoch 50: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=7hfh, val loss1=0.00289, val loss2=0.00295, val loss=0.00583, val_PSNR=25.40, val_SSIM=0.449, train loss1=0.00297, train loss2
+
+
+
+
+
+
+Epoch 51: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=7hfh, val loss1=0.00285, val loss2=0.00271, val loss=0.00556, val_PSNR=25.80, val_SSIM=0.468, train loss1=0.00287, train loss2
+
+
+
+
+
+
+Epoch 52: 100%|█| 49/49 [00:12<00:00,  4.07it/s, v_num=7hfh, val loss1=0.00279, val loss2=0.00279, val loss=0.00558, val_PSNR=25.70, val_SSIM=0.442, train loss1=0.0029, train loss2=
+
+
+
+
+
+
+
+Epoch 53: 100%|█| 49/49 [00:12<00:00,  4.07it/s, v_num=7hfh, val loss1=0.00327, val loss2=0.00527, val loss=0.00854, val_PSNR=22.90, val_SSIM=0.374, train loss1=0.00332, train loss2
+
+
+
+
+
+
+Epoch 54: 100%|█| 49/49 [00:12<00:00,  4.07it/s, v_num=7hfh, val loss1=0.0027, val loss2=0.00248, val loss=0.00518, val_PSNR=26.10, val_SSIM=0.481, train loss1=0.00301, train loss2=
+
+
+
+
+
+
+Epoch 55: 100%|█| 49/49 [00:12<00:00,  4.07it/s, v_num=7hfh, val loss1=0.00267, val loss2=0.00262, val loss=0.00529, val_PSNR=26.00, val_SSIM=0.493, train loss1=0.00271, train loss2
+
+
+
+
+
+
+Epoch 56: 100%|█| 49/49 [00:11<00:00,  4.10it/s, v_num=7hfh, val loss1=0.00265, val loss2=0.00269, val loss=0.00534, val_PSNR=25.90, val_SSIM=0.487, train loss1=0.00267, train loss2
+
+
+
+
+
+
+Epoch 57: 100%|█| 49/49 [00:11<00:00,  4.14it/s, v_num=7hfh, val loss1=0.00263, val loss2=0.00242, val loss=0.00505, val_PSNR=26.30, val_SSIM=0.474, train loss1=0.00265, train loss2
+
+
+
+
+
+Epoch 58: 100%|█| 49/49 [00:11<00:00,  4.15it/s, v_num=7hfh, val loss1=0.00261, val loss2=0.00241, val loss=0.00502, val_PSNR=26.30, val_SSIM=0.479, train loss1=0.00263, train loss2
+
+
+
+
+
+
+Epoch 59: 100%|█| 49/49 [00:11<00:00,  4.17it/s, v_num=7hfh, val loss1=0.00255, val loss2=0.00221, val loss=0.00476, val_PSNR=26.60, val_SSIM=0.502, train loss1=0.00263, train loss2
+
+
+
+
+
+
+Epoch 60: 100%|█| 49/49 [00:11<00:00,  4.16it/s, v_num=7hfh, val loss1=0.00255, val loss2=0.00246, val loss=0.00501, val_PSNR=26.20, val_SSIM=0.464, train loss1=0.00256, train loss2
+
+
+
+
+
+
+Epoch 61: 100%|█| 49/49 [00:11<00:00,  4.17it/s, v_num=7hfh, val loss1=0.00259, val loss2=0.0023, val loss=0.00489, val_PSNR=26.50, val_SSIM=0.463, train loss1=0.00259, train loss2=
+
+
+
+
+
+
+Epoch 62: 100%|█| 49/49 [00:11<00:00,  4.17it/s, v_num=7hfh, val loss1=0.00249, val loss2=0.00226, val loss=0.00476, val_PSNR=26.50, val_SSIM=0.479, train loss1=0.00256, train loss2
+
+
+
+
+
+
+Epoch 63: 100%|█| 49/49 [00:11<00:00,  4.18it/s, v_num=7hfh, val loss1=0.00251, val loss2=0.00207, val loss=0.00458, val_PSNR=26.90, val_SSIM=0.465, train loss1=0.00254, train loss2
+
+
+
+
+
+
+Epoch 64: 100%|█| 49/49 [00:11<00:00,  4.18it/s, v_num=7hfh, val loss1=0.00248, val loss2=0.00219, val loss=0.00467, val_PSNR=26.70, val_SSIM=0.492, train loss1=0.00257, train loss2
+
+
+
+
+
+
+Epoch 65: 100%|█| 49/49 [00:11<00:00,  4.18it/s, v_num=7hfh, val loss1=0.00252, val loss2=0.00246, val loss=0.00498, val_PSNR=26.20, val_SSIM=0.474, train loss1=0.00249, train loss2
+
+
+
+
+
+
+Epoch 66: 100%|█| 49/49 [00:11<00:00,  4.18it/s, v_num=7hfh, val loss1=0.00251, val loss2=0.00204, val loss=0.00455, val_PSNR=26.90, val_SSIM=0.464, train loss1=0.00247, train loss2
+
+
+
+
+
+
+Epoch 67: 100%|█| 49/49 [00:11<00:00,  4.19it/s, v_num=7hfh, val loss1=0.00237, val loss2=0.00206, val loss=0.00443, val_PSNR=27.00, val_SSIM=0.537, train loss1=0.00246, train loss2
+
+
+
+
+
+
+Epoch 68: 100%|█| 49/49 [00:11<00:00,  4.17it/s, v_num=7hfh, val loss1=0.00247, val loss2=0.00571, val loss=0.00817, val_PSNR=22.80, val_SSIM=0.338, train loss1=0.00246, train loss2
+
+
+
+
+
+Epoch 69: 100%|█| 49/49 [00:11<00:00,  4.16it/s, v_num=7hfh, val loss1=0.00242, val loss2=0.00228, val loss=0.0047, val_PSNR=26.50, val_SSIM=0.438, train loss1=0.00243, train loss2=
+
+
+
+
+
+
+Epoch 70: 100%|█| 49/49 [00:11<00:00,  4.17it/s, v_num=7hfh, val loss1=0.00232, val loss2=0.00213, val loss=0.00445, val_PSNR=26.80, val_SSIM=0.534, train loss1=0.00239, train loss2
+
+
+
+
+
+
+Epoch 71: 100%|█| 49/49 [00:11<00:00,  4.17it/s, v_num=7hfh, val loss1=0.00238, val loss2=0.00219, val loss=0.00456, val_PSNR=26.70, val_SSIM=0.494, train loss1=0.0024, train loss2=
+
+
+
+
+
+
+Epoch 72: 100%|█| 49/49 [00:11<00:00,  4.18it/s, v_num=7hfh, val loss1=0.00236, val loss2=0.00217, val loss=0.00452, val_PSNR=26.80, val_SSIM=0.521, train loss1=0.00238, train loss2
+
+
+
+
+
+Epoch 73:  71%|▋| 35/49 [00:08<00:03,  4.10it/s, v_num=7hfh, val loss1=0.0023, val loss2=0.00229, val loss=0.00459, val_PSNR=26.50, val_SSIM=0.514, train loss1=0.00243, train loss2=
+E:\Anaconda\envs\unet\lib\site-packages\pytorch_lightning\trainer\call.py:54: Detected KeyboardInterrupt, attempting graceful shutdown...
+
+
+
+Testing DataLoader 0: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 7/7 [00:03<00:00,  1.85it/s]
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       Test metric             DataLoader 0
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+        test loss          0.004614911042153835
+       test loss1          0.002434388268738985
+       test loss2          0.0021805225405842066
+        test_PSNR           26.692508697509766
+        test_SSIM           0.4431404173374176
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────

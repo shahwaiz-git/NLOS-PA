@@ -1,0 +1,27 @@
+2024-03-06 16:09:56,675 INFO    MainThread:67152 [wandb_setup.py:_flush():76] Loading settings from C:\Users\19086\.config\wandb\settings
+2024-03-06 16:09:56,675 INFO    MainThread:67152 [wandb_setup.py:_flush():76] Loading settings from D:\HISLab\±œ…Ë\CODE\wandb\settings
+2024-03-06 16:09:56,675 INFO    MainThread:67152 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-03-06 16:09:56,675 INFO    MainThread:67152 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'main.py', 'program': 'D:\\HISLab\\±œ…Ë\\CODE\\main.py'}
+2024-03-06 16:09:56,675 INFO    MainThread:67152 [wandb_init.py:_log_setup():428] Logging user logs to .\wandb\run-20240306_160956-13lv99xk\logs\debug.log
+2024-03-06 16:09:56,676 INFO    MainThread:67152 [wandb_init.py:_log_setup():429] Logging internal logs to .\wandb\run-20240306_160956-13lv99xk\logs\debug-internal.log
+2024-03-06 16:09:56,678 INFO    MainThread:67152 [wandb_init.py:init():462] calling init triggers
+2024-03-06 16:09:56,678 INFO    MainThread:67152 [wandb_init.py:init():465] wandb.init called with sweep_config: {}
+config: {}
+2024-03-06 16:09:56,680 INFO    MainThread:67152 [wandb_init.py:init():515] starting backend
+2024-03-06 16:09:56,680 INFO    MainThread:67152 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=spawn, using: spawn
+2024-03-06 16:09:56,688 INFO    MainThread:67152 [backend.py:ensure_launched():217] starting backend process...
+2024-03-06 16:09:57,913 INFO    MainThread:67152 [backend.py:ensure_launched():222] started backend process with pid: 64112
+2024-03-06 16:09:57,914 INFO    MainThread:67152 [wandb_init.py:init():525] backend started and connected
+2024-03-06 16:09:57,924 INFO    MainThread:67152 [wandb_init.py:init():596] updated telemetry
+2024-03-06 16:09:57,995 INFO    MainThread:67152 [wandb_init.py:init():627] communicating run to backend with 30 second timeout
+2024-03-06 16:10:02,011 INFO    MainThread:67152 [wandb_run.py:_on_init():1924] communicating current version
+2024-03-06 16:10:02,945 INFO    MainThread:67152 [wandb_run.py:_on_init():1928] got version response upgrade_message: "wandb version 0.16.4 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-03-06 16:10:02,945 INFO    MainThread:67152 [wandb_init.py:init():662] starting run threads in backend
+2024-03-06 16:10:07,123 INFO    MainThread:67152 [wandb_run.py:_console_start():1898] atexit reg
+2024-03-06 16:10:07,127 INFO    MainThread:67152 [wandb_run.py:_redirect():1771] redirect: SettingsConsole.WRAP
+2024-03-06 16:10:07,127 INFO    MainThread:67152 [wandb_run.py:_redirect():1808] Wrapping output streams.
+2024-03-06 16:10:07,130 INFO    MainThread:67152 [wandb_run.py:_redirect():1832] Redirects installed.
+2024-03-06 16:10:07,131 INFO    MainThread:67152 [wandb_init.py:init():688] run started, returning control to user process
+2024-03-06 16:10:07,277 INFO    MainThread:67152 [wandb_run.py:_config_callback():1136] config_cb None None {'model_name': 'UNet-DAS', 'base_dir': 'D:\\HISLab\\DATASET\\StripSkullCT_Simulation', 'mixed_signal_dir': 'D:\\HISLab\\DATASET\\StripSkullCT_Simulation\\mixed_signal', 'direct_signal_dir': 'D:\\HISLab\\DATASET\\StripSkullCT_Simulation\\direct_signal', 'target_dir': 'D:\\HISLab\\DATASET\\StripSkullCT_Simulation\\target', 'sensor_mask_dir': 'D:\\HISLab\\DATASET\\StripSkullCT_Simulation\\sensor_mask_idx.mat', 'save_dir': 'D:\\HISLab\\DATASET\\StripSkullCT_Simulation\\RESULT', 'n_classes': 1, 'channels': 50, 'dt': 2e-07, 'train_size': 0.8, 'val_size': 0.1, 'max_epochs': 300, 'min_epochs': 100, 'batch_size': 1, 'num_workers': 2, 'seed': 1121, 'lr1': 0.001, 'lr2': 0.0001, 'loss': 'mse'}
+2024-03-06 16:13:38,700 INFO    MainThread:67152 [wandb_run.py:_config_callback():1136] config_cb None None {'model_name': 'UNet-DAS', 'base_dir': 'D:\\HISLab\\DATASET\\StripSkullCT_Simulation', 'mixed_signal_dir': 'D:\\HISLab\\DATASET\\StripSkullCT_Simulation\\mixed_signal', 'direct_signal_dir': 'D:\\HISLab\\DATASET\\StripSkullCT_Simulation\\direct_signal', 'target_dir': 'D:\\HISLab\\DATASET\\StripSkullCT_Simulation\\target', 'sensor_mask_dir': 'D:\\HISLab\\DATASET\\StripSkullCT_Simulation\\sensor_mask_idx.mat', 'save_dir': 'D:\\HISLab\\DATASET\\StripSkullCT_Simulation\\RESULT', 'n_classes': 1, 'channels': 50, 'dt': 2e-07, 'train_size': 0.8, 'val_size': 0.1, 'max_epochs': 300, 'min_epochs': 100, 'batch_size': 1, 'num_workers': 2, 'seed': 1121, 'lr1': 0.001, 'lr2': 0.0001, 'loss': 'mse'}

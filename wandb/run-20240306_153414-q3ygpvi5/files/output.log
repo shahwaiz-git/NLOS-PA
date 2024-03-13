@@ -1,0 +1,35 @@
+
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+E:\Anaconda\envs\unet\lib\site-packages\torch\nn\modules\loss.py:535: UserWarning: Using a target size (torch.Size([32, 1, 256, 256])) that is different to the input size (torch.Size([32, 32, 256, 256])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  return F.mse_loss(input, target, reduction=self.reduction)
+Testing DataLoader 0:   0%|                                                                                                                                    | 0/7 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "main.py", line 88, in <module>
+    trainer.test(model, datamodule=datamodule)
+  File "E:\Anaconda\envs\unet\lib\site-packages\pytorch_lightning\trainer\trainer.py", line 754, in test
+    return call._call_and_handle_interrupt(
+  File "E:\Anaconda\envs\unet\lib\site-packages\pytorch_lightning\trainer\call.py", line 44, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "E:\Anaconda\envs\unet\lib\site-packages\pytorch_lightning\trainer\trainer.py", line 794, in _test_impl
+    results = self._run(model, ckpt_path=ckpt_path)
+  File "E:\Anaconda\envs\unet\lib\site-packages\pytorch_lightning\trainer\trainer.py", line 989, in _run
+    results = self._run_stage()
+  File "E:\Anaconda\envs\unet\lib\site-packages\pytorch_lightning\trainer\trainer.py", line 1028, in _run_stage
+    return self._evaluation_loop.run()
+  File "E:\Anaconda\envs\unet\lib\site-packages\pytorch_lightning\loops\utilities.py", line 182, in _decorator
+    return loop_run(self, *args, **kwargs)
+  File "E:\Anaconda\envs\unet\lib\site-packages\pytorch_lightning\loops\evaluation_loop.py", line 134, in run
+    self._evaluation_step(batch, batch_idx, dataloader_idx, dataloader_iter)
+  File "E:\Anaconda\envs\unet\lib\site-packages\pytorch_lightning\loops\evaluation_loop.py", line 391, in _evaluation_step
+    output = call._call_strategy_hook(trainer, hook_name, *step_args)
+  File "E:\Anaconda\envs\unet\lib\site-packages\pytorch_lightning\trainer\call.py", line 309, in _call_strategy_hook
+    output = fn(*args, **kwargs)
+  File "E:\Anaconda\envs\unet\lib\site-packages\pytorch_lightning\strategies\strategy.py", line 416, in test_step
+    return self.lightning_module.test_step(*args, **kwargs)
+  File "D:\HISLab\毕设\CODE\MODEL\model_interface.py", line 73, in test_step
+    self.evaluate(batch, 'test')
+  File "D:\HISLab\毕设\CODE\MODEL\model_interface.py", line 59, in evaluate
+    psnr = PSNR(target, image_hat)
+  File "D:\HISLab\毕设\CODE\utlis.py", line 17, in PSNR
+    assert y.shape == y_hat.shape
+AssertionError

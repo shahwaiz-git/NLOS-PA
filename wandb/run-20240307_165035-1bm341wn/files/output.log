@@ -1,0 +1,2286 @@
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+  | Name           | Type    | Params
+-------------------------------------------
+0 | das            | DAS     | 0
+1 | unet1d         | UNet1D  | 163 K
+2 | unet2d         | UNet2D  | 133 K
+3 | loss_function1 | MSELoss | 0
+4 | loss_function2 | MSELoss | 0
+-------------------------------------------
+297 K     Trainable params
+0         Non-trainable params
+297 K     Total params
+1.188     Total estimated model params size (MB)
+
+
+
+E:\Anaconda\envs\unet\lib\site-packages\pytorch_lightning\loops\fit_loop.py:293: The number of training batches (49) is smaller than the logging interval Trainer(log_every_n_steps=50). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+
+
+
+
+
+Epoch 0: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 49/49 [00:12<00:00,  3.98it/s, v_num=41wn]
+Validation DataLoader 0:  43%|███████████████████████████████████████████████████▊                                                                     | 3/7 [00:01<00:01,  2.39it/s]
+
+
+
+
+
+
+Epoch 1: 100%|█| 49/49 [00:11<00:00,  4.15it/s, v_num=41wn, val_loss1=0.245, val_loss2=0.141, val_loss=0.386, val_PSNR=8.510, val_SSIM=0.0962, train_loss1=0.275, train_loss2=0.194,
+Validation DataLoader 0:  14%|█████████████████▎                                                                                                       | 1/7 [00:00<00:02,  2.38it/s]
+
+
+
+
+
+
+Epoch 2: 100%|█| 49/49 [00:12<00:00,  3.97it/s, v_num=41wn, val_loss1=0.0545, val_loss2=0.152, val_loss=0.206, val_PSNR=8.200, val_SSIM=0.198, train_loss1=0.155, train_loss2=0.154,
+
+Validation DataLoader 0:  57%|█████████████████████████████████████████████████████████████████████▏                                                   | 4/7 [00:01<00:01,  2.25it/s]
+
+
+
+
+
+
+Epoch 3: 100%|█| 49/49 [00:12<00:00,  3.94it/s, v_num=41wn, val_loss1=0.0297, val_loss2=0.0476, val_loss=0.0773, val_PSNR=13.20, val_SSIM=0.406, train_loss1=0.0358, train_loss2=0.10
+
+Validation DataLoader 0:  71%|██████████████████████████████████████████████████████████████████████████████████████▍                                  | 5/7 [00:02<00:00,  2.28it/s]
+
+
+
+
+
+
+Epoch 4: 100%|█| 49/49 [00:12<00:00,  3.99it/s, v_num=41wn, val_loss1=0.0141, val_loss2=0.0298, val_loss=0.0439, val_PSNR=15.30, val_SSIM=0.606, train_loss1=0.0206, train_loss2=0.03
+Validation DataLoader 0:  29%|██████████████████████████████████▌                                                                                      | 2/7 [00:00<00:02,  2.22it/s]
+
+
+
+
+
+
+Epoch 5: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.0128, val_loss2=0.0137, val_loss=0.0265, val_PSNR=18.60, val_SSIM=0.765, train_loss1=0.0133, train_loss2=0.01
+
+Validation DataLoader 0:  86%|███████████████████████████████████████████████████████████████████████████████████████████████████████▋                 | 6/7 [00:02<00:00,  2.30it/s]
+
+
+
+
+
+
+Epoch 6: 100%|█| 49/49 [00:11<00:00,  4.10it/s, v_num=41wn, val_loss1=0.0124, val_loss2=0.00894, val_loss=0.0214, val_PSNR=20.50, val_SSIM=0.823, train_loss1=0.0126, train_loss2=0.0
+Validation DataLoader 0:  43%|███████████████████████████████████████████████████▊                                                                     | 3/7 [00:01<00:01,  2.33it/s]
+
+
+
+
+
+
+Epoch 7: 100%|█| 49/49 [00:12<00:00,  4.04it/s, v_num=41wn, val_loss1=0.0122, val_loss2=0.00731, val_loss=0.0195, val_PSNR=21.40, val_SSIM=0.840, train_loss1=0.0123, train_loss2=0.0
+Validation DataLoader 0:  14%|█████████████████▎                                                                                                       | 1/7 [00:00<00:02,  2.26it/s]
+
+
+
+
+
+
+Epoch 8: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.012, val_loss2=0.0064, val_loss=0.0184, val_PSNR=21.90, val_SSIM=0.859, train_loss1=0.0121, train_loss2=0.006
+
+Validation DataLoader 0:  71%|██████████████████████████████████████████████████████████████████████████████████████▍                                  | 5/7 [00:02<00:00,  2.34it/s]
+
+
+
+
+
+
+Epoch 9: 100%|█| 49/49 [00:11<00:00,  4.09it/s, v_num=41wn, val_loss1=0.0119, val_loss2=0.00587, val_loss=0.0177, val_PSNR=22.30, val_SSIM=0.868, train_loss1=0.0119, train_loss2=0.0
+Validation DataLoader 0:  29%|██████████████████████████████████▌                                                                                      | 2/7 [00:00<00:02,  2.33it/s]
+
+
+
+
+
+
+Epoch 10: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.0118, val_loss2=0.00554, val_loss=0.0173, val_PSNR=22.60, val_SSIM=0.877, train_loss1=0.0118, train_loss2=0.
+
+
+
+
+
+
+
+
+Epoch 11: 100%|█| 49/49 [00:12<00:00,  4.08it/s, v_num=41wn, val_loss1=0.0116, val_loss2=0.00532, val_loss=0.0169, val_PSNR=22.70, val_SSIM=0.884, train_loss1=0.0117, train_loss2=0.
+Validation DataLoader 0:  43%|███████████████████████████████████████████████████▊                                                                     | 3/7 [00:01<00:01,  2.33it/s]
+
+
+
+
+
+
+Epoch 12: 100%|█| 49/49 [00:12<00:00,  4.03it/s, v_num=41wn, val_loss1=0.0115, val_loss2=0.00518, val_loss=0.0166, val_PSNR=22.90, val_SSIM=0.886, train_loss1=0.0116, train_loss2=0.
+
+
+
+
+
+
+Epoch 13: 100%|█| 49/49 [00:12<00:00,  4.06it/s, v_num=41wn, val_loss1=0.0111, val_loss2=0.00514, val_loss=0.0163, val_PSNR=22.90, val_SSIM=0.884, train_loss1=0.0113, train_loss2=0.
+
+
+
+
+
+
+
+Epoch 14: 100%|█| 49/49 [00:12<00:00,  4.08it/s, v_num=41wn, val_loss1=0.00989, val_loss2=0.00607, val_loss=0.016, val_PSNR=22.20, val_SSIM=0.867, train_loss1=0.0105, train_loss2=0.
+Validation DataLoader 0:  29%|██████████████████████████████████▌                                                                                      | 2/7 [00:00<00:02,  2.26it/s]
+
+
+
+
+
+
+Epoch 15: 100%|█| 49/49 [00:12<00:00,  4.06it/s, v_num=41wn, val_loss1=0.00938, val_loss2=0.00478, val_loss=0.0142, val_PSNR=23.20, val_SSIM=0.892, train_loss1=0.00961, train_loss2=
+
+Validation DataLoader 0:  71%|██████████████████████████████████████████████████████████████████████████████████████▍                                  | 5/7 [00:02<00:00,  2.36it/s]
+
+
+
+
+
+Epoch 16: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00917, val_loss2=0.00389, val_loss=0.0131, val_PSNR=24.10, val_SSIM=0.912, train_loss1=0.00928, train_loss2=
+
+Validation DataLoader 0:  57%|█████████████████████████████████████████████████████████████████████▏                                                   | 4/7 [00:01<00:01,  2.31it/s]
+
+
+
+
+
+
+Epoch 17: 100%|█| 49/49 [00:11<00:00,  4.10it/s, v_num=41wn, val_loss1=0.00901, val_loss2=0.00376, val_loss=0.0128, val_PSNR=24.30, val_SSIM=0.914, train_loss1=0.00909, train_loss2=
+
+
+
+
+
+
+Epoch 18: 100%|█| 49/49 [00:11<00:00,  4.13it/s, v_num=41wn, val_loss1=0.0085, val_loss2=0.004, val_loss=0.0125, val_PSNR=24.00, val_SSIM=0.882, train_loss1=0.00879, train_loss2=0.0
+
+
+
+
+
+
+Epoch 19: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00811, val_loss2=0.00419, val_loss=0.0123, val_PSNR=23.80, val_SSIM=0.872, train_loss1=0.00829, train_loss2=
+
+
+
+
+
+
+
+Epoch 20: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00768, val_loss2=0.00384, val_loss=0.0115, val_PSNR=24.20, val_SSIM=0.901, train_loss1=0.00786, train_loss2=
+
+
+
+
+
+
+Epoch 21: 100%|█| 49/49 [00:11<00:00,  4.09it/s, v_num=41wn, val_loss1=0.00749, val_loss2=0.00387, val_loss=0.0114, val_PSNR=24.20, val_SSIM=0.907, train_loss1=0.00763, train_loss2=
+
+Validation DataLoader 0:  71%|██████████████████████████████████████████████████████████████████████████████████████▍                                  | 5/7 [00:02<00:00,  2.23it/s]
+
+
+
+
+
+
+Epoch 22: 100%|█| 49/49 [00:12<00:00,  4.01it/s, v_num=41wn, val_loss1=0.00729, val_loss2=0.00338, val_loss=0.0107, val_PSNR=24.70, val_SSIM=0.917, train_loss1=0.00737, train_loss2=
+Validation DataLoader 0:  43%|███████████████████████████████████████████████████▊                                                                     | 3/7 [00:01<00:01,  2.30it/s]
+
+
+
+
+
+
+Epoch 23: 100%|█| 49/49 [00:12<00:00,  3.99it/s, v_num=41wn, val_loss1=0.00715, val_loss2=0.00318, val_loss=0.0103, val_PSNR=25.00, val_SSIM=0.926, train_loss1=0.00726, train_loss2=
+
+Validation DataLoader 0:  57%|█████████████████████████████████████████████████████████████████████▏                                                   | 4/7 [00:01<00:01,  2.35it/s]
+
+
+
+
+
+
+Epoch 24: 100%|█| 49/49 [00:12<00:00,  4.01it/s, v_num=41wn, val_loss1=0.00699, val_loss2=0.00299, val_loss=0.00998, val_PSNR=25.20, val_SSIM=0.927, train_loss1=0.00712, train_loss2
+
+
+
+
+
+
+
+Epoch 25: 100%|█| 49/49 [00:12<00:00,  3.98it/s, v_num=41wn, val_loss1=0.00693, val_loss2=0.00295, val_loss=0.00988, val_PSNR=25.30, val_SSIM=0.928, train_loss1=0.00698, train_loss2
+
+Validation DataLoader 0:  71%|██████████████████████████████████████████████████████████████████████████████████████▍                                  | 5/7 [00:02<00:00,  2.31it/s]
+
+
+
+
+
+
+Epoch 26: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00676, val_loss2=0.00279, val_loss=0.00955, val_PSNR=25.50, val_SSIM=0.932, train_loss1=0.00684, train_loss2
+Validation DataLoader 0:  29%|██████████████████████████████████▌                                                                                      | 2/7 [00:00<00:02,  2.27it/s]
+
+
+
+
+
+
+Epoch 27: 100%|█| 49/49 [00:12<00:00,  4.02it/s, v_num=41wn, val_loss1=0.00671, val_loss2=0.00278, val_loss=0.00949, val_PSNR=25.60, val_SSIM=0.937, train_loss1=0.00673, train_loss2
+
+Validation DataLoader 0:  71%|██████████████████████████████████████████████████████████████████████████████████████▍                                  | 5/7 [00:02<00:00,  2.26it/s]
+
+
+
+
+
+
+Epoch 28: 100%|█| 49/49 [00:11<00:00,  4.13it/s, v_num=41wn, val_loss1=0.00657, val_loss2=0.00258, val_loss=0.00914, val_PSNR=25.90, val_SSIM=0.942, train_loss1=0.00664, train_loss2
+Validation DataLoader 0:  57%|█████████████████████████████████████████████████████████████████████▏                                                   | 4/7 [00:01<00:01,  2.37it/s]
+
+
+
+
+
+
+Epoch 29: 100%|█| 49/49 [00:11<00:00,  4.14it/s, v_num=41wn, val_loss1=0.00653, val_loss2=0.00252, val_loss=0.00905, val_PSNR=26.00, val_SSIM=0.942, train_loss1=0.00661, train_loss2
+
+
+
+
+
+
+
+Epoch 30: 100%|█| 49/49 [00:12<00:00,  4.07it/s, v_num=41wn, val_loss1=0.00647, val_loss2=0.00242, val_loss=0.00889, val_PSNR=26.20, val_SSIM=0.947, train_loss1=0.00652, train_loss2
+
+
+
+
+
+
+
+Epoch 31: 100%|█| 49/49 [00:12<00:00,  4.08it/s, v_num=41wn, val_loss1=0.00644, val_loss2=0.00239, val_loss=0.00883, val_PSNR=26.20, val_SSIM=0.946, train_loss1=0.0065, train_loss2=
+Validation DataLoader 0:  43%|███████████████████████████████████████████████████▊                                                                     | 3/7 [00:01<00:01,  2.31it/s]
+
+
+
+
+
+
+Epoch 32: 100%|█| 49/49 [00:11<00:00,  4.14it/s, v_num=41wn, val_loss1=0.00642, val_loss2=0.00237, val_loss=0.00879, val_PSNR=26.30, val_SSIM=0.947, train_loss1=0.00649, train_loss2
+
+
+
+
+
+
+Epoch 33: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00638, val_loss2=0.00234, val_loss=0.00872, val_PSNR=26.30, val_SSIM=0.946, train_loss1=0.00641, train_loss2
+
+Validation DataLoader 0:  71%|██████████████████████████████████████████████████████████████████████████████████████▍                                  | 5/7 [00:02<00:00,  2.36it/s]
+
+
+
+
+
+
+Epoch 34: 100%|█| 49/49 [00:11<00:00,  4.13it/s, v_num=41wn, val_loss1=0.00629, val_loss2=0.00218, val_loss=0.00847, val_PSNR=26.60, val_SSIM=0.951, train_loss1=0.00634, train_loss2
+Validation DataLoader 0:  29%|██████████████████████████████████▌                                                                                      | 2/7 [00:00<00:02,  2.37it/s]
+
+
+
+
+
+
+Epoch 35: 100%|█| 49/49 [00:11<00:00,  4.13it/s, v_num=41wn, val_loss1=0.00624, val_loss2=0.00216, val_loss=0.00839, val_PSNR=26.70, val_SSIM=0.952, train_loss1=0.00629, train_loss2
+
+
+
+
+
+
+
+Epoch 36: 100%|█| 49/49 [00:12<00:00,  4.08it/s, v_num=41wn, val_loss1=0.00617, val_loss2=0.00208, val_loss=0.00825, val_PSNR=26.80, val_SSIM=0.953, train_loss1=0.00621, train_loss2
+
+Validation DataLoader 0:  57%|█████████████████████████████████████████████████████████████████████▏                                                   | 4/7 [00:01<00:01,  2.33it/s]
+
+
+
+
+
+
+Epoch 37: 100%|█| 49/49 [00:12<00:00,  4.07it/s, v_num=41wn, val_loss1=0.00611, val_loss2=0.00204, val_loss=0.00815, val_PSNR=26.90, val_SSIM=0.955, train_loss1=0.00617, train_loss2
+
+
+
+
+
+
+Epoch 38: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00608, val_loss2=0.00209, val_loss=0.00817, val_PSNR=26.80, val_SSIM=0.951, train_loss1=0.00607, train_loss2
+
+
+
+
+
+
+
+Epoch 39: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00586, val_loss2=0.00205, val_loss=0.00791, val_PSNR=26.90, val_SSIM=0.955, train_loss1=0.00602, train_loss2
+
+
+
+
+
+
+
+Epoch 40: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00576, val_loss2=0.00206, val_loss=0.00782, val_PSNR=26.90, val_SSIM=0.955, train_loss1=0.00584, train_loss2
+
+Validation DataLoader 0:  71%|██████████████████████████████████████████████████████████████████████████████████████▍                                  | 5/7 [00:01<00:00,  2.91it/s]
+
+
+
+
+
+Epoch 41: 100%|█| 49/49 [00:11<00:00,  4.09it/s, v_num=41wn, val_loss1=0.00565, val_loss2=0.00193, val_loss=0.00757, val_PSNR=27.20, val_SSIM=0.956, train_loss1=0.00574, train_loss2
+
+Validation DataLoader 0:  71%|██████████████████████████████████████████████████████████████████████████████████████▍                                  | 5/7 [00:01<00:00,  2.89it/s]
+
+
+
+
+
+
+Epoch 42: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00556, val_loss2=0.00189, val_loss=0.00745, val_PSNR=27.20, val_SSIM=0.959, train_loss1=0.00564, train_loss2
+Validation DataLoader 0:  71%|██████████████████████████████████████████████████████████████████████████████████████▍                                  | 5/7 [00:01<00:00,  2.86it/s]
+
+
+
+
+
+
+Epoch 43: 100%|█| 49/49 [00:12<00:00,  4.07it/s, v_num=41wn, val_loss1=0.00545, val_loss2=0.00184, val_loss=0.00728, val_PSNR=27.40, val_SSIM=0.960, train_loss1=0.00555, train_loss2
+
+
+
+
+
+
+Epoch 44: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00537, val_loss2=0.00185, val_loss=0.00722, val_PSNR=27.30, val_SSIM=0.958, train_loss1=0.00542, train_loss2
+
+
+
+
+
+
+Epoch 45: 100%|█| 49/49 [00:12<00:00,  4.08it/s, v_num=41wn, val_loss1=0.00525, val_loss2=0.00185, val_loss=0.00711, val_PSNR=27.30, val_SSIM=0.960, train_loss1=0.00531, train_loss2
+Validation DataLoader 0:  29%|██████████████████████████████████▌                                                                                      | 2/7 [00:00<00:01,  2.81it/s]
+
+
+
+
+
+
+Epoch 46: 100%|█| 49/49 [00:12<00:00,  3.99it/s, v_num=41wn, val_loss1=0.00516, val_loss2=0.00182, val_loss=0.00697, val_PSNR=27.40, val_SSIM=0.961, train_loss1=0.00522, train_loss2
+
+
+
+
+
+
+
+
+Epoch 47: 100%|█| 49/49 [00:12<00:00,  4.07it/s, v_num=41wn, val_loss1=0.00505, val_loss2=0.0018, val_loss=0.00684, val_PSNR=27.50, val_SSIM=0.961, train_loss1=0.0051, train_loss2=0
+
+
+
+
+
+
+Epoch 48: 100%|█| 49/49 [00:12<00:00,  4.08it/s, v_num=41wn, val_loss1=0.00492, val_loss2=0.00179, val_loss=0.00672, val_PSNR=27.50, val_SSIM=0.959, train_loss1=0.00499, train_loss2
+
+
+
+
+
+
+Epoch 49: 100%|█| 49/49 [00:12<00:00,  4.05it/s, v_num=41wn, val_loss1=0.00484, val_loss2=0.00181, val_loss=0.00665, val_PSNR=27.40, val_SSIM=0.959, train_loss1=0.00491, train_loss2
+
+
+
+
+
+
+Epoch 50: 100%|█| 49/49 [00:11<00:00,  4.08it/s, v_num=41wn, val_loss1=0.00475, val_loss2=0.00179, val_loss=0.00654, val_PSNR=27.50, val_SSIM=0.960, train_loss1=0.00484, train_loss2
+Validation DataLoader 0:  29%|██████████████████████████████████▌                                                                                      | 2/7 [00:00<00:01,  2.79it/s]
+
+
+
+
+
+
+Epoch 51: 100%|█| 49/49 [00:12<00:00,  4.04it/s, v_num=41wn, val_loss1=0.00465, val_loss2=0.00172, val_loss=0.00636, val_PSNR=27.70, val_SSIM=0.962, train_loss1=0.00474, train_loss2
+
+
+
+
+
+
+Epoch 52: 100%|█| 49/49 [00:11<00:00,  4.09it/s, v_num=41wn, val_loss1=0.00459, val_loss2=0.00171, val_loss=0.0063, val_PSNR=27.70, val_SSIM=0.962, train_loss1=0.00464, train_loss2=
+
+
+
+
+
+
+Epoch 53: 100%|█| 49/49 [00:11<00:00,  4.09it/s, v_num=41wn, val_loss1=0.0045, val_loss2=0.00172, val_loss=0.00622, val_PSNR=27.70, val_SSIM=0.962, train_loss1=0.00459, train_loss2=
+
+Validation DataLoader 0:  71%|██████████████████████████████████████████████████████████████████████████████████████▍                                  | 5/7 [00:01<00:00,  2.90it/s]
+
+
+
+
+
+
+Epoch 54: 100%|█| 49/49 [00:12<00:00,  4.04it/s, v_num=41wn, val_loss1=0.00444, val_loss2=0.00167, val_loss=0.00611, val_PSNR=27.80, val_SSIM=0.963, train_loss1=0.0045, train_loss2=
+Validation DataLoader 0:  57%|█████████████████████████████████████████████████████████████████████▏                                                   | 4/7 [00:01<00:01,  2.93it/s]
+
+
+
+
+
+
+Epoch 55: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00437, val_loss2=0.00166, val_loss=0.00603, val_PSNR=27.80, val_SSIM=0.964, train_loss1=0.00443, train_loss2
+
+
+
+
+
+
+Epoch 56: 100%|█| 49/49 [00:12<00:00,  4.03it/s, v_num=41wn, val_loss1=0.00435, val_loss2=0.00176, val_loss=0.00611, val_PSNR=27.60, val_SSIM=0.962, train_loss1=0.00436, train_loss2
+
+
+
+
+
+
+Epoch 57: 100%|█| 49/49 [00:12<00:00,  3.98it/s, v_num=41wn, val_loss1=0.00422, val_loss2=0.00164, val_loss=0.00586, val_PSNR=27.90, val_SSIM=0.964, train_loss1=0.00429, train_loss2
+
+
+
+
+
+
+
+Epoch 58: 100%|█| 49/49 [00:12<00:00,  4.08it/s, v_num=41wn, val_loss1=0.00417, val_loss2=0.0016, val_loss=0.00577, val_PSNR=28.00, val_SSIM=0.965, train_loss1=0.00425, train_loss2=
+
+
+
+
+
+
+
+Epoch 59: 100%|█| 49/49 [00:12<00:00,  4.03it/s, v_num=41wn, val_loss1=0.00411, val_loss2=0.0016, val_loss=0.00572, val_PSNR=28.00, val_SSIM=0.965, train_loss1=0.0042, train_loss2=0
+
+
+
+
+
+
+Epoch 60: 100%|█| 49/49 [00:12<00:00,  4.08it/s, v_num=41wn, val_loss1=0.00408, val_loss2=0.00157, val_loss=0.00565, val_PSNR=28.10, val_SSIM=0.964, train_loss1=0.00412, train_loss2
+
+
+
+
+
+
+Epoch 61: 100%|█| 49/49 [00:12<00:00,  4.04it/s, v_num=41wn, val_loss1=0.00402, val_loss2=0.00161, val_loss=0.00563, val_PSNR=27.90, val_SSIM=0.962, train_loss1=0.00407, train_loss2
+
+
+
+
+
+
+Epoch 62: 100%|█| 49/49 [00:11<00:00,  4.09it/s, v_num=41wn, val_loss1=0.00401, val_loss2=0.00161, val_loss=0.00562, val_PSNR=27.90, val_SSIM=0.963, train_loss1=0.00402, train_loss2
+
+
+
+
+
+
+
+Epoch 63: 100%|█| 49/49 [00:12<00:00,  4.06it/s, v_num=41wn, val_loss1=0.00388, val_loss2=0.00152, val_loss=0.00539, val_PSNR=28.20, val_SSIM=0.966, train_loss1=0.00396, train_loss2
+
+
+
+
+
+
+
+Epoch 64: 100%|█| 49/49 [00:12<00:00,  4.04it/s, v_num=41wn, val_loss1=0.00385, val_loss2=0.00152, val_loss=0.00537, val_PSNR=28.20, val_SSIM=0.966, train_loss1=0.0039, train_loss2=
+
+
+
+
+
+
+Epoch 65: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00376, val_loss2=0.00156, val_loss=0.00531, val_PSNR=28.10, val_SSIM=0.964, train_loss1=0.00383, train_loss2
+Validation DataLoader 0:  71%|██████████████████████████████████████████████████████████████████████████████████████▍                                  | 5/7 [00:01<00:00,  2.91it/s]
+
+
+
+
+
+
+Epoch 66: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.0037, val_loss2=0.00148, val_loss=0.00519, val_PSNR=28.30, val_SSIM=0.967, train_loss1=0.00376, train_loss2=
+
+
+
+
+
+
+Epoch 67: 100%|█| 49/49 [00:12<00:00,  4.07it/s, v_num=41wn, val_loss1=0.00361, val_loss2=0.00152, val_loss=0.00512, val_PSNR=28.20, val_SSIM=0.965, train_loss1=0.0037, train_loss2=
+
+
+
+
+
+
+Epoch 68: 100%|█| 49/49 [00:12<00:00,  4.08it/s, v_num=41wn, val_loss1=0.00365, val_loss2=0.00159, val_loss=0.00525, val_PSNR=28.00, val_SSIM=0.966, train_loss1=0.00362, train_loss2
+
+
+
+
+
+
+Epoch 69: 100%|█| 49/49 [00:12<00:00,  4.03it/s, v_num=41wn, val_loss1=0.00348, val_loss2=0.00152, val_loss=0.005, val_PSNR=28.20, val_SSIM=0.967, train_loss1=0.00355, train_loss2=0
+
+
+
+
+
+
+Epoch 70: 100%|█| 49/49 [00:11<00:00,  4.09it/s, v_num=41wn, val_loss1=0.00343, val_loss2=0.00157, val_loss=0.005, val_PSNR=28.10, val_SSIM=0.965, train_loss1=0.00346, train_loss2=0
+
+
+
+
+
+
+Epoch 71: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00333, val_loss2=0.00152, val_loss=0.00485, val_PSNR=28.20, val_SSIM=0.964, train_loss1=0.00342, train_loss2
+
+
+
+
+
+
+
+Epoch 72: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00331, val_loss2=0.00152, val_loss=0.00484, val_PSNR=28.20, val_SSIM=0.963, train_loss1=0.00333, train_loss2
+Validation DataLoader 0:  57%|█████████████████████████████████████████████████████████████████████▏                                                   | 4/7 [00:01<00:01,  2.84it/s]
+
+
+
+
+
+
+Epoch 73: 100%|█| 49/49 [00:11<00:00,  4.09it/s, v_num=41wn, val_loss1=0.00329, val_loss2=0.00145, val_loss=0.00473, val_PSNR=28.40, val_SSIM=0.969, train_loss1=0.00332, train_loss2
+
+
+
+
+
+
+Epoch 74: 100%|█| 49/49 [00:12<00:00,  4.04it/s, v_num=41wn, val_loss1=0.00324, val_loss2=0.00144, val_loss=0.00468, val_PSNR=28.40, val_SSIM=0.969, train_loss1=0.00324, train_loss2
+
+
+
+
+
+
+Epoch 75: 100%|█| 49/49 [00:11<00:00,  4.09it/s, v_num=41wn, val_loss1=0.0032, val_loss2=0.0015, val_loss=0.0047, val_PSNR=28.20, val_SSIM=0.968, train_loss1=0.0032, train_loss2=0.0
+
+
+
+
+
+
+Epoch 76: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00315, val_loss2=0.00149, val_loss=0.00464, val_PSNR=28.30, val_SSIM=0.967, train_loss1=0.00316, train_loss2
+
+
+
+
+
+
+
+Epoch 77: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00305, val_loss2=0.00138, val_loss=0.00443, val_PSNR=28.60, val_SSIM=0.970, train_loss1=0.00314, train_loss2
+
+
+
+
+
+
+Epoch 78: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00303, val_loss2=0.00142, val_loss=0.00444, val_PSNR=28.50, val_SSIM=0.968, train_loss1=0.00307, train_loss2
+
+Validation DataLoader 0:  86%|███████████████████████████████████████████████████████████████████████████████████████████████████████▋                 | 6/7 [00:02<00:00,  2.93it/s]
+
+
+
+
+
+Epoch 79: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00299, val_loss2=0.00136, val_loss=0.00435, val_PSNR=28.70, val_SSIM=0.971, train_loss1=0.00305, train_loss2
+
+
+
+
+
+
+Epoch 80: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00303, val_loss2=0.00147, val_loss=0.0045, val_PSNR=28.30, val_SSIM=0.966, train_loss1=0.00306, train_loss2=
+
+Validation DataLoader 0:  71%|██████████████████████████████████████████████████████████████████████████████████████▍                                  | 5/7 [00:01<00:00,  2.93it/s]
+
+
+
+
+
+
+Epoch 81: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00292, val_loss2=0.00135, val_loss=0.00427, val_PSNR=28.70, val_SSIM=0.971, train_loss1=0.00299, train_loss2
+
+
+
+
+
+
+Epoch 82: 100%|█| 49/49 [00:11<00:00,  4.10it/s, v_num=41wn, val_loss1=0.00292, val_loss2=0.00135, val_loss=0.00427, val_PSNR=28.70, val_SSIM=0.970, train_loss1=0.00295, train_loss2
+
+
+
+
+
+
+Epoch 83: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00291, val_loss2=0.00134, val_loss=0.00425, val_PSNR=28.70, val_SSIM=0.969, train_loss1=0.00296, train_loss2
+
+
+
+
+
+
+Epoch 84: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.0029, val_loss2=0.00132, val_loss=0.00422, val_PSNR=28.80, val_SSIM=0.971, train_loss1=0.0029, train_loss2=0
+
+
+
+
+
+
+Epoch 85: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00289, val_loss2=0.00132, val_loss=0.0042, val_PSNR=28.80, val_SSIM=0.971, train_loss1=0.00289, train_loss2=
+Validation DataLoader 0:  29%|██████████████████████████████████▌                                                                                      | 2/7 [00:00<00:01,  2.90it/s]
+
+
+
+
+
+
+Epoch 86: 100%|█| 49/49 [00:11<00:00,  4.13it/s, v_num=41wn, val_loss1=0.00282, val_loss2=0.00133, val_loss=0.00416, val_PSNR=28.80, val_SSIM=0.972, train_loss1=0.0029, train_loss2=
+
+
+
+
+
+
+
+Epoch 87: 100%|█| 49/49 [00:12<00:00,  4.06it/s, v_num=41wn, val_loss1=0.00279, val_loss2=0.00125, val_loss=0.00405, val_PSNR=29.00, val_SSIM=0.973, train_loss1=0.00282, train_loss2
+
+
+
+
+
+
+Epoch 88: 100%|█| 49/49 [00:12<00:00,  4.06it/s, v_num=41wn, val_loss1=0.00278, val_loss2=0.00128, val_loss=0.00405, val_PSNR=28.90, val_SSIM=0.972, train_loss1=0.00281, train_loss2
+
+
+
+
+
+
+
+Epoch 89: 100%|█| 49/49 [00:11<00:00,  4.08it/s, v_num=41wn, val_loss1=0.0028, val_loss2=0.00135, val_loss=0.00415, val_PSNR=28.70, val_SSIM=0.970, train_loss1=0.00279, train_loss2=
+
+
+
+
+
+
+Epoch 90: 100%|█| 49/49 [00:12<00:00,  3.99it/s, v_num=41wn, val_loss1=0.00278, val_loss2=0.0013, val_loss=0.00409, val_PSNR=28.90, val_SSIM=0.973, train_loss1=0.0028, train_loss2=0
+
+
+
+
+
+
+
+Epoch 91: 100%|█| 49/49 [00:12<00:00,  3.98it/s, v_num=41wn, val_loss1=0.00273, val_loss2=0.00124, val_loss=0.00397, val_PSNR=29.10, val_SSIM=0.973, train_loss1=0.00276, train_loss2
+
+
+
+
+
+
+
+Epoch 92: 100%|█| 49/49 [00:12<00:00,  3.99it/s, v_num=41wn, val_loss1=0.00271, val_loss2=0.00122, val_loss=0.00393, val_PSNR=29.20, val_SSIM=0.974, train_loss1=0.00275, train_loss2
+
+
+
+
+
+
+
+Epoch 93: 100%|█| 49/49 [00:12<00:00,  3.98it/s, v_num=41wn, val_loss1=0.00271, val_loss2=0.00128, val_loss=0.00399, val_PSNR=28.90, val_SSIM=0.972, train_loss1=0.00273, train_loss2
+
+
+
+
+
+
+Epoch 94: 100%|█| 49/49 [00:12<00:00,  3.96it/s, v_num=41wn, val_loss1=0.00269, val_loss2=0.00129, val_loss=0.00398, val_PSNR=28.90, val_SSIM=0.971, train_loss1=0.00271, train_loss2
+
+
+
+
+
+
+
+
+Epoch 95: 100%|█| 49/49 [00:12<00:00,  3.96it/s, v_num=41wn, val_loss1=0.00267, val_loss2=0.00122, val_loss=0.00388, val_PSNR=29.20, val_SSIM=0.974, train_loss1=0.00271, train_loss2
+
+
+
+
+
+
+Epoch 96: 100%|█| 49/49 [00:12<00:00,  4.02it/s, v_num=41wn, val_loss1=0.00266, val_loss2=0.00118, val_loss=0.00385, val_PSNR=29.30, val_SSIM=0.973, train_loss1=0.00267, train_loss2
+
+
+
+
+
+
+
+Epoch 97: 100%|█| 49/49 [00:12<00:00,  3.98it/s, v_num=41wn, val_loss1=0.00264, val_loss2=0.00116, val_loss=0.0038, val_PSNR=29.40, val_SSIM=0.975, train_loss1=0.00269, train_loss2=
+
+
+
+
+
+
+Epoch 98: 100%|█| 49/49 [00:12<00:00,  3.99it/s, v_num=41wn, val_loss1=0.00264, val_loss2=0.00121, val_loss=0.00384, val_PSNR=29.20, val_SSIM=0.973, train_loss1=0.00265, train_loss2
+
+
+
+
+
+
+Epoch 99: 100%|█| 49/49 [00:12<00:00,  4.07it/s, v_num=41wn, val_loss1=0.00261, val_loss2=0.00117, val_loss=0.00378, val_PSNR=29.30, val_SSIM=0.975, train_loss1=0.00264, train_loss2
+
+
+
+
+
+
+
+Epoch 100: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.0026, val_loss2=0.00115, val_loss=0.00375, val_PSNR=29.40, val_SSIM=0.974, train_loss1=0.00263, train_loss2
+Validation DataLoader 0:  57%|█████████████████████████████████████████████████████████████████████▏                                                   | 4/7 [00:01<00:01,  2.90it/s]
+
+
+
+
+
+
+Epoch 101: 100%|█| 49/49 [00:12<00:00,  4.08it/s, v_num=41wn, val_loss1=0.00259, val_loss2=0.00113, val_loss=0.00371, val_PSNR=29.50, val_SSIM=0.976, train_loss1=0.00261, train_loss
+
+
+
+
+
+
+Epoch 102: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00259, val_loss2=0.00115, val_loss=0.00374, val_PSNR=29.40, val_SSIM=0.975, train_loss1=0.00261, train_loss
+
+
+
+
+
+
+Epoch 103: 100%|█| 49/49 [00:12<00:00,  4.08it/s, v_num=41wn, val_loss1=0.00258, val_loss2=0.00116, val_loss=0.00373, val_PSNR=29.40, val_SSIM=0.974, train_loss1=0.00259, train_loss
+
+
+
+
+
+
+
+Epoch 104: 100%|█| 49/49 [00:12<00:00,  4.07it/s, v_num=41wn, val_loss1=0.00256, val_loss2=0.0011, val_loss=0.00366, val_PSNR=29.60, val_SSIM=0.976, train_loss1=0.00259, train_loss2
+
+
+
+
+
+
+Epoch 105: 100%|█| 49/49 [00:12<00:00,  4.07it/s, v_num=41wn, val_loss1=0.00254, val_loss2=0.00113, val_loss=0.00367, val_PSNR=29.50, val_SSIM=0.975, train_loss1=0.0026, train_loss2
+
+
+
+
+
+
+
+Epoch 106: 100%|█| 49/49 [00:12<00:00,  4.08it/s, v_num=41wn, val_loss1=0.00254, val_loss2=0.00111, val_loss=0.00365, val_PSNR=29.50, val_SSIM=0.976, train_loss1=0.00258, train_loss
+
+
+
+
+
+
+
+Epoch 107: 100%|█| 49/49 [00:11<00:00,  4.10it/s, v_num=41wn, val_loss1=0.00254, val_loss2=0.0011, val_loss=0.00364, val_PSNR=29.60, val_SSIM=0.976, train_loss1=0.00255, train_loss2
+
+
+
+
+
+
+
+Epoch 108: 100%|█| 49/49 [00:12<00:00,  4.05it/s, v_num=41wn, val_loss1=0.00255, val_loss2=0.00107, val_loss=0.00361, val_PSNR=29.70, val_SSIM=0.977, train_loss1=0.00255, train_loss
+
+
+
+
+
+
+Epoch 109: 100%|█| 49/49 [00:12<00:00,  4.03it/s, v_num=41wn, val_loss1=0.00252, val_loss2=0.00107, val_loss=0.0036, val_PSNR=29.70, val_SSIM=0.976, train_loss1=0.00256, train_loss2
+
+
+
+
+
+
+Epoch 110: 100%|█| 49/49 [00:12<00:00,  4.03it/s, v_num=41wn, val_loss1=0.0025, val_loss2=0.00108, val_loss=0.00358, val_PSNR=29.70, val_SSIM=0.976, train_loss1=0.00257, train_loss2
+
+
+
+
+
+
+
+Epoch 111: 100%|█| 49/49 [00:12<00:00,  4.05it/s, v_num=41wn, val_loss1=0.0025, val_loss2=0.00108, val_loss=0.00358, val_PSNR=29.70, val_SSIM=0.977, train_loss1=0.00251, train_loss2
+
+
+
+
+
+
+Epoch 112: 100%|█| 49/49 [00:11<00:00,  4.13it/s, v_num=41wn, val_loss1=0.00248, val_loss2=0.00107, val_loss=0.00354, val_PSNR=29.70, val_SSIM=0.976, train_loss1=0.0025, train_loss2
+
+
+
+
+
+
+
+Epoch 113: 100%|█| 49/49 [00:12<00:00,  4.06it/s, v_num=41wn, val_loss1=0.00246, val_loss2=0.00103, val_loss=0.00349, val_PSNR=29.90, val_SSIM=0.978, train_loss1=0.0025, train_loss2
+
+
+
+
+
+
+Epoch 114: 100%|█| 49/49 [00:12<00:00,  4.07it/s, v_num=41wn, val_loss1=0.00248, val_loss2=0.00106, val_loss=0.00354, val_PSNR=29.70, val_SSIM=0.976, train_loss1=0.0025, train_loss2
+
+
+
+
+
+
+Epoch 115: 100%|█| 49/49 [00:12<00:00,  4.06it/s, v_num=41wn, val_loss1=0.00249, val_loss2=0.00107, val_loss=0.00356, val_PSNR=29.70, val_SSIM=0.977, train_loss1=0.00251, train_loss
+
+
+
+
+
+
+Epoch 116: 100%|█| 49/49 [00:12<00:00,  4.08it/s, v_num=41wn, val_loss1=0.00249, val_loss2=0.00103, val_loss=0.00352, val_PSNR=29.90, val_SSIM=0.977, train_loss1=0.0025, train_loss2
+
+
+
+
+
+
+
+Epoch 117: 100%|█| 49/49 [00:12<00:00,  4.06it/s, v_num=41wn, val_loss1=0.00244, val_loss2=0.00101, val_loss=0.00345, val_PSNR=30.00, val_SSIM=0.978, train_loss1=0.00246, train_loss
+
+
+
+
+
+
+
+
+Epoch 118: 100%|█| 49/49 [00:12<00:00,  3.86it/s, v_num=41wn, val_loss1=0.00244, val_loss2=0.000994, val_loss=0.00343, val_PSNR=30.00, val_SSIM=0.978, train_loss1=0.00246, train_los
+
+
+
+
+
+
+Epoch 119: 100%|█| 49/49 [00:12<00:00,  4.07it/s, v_num=41wn, val_loss1=0.00245, val_loss2=0.00102, val_loss=0.00348, val_PSNR=29.90, val_SSIM=0.977, train_loss1=0.00245, train_loss
+
+
+
+
+
+
+Epoch 120: 100%|█| 49/49 [00:12<00:00,  3.97it/s, v_num=41wn, val_loss1=0.00243, val_loss2=0.001, val_loss=0.00343, val_PSNR=30.00, val_SSIM=0.978, train_loss1=0.00246, train_loss2=
+
+
+
+
+
+
+
+Epoch 121: 100%|█| 49/49 [00:12<00:00,  4.07it/s, v_num=41wn, val_loss1=0.00242, val_loss2=0.00102, val_loss=0.00344, val_PSNR=29.90, val_SSIM=0.978, train_loss1=0.00244, train_loss
+
+
+
+
+
+
+Epoch 122: 100%|█| 49/49 [00:12<00:00,  3.88it/s, v_num=41wn, val_loss1=0.00241, val_loss2=0.00099, val_loss=0.0034, val_PSNR=30.10, val_SSIM=0.978, train_loss1=0.00242, train_loss2
+
+
+
+
+
+
+
+Epoch 123: 100%|█| 49/49 [00:12<00:00,  3.90it/s, v_num=41wn, val_loss1=0.00239, val_loss2=0.001, val_loss=0.0034, val_PSNR=30.00, val_SSIM=0.978, train_loss1=0.00241, train_loss2=0
+
+
+
+
+
+
+Epoch 124: 100%|█| 49/49 [00:12<00:00,  3.92it/s, v_num=41wn, val_loss1=0.00241, val_loss2=0.00108, val_loss=0.00349, val_PSNR=29.70, val_SSIM=0.973, train_loss1=0.00241, train_loss
+
+
+
+
+
+
+
+Epoch 125: 100%|█| 49/49 [00:12<00:00,  3.87it/s, v_num=41wn, val_loss1=0.00238, val_loss2=0.00101, val_loss=0.0034, val_PSNR=30.00, val_SSIM=0.978, train_loss1=0.0024, train_loss2=
+
+
+
+
+
+
+Epoch 126: 100%|█| 49/49 [00:12<00:00,  3.95it/s, v_num=41wn, val_loss1=0.0024, val_loss2=0.00103, val_loss=0.00343, val_PSNR=29.90, val_SSIM=0.976, train_loss1=0.00239, train_loss2
+
+
+
+
+
+
+
+Epoch 127: 100%|█| 49/49 [00:12<00:00,  4.05it/s, v_num=41wn, val_loss1=0.00235, val_loss2=0.000952, val_loss=0.0033, val_PSNR=30.20, val_SSIM=0.979, train_loss1=0.00243, train_loss
+
+
+
+
+
+
+Epoch 128: 100%|█| 49/49 [00:12<00:00,  4.02it/s, v_num=41wn, val_loss1=0.00239, val_loss2=0.000969, val_loss=0.00336, val_PSNR=30.10, val_SSIM=0.978, train_loss1=0.00238, train_los
+
+
+
+
+
+
+
+
+Epoch 129: 100%|█| 49/49 [00:12<00:00,  4.01it/s, v_num=41wn, val_loss1=0.00235, val_loss2=0.000941, val_loss=0.00329, val_PSNR=30.30, val_SSIM=0.979, train_loss1=0.0024, train_loss
+
+
+
+
+
+
+Epoch 130: 100%|█| 49/49 [00:12<00:00,  4.03it/s, v_num=41wn, val_loss1=0.00234, val_loss2=0.000936, val_loss=0.00328, val_PSNR=30.30, val_SSIM=0.979, train_loss1=0.00236, train_los
+
+
+
+
+
+
+
+Epoch 131: 100%|█| 49/49 [00:12<00:00,  3.98it/s, v_num=41wn, val_loss1=0.00233, val_loss2=0.000939, val_loss=0.00327, val_PSNR=30.30, val_SSIM=0.979, train_loss1=0.00236, train_los
+
+
+
+
+
+
+
+Epoch 132: 100%|█| 49/49 [00:12<00:00,  3.92it/s, v_num=41wn, val_loss1=0.00238, val_loss2=0.00102, val_loss=0.0034, val_PSNR=29.90, val_SSIM=0.976, train_loss1=0.00235, train_loss2
+
+
+
+
+
+
+Epoch 133: 100%|█| 49/49 [00:12<00:00,  3.87it/s, v_num=41wn, val_loss1=0.00232, val_loss2=0.000934, val_loss=0.00325, val_PSNR=30.30, val_SSIM=0.979, train_loss1=0.00235, train_los
+
+
+
+
+
+
+
+Epoch 134: 100%|█| 49/49 [00:12<00:00,  3.87it/s, v_num=41wn, val_loss1=0.00233, val_loss2=0.000942, val_loss=0.00327, val_PSNR=30.30, val_SSIM=0.979, train_loss1=0.00236, train_los
+
+
+
+
+
+
+
+Epoch 135: 100%|█| 49/49 [00:12<00:00,  3.98it/s, v_num=41wn, val_loss1=0.00233, val_loss2=0.000932, val_loss=0.00326, val_PSNR=30.30, val_SSIM=0.980, train_loss1=0.00235, train_los
+
+
+
+
+
+
+
+
+Epoch 136: 100%|█| 49/49 [00:12<00:00,  3.87it/s, v_num=41wn, val_loss1=0.0023, val_loss2=0.000911, val_loss=0.00321, val_PSNR=30.40, val_SSIM=0.980, train_loss1=0.00232, train_loss
+
+
+
+
+
+
+Epoch 137: 100%|█| 49/49 [00:12<00:00,  3.92it/s, v_num=41wn, val_loss1=0.0023, val_loss2=0.000924, val_loss=0.00322, val_PSNR=30.40, val_SSIM=0.979, train_loss1=0.0023, train_loss2
+
+
+
+
+
+
+
+Epoch 138: 100%|█| 49/49 [00:12<00:00,  3.87it/s, v_num=41wn, val_loss1=0.00231, val_loss2=0.000913, val_loss=0.00323, val_PSNR=30.40, val_SSIM=0.980, train_loss1=0.0023, train_loss
+
+
+
+
+
+
+
+
+Epoch 139: 100%|█| 49/49 [00:12<00:00,  4.06it/s, v_num=41wn, val_loss1=0.00228, val_loss2=0.000886, val_loss=0.00316, val_PSNR=30.50, val_SSIM=0.981, train_loss1=0.0023, train_loss
+
+
+
+
+
+
+Epoch 140: 100%|█| 49/49 [00:12<00:00,  4.04it/s, v_num=41wn, val_loss1=0.00231, val_loss2=0.000913, val_loss=0.00323, val_PSNR=30.40, val_SSIM=0.980, train_loss1=0.00229, train_los
+
+
+
+
+
+
+
+Epoch 141: 100%|█| 49/49 [00:12<00:00,  4.06it/s, v_num=41wn, val_loss1=0.00228, val_loss2=0.000884, val_loss=0.00316, val_PSNR=30.50, val_SSIM=0.981, train_loss1=0.00229, train_los
+
+
+
+
+
+
+
+Epoch 142: 100%|█| 49/49 [00:12<00:00,  4.04it/s, v_num=41wn, val_loss1=0.00225, val_loss2=0.000871, val_loss=0.00313, val_PSNR=30.60, val_SSIM=0.981, train_loss1=0.00228, train_los
+
+
+
+
+
+
+
+Epoch 143: 100%|█| 49/49 [00:11<00:00,  4.09it/s, v_num=41wn, val_loss1=0.00226, val_loss2=0.000885, val_loss=0.00315, val_PSNR=30.50, val_SSIM=0.980, train_loss1=0.00227, train_los
+
+
+
+
+
+
+Epoch 144: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00225, val_loss2=0.00092, val_loss=0.00317, val_PSNR=30.40, val_SSIM=0.978, train_loss1=0.00226, train_loss
+
+
+
+
+
+
+
+Epoch 145: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00225, val_loss2=0.000879, val_loss=0.00313, val_PSNR=30.60, val_SSIM=0.981, train_loss1=0.00227, train_los
+
+
+
+
+
+
+Epoch 146: 100%|█| 49/49 [00:12<00:00,  4.01it/s, v_num=41wn, val_loss1=0.00226, val_loss2=0.000898, val_loss=0.00316, val_PSNR=30.50, val_SSIM=0.980, train_loss1=0.00225, train_los
+
+
+
+
+
+
+Epoch 147: 100%|█| 49/49 [00:12<00:00,  3.93it/s, v_num=41wn, val_loss1=0.00226, val_loss2=0.000886, val_loss=0.00315, val_PSNR=30.50, val_SSIM=0.980, train_loss1=0.00224, train_los
+
+
+
+
+
+
+
+Epoch 148: 100%|█| 49/49 [00:12<00:00,  4.04it/s, v_num=41wn, val_loss1=0.00221, val_loss2=0.000866, val_loss=0.00307, val_PSNR=30.60, val_SSIM=0.980, train_loss1=0.00225, train_los
+
+
+
+
+
+
+
+Epoch 149: 100%|█| 49/49 [00:12<00:00,  4.08it/s, v_num=41wn, val_loss1=0.00224, val_loss2=0.000847, val_loss=0.00309, val_PSNR=30.70, val_SSIM=0.982, train_loss1=0.00223, train_los
+
+
+
+
+
+
+
+Epoch 150: 100%|█| 49/49 [00:12<00:00,  4.06it/s, v_num=41wn, val_loss1=0.00219, val_loss2=0.00085, val_loss=0.00304, val_PSNR=30.70, val_SSIM=0.982, train_loss1=0.00222, train_loss
+
+
+
+
+
+
+Epoch 151: 100%|█| 49/49 [00:12<00:00,  4.07it/s, v_num=41wn, val_loss1=0.00221, val_loss2=0.000875, val_loss=0.00308, val_PSNR=30.60, val_SSIM=0.981, train_loss1=0.00222, train_los
+
+
+
+
+
+
+Epoch 152: 100%|█| 49/49 [00:12<00:00,  4.07it/s, v_num=41wn, val_loss1=0.00219, val_loss2=0.000873, val_loss=0.00307, val_PSNR=30.60, val_SSIM=0.981, train_loss1=0.00221, train_los
+
+
+
+
+
+
+Epoch 153: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00224, val_loss2=0.000916, val_loss=0.00316, val_PSNR=30.40, val_SSIM=0.977, train_loss1=0.00221, train_los
+
+
+
+
+
+
+Epoch 154: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00228, val_loss2=0.000946, val_loss=0.00323, val_PSNR=30.30, val_SSIM=0.980, train_loss1=0.00223, train_los
+
+
+
+
+
+
+Epoch 155: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00217, val_loss2=0.000846, val_loss=0.00302, val_PSNR=30.70, val_SSIM=0.981, train_loss1=0.00221, train_los
+
+
+
+
+
+
+
+
+Epoch 156: 100%|█| 49/49 [00:11<00:00,  4.13it/s, v_num=41wn, val_loss1=0.00217, val_loss2=0.000822, val_loss=0.00299, val_PSNR=30.90, val_SSIM=0.982, train_loss1=0.00219, train_los
+
+
+
+
+
+
+
+Epoch 157: 100%|█| 49/49 [00:11<00:00,  4.13it/s, v_num=41wn, val_loss1=0.00217, val_loss2=0.000826, val_loss=0.00299, val_PSNR=30.80, val_SSIM=0.982, train_loss1=0.00222, train_los
+
+
+
+
+
+
+Epoch 158: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00217, val_loss2=0.000863, val_loss=0.00304, val_PSNR=30.70, val_SSIM=0.981, train_loss1=0.00219, train_los
+
+
+
+
+
+
+Epoch 159: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00217, val_loss2=0.000992, val_loss=0.00316, val_PSNR=30.00, val_SSIM=0.976, train_loss1=0.00218, train_los
+
+
+
+
+
+
+Epoch 160: 100%|█| 49/49 [00:11<00:00,  4.13it/s, v_num=41wn, val_loss1=0.00215, val_loss2=0.00082, val_loss=0.00297, val_PSNR=30.90, val_SSIM=0.982, train_loss1=0.00219, train_loss
+
+
+
+
+
+
+Epoch 161: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00214, val_loss2=0.000798, val_loss=0.00294, val_PSNR=31.00, val_SSIM=0.982, train_loss1=0.00218, train_los
+Validation DataLoader 0:  43%|███████████████████████████████████████████████████▊                                                                     | 3/7 [00:01<00:01,  2.92it/s]
+
+
+
+
+
+
+Epoch 162: 100%|█| 49/49 [00:12<00:00,  3.95it/s, v_num=41wn, val_loss1=0.00217, val_loss2=0.000817, val_loss=0.00298, val_PSNR=30.90, val_SSIM=0.983, train_loss1=0.00217, train_los
+
+
+
+
+
+
+
+Epoch 163: 100%|█| 49/49 [00:12<00:00,  3.95it/s, v_num=41wn, val_loss1=0.00218, val_loss2=0.000846, val_loss=0.00303, val_PSNR=30.70, val_SSIM=0.981, train_loss1=0.00216, train_los
+Validation DataLoader 0:  57%|█████████████████████████████████████████████████████████████████████▏                                                   | 4/7 [00:01<00:01,  2.77it/s]
+
+
+
+
+
+
+Epoch 164: 100%|█| 49/49 [00:12<00:00,  3.94it/s, v_num=41wn, val_loss1=0.00212, val_loss2=0.000785, val_loss=0.00291, val_PSNR=31.10, val_SSIM=0.983, train_loss1=0.00215, train_los
+
+
+
+
+
+
+Epoch 165: 100%|█| 49/49 [00:12<00:00,  3.96it/s, v_num=41wn, val_loss1=0.00213, val_loss2=0.000825, val_loss=0.00295, val_PSNR=30.80, val_SSIM=0.981, train_loss1=0.00215, train_los
+
+Validation DataLoader 0:  71%|██████████████████████████████████████████████████████████████████████████████████████▍                                  | 5/7 [00:01<00:00,  2.80it/s]
+
+
+
+
+
+
+Epoch 166: 100%|█| 49/49 [00:12<00:00,  3.92it/s, v_num=41wn, val_loss1=0.00213, val_loss2=0.000789, val_loss=0.00292, val_PSNR=31.00, val_SSIM=0.983, train_loss1=0.00215, train_los
+
+
+
+
+
+
+Epoch 167: 100%|█| 49/49 [00:12<00:00,  4.00it/s, v_num=41wn, val_loss1=0.00213, val_loss2=0.000815, val_loss=0.00295, val_PSNR=30.90, val_SSIM=0.982, train_loss1=0.00215, train_los
+
+
+
+
+
+
+Epoch 168: 100%|█| 49/49 [00:12<00:00,  3.97it/s, v_num=41wn, val_loss1=0.0021, val_loss2=0.000805, val_loss=0.0029, val_PSNR=31.00, val_SSIM=0.981, train_loss1=0.00213, train_loss2
+
+Validation DataLoader 0:  71%|██████████████████████████████████████████████████████████████████████████████████████▍                                  | 5/7 [00:01<00:00,  2.74it/s]
+
+
+
+
+
+
+Epoch 169: 100%|█| 49/49 [00:12<00:00,  4.02it/s, v_num=41wn, val_loss1=0.00209, val_loss2=0.000787, val_loss=0.00288, val_PSNR=31.00, val_SSIM=0.983, train_loss1=0.00212, train_los
+
+
+
+
+
+
+Epoch 170: 100%|█| 49/49 [00:11<00:00,  4.13it/s, v_num=41wn, val_loss1=0.0021, val_loss2=0.000798, val_loss=0.0029, val_PSNR=31.00, val_SSIM=0.981, train_loss1=0.00211, train_loss2
+
+
+
+
+
+
+Epoch 171: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00213, val_loss2=0.0012, val_loss=0.00333, val_PSNR=29.20, val_SSIM=0.951, train_loss1=0.00212, train_loss2
+
+
+
+
+
+
+Epoch 172: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00209, val_loss2=0.000776, val_loss=0.00287, val_PSNR=31.10, val_SSIM=0.983, train_loss1=0.00212, train_los
+
+
+
+
+
+
+Epoch 173: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00212, val_loss2=0.000848, val_loss=0.00297, val_PSNR=30.70, val_SSIM=0.980, train_loss1=0.00211, train_los
+Validation DataLoader 0:  29%|██████████████████████████████████▌                                                                                      | 2/7 [00:00<00:01,  2.86it/s]
+
+
+
+
+
+
+Epoch 174: 100%|█| 49/49 [00:11<00:00,  4.09it/s, v_num=41wn, val_loss1=0.00209, val_loss2=0.000798, val_loss=0.00289, val_PSNR=31.00, val_SSIM=0.983, train_loss1=0.00211, train_los
+
+
+
+
+
+
+
+Epoch 175: 100%|█| 49/49 [00:12<00:00,  3.97it/s, v_num=41wn, val_loss1=0.00212, val_loss2=0.000793, val_loss=0.00291, val_PSNR=31.00, val_SSIM=0.982, train_loss1=0.00211, train_los
+
+
+
+
+
+
+Epoch 176: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00209, val_loss2=0.000806, val_loss=0.0029, val_PSNR=30.90, val_SSIM=0.981, train_loss1=0.00211, train_loss
+
+
+
+
+
+
+Epoch 177: 100%|█| 49/49 [00:12<00:00,  4.04it/s, v_num=41wn, val_loss1=0.00207, val_loss2=0.000779, val_loss=0.00285, val_PSNR=31.10, val_SSIM=0.983, train_loss1=0.00209, train_los
+
+
+
+
+
+
+Epoch 178: 100%|█| 49/49 [00:12<00:00,  4.08it/s, v_num=41wn, val_loss1=0.00209, val_loss2=0.000812, val_loss=0.0029, val_PSNR=30.90, val_SSIM=0.979, train_loss1=0.00209, train_loss
+Validation DataLoader 0:  14%|█████████████████▎                                                                                                       | 1/7 [00:00<00:02,  2.92it/s]
+
+
+
+
+
+
+Epoch 179: 100%|█| 49/49 [00:11<00:00,  4.10it/s, v_num=41wn, val_loss1=0.00207, val_loss2=0.000731, val_loss=0.0028, val_PSNR=31.40, val_SSIM=0.984, train_loss1=0.0021, train_loss2
+
+
+
+
+
+
+Epoch 180: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00207, val_loss2=0.000746, val_loss=0.00282, val_PSNR=31.30, val_SSIM=0.984, train_loss1=0.00209, train_los
+
+
+
+
+
+
+Epoch 181: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.0021, val_loss2=0.000766, val_loss=0.00286, val_PSNR=31.20, val_SSIM=0.982, train_loss1=0.0021, train_loss2
+
+
+
+
+
+
+
+Epoch 182: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00209, val_loss2=0.000733, val_loss=0.00282, val_PSNR=31.40, val_SSIM=0.984, train_loss1=0.00208, train_los
+Validation DataLoader 0:  71%|██████████████████████████████████████████████████████████████████████████████████████▍                                  | 5/7 [00:01<00:00,  2.93it/s]
+
+
+
+
+
+
+Epoch 183: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00206, val_loss2=0.000718, val_loss=0.00278, val_PSNR=31.50, val_SSIM=0.984, train_loss1=0.00208, train_los
+
+
+
+
+
+
+Epoch 184: 100%|█| 49/49 [00:11<00:00,  4.13it/s, v_num=41wn, val_loss1=0.00207, val_loss2=0.000725, val_loss=0.0028, val_PSNR=31.40, val_SSIM=0.984, train_loss1=0.00207, train_loss
+
+
+
+
+
+
+Epoch 185: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00206, val_loss2=0.000759, val_loss=0.00282, val_PSNR=31.20, val_SSIM=0.983, train_loss1=0.00206, train_los
+Validation DataLoader 0:  43%|███████████████████████████████████████████████████▊                                                                     | 3/7 [00:01<00:01,  2.92it/s]
+
+
+
+
+
+
+Epoch 186: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00204, val_loss2=0.000723, val_loss=0.00276, val_PSNR=31.40, val_SSIM=0.985, train_loss1=0.00206, train_los
+
+
+
+
+
+
+Epoch 187: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00204, val_loss2=0.000738, val_loss=0.00278, val_PSNR=31.30, val_SSIM=0.983, train_loss1=0.00205, train_los
+
+
+
+
+
+
+Epoch 188: 100%|█| 49/49 [00:11<00:00,  4.09it/s, v_num=41wn, val_loss1=0.0021, val_loss2=0.000847, val_loss=0.00295, val_PSNR=30.70, val_SSIM=0.982, train_loss1=0.00208, train_loss
+
+
+
+
+
+
+Epoch 189: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00205, val_loss2=0.000762, val_loss=0.00281, val_PSNR=31.20, val_SSIM=0.982, train_loss1=0.00206, train_los
+
+
+
+
+
+
+Epoch 190: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00206, val_loss2=0.000741, val_loss=0.00281, val_PSNR=31.30, val_SSIM=0.983, train_loss1=0.00205, train_los
+
+
+
+
+
+
+Epoch 191: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00203, val_loss2=0.00071, val_loss=0.00274, val_PSNR=31.50, val_SSIM=0.985, train_loss1=0.00206, train_loss
+
+
+
+
+
+
+Epoch 192: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00203, val_loss2=0.000724, val_loss=0.00275, val_PSNR=31.40, val_SSIM=0.983, train_loss1=0.00204, train_los
+
+
+
+
+
+
+
+Epoch 193: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00204, val_loss2=0.000705, val_loss=0.00274, val_PSNR=31.50, val_SSIM=0.984, train_loss1=0.00205, train_los
+
+
+
+
+
+
+Epoch 194: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00204, val_loss2=0.000747, val_loss=0.00279, val_PSNR=31.30, val_SSIM=0.982, train_loss1=0.00204, train_los
+
+
+
+
+
+
+Epoch 195: 100%|█| 49/49 [00:11<00:00,  4.13it/s, v_num=41wn, val_loss1=0.002, val_loss2=0.000691, val_loss=0.0027, val_PSNR=31.60, val_SSIM=0.985, train_loss1=0.00204, train_loss2=
+Validation DataLoader 0:  57%|█████████████████████████████████████████████████████████████████████▏                                                   | 4/7 [00:01<00:01,  2.94it/s]
+
+
+
+
+
+
+Epoch 196: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.002, val_loss2=0.000694, val_loss=0.0027, val_PSNR=31.60, val_SSIM=0.985, train_loss1=0.00203, train_loss2=
+
+
+
+
+
+
+Epoch 197: 100%|█| 49/49 [00:11<00:00,  4.09it/s, v_num=41wn, val_loss1=0.00203, val_loss2=0.000722, val_loss=0.00275, val_PSNR=31.40, val_SSIM=0.983, train_loss1=0.00203, train_los
+
+
+
+
+
+
+Epoch 198: 100%|█| 49/49 [00:11<00:00,  4.09it/s, v_num=41wn, val_loss1=0.00201, val_loss2=0.000709, val_loss=0.00272, val_PSNR=31.50, val_SSIM=0.985, train_loss1=0.00203, train_los
+
+
+
+
+
+
+Epoch 199: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.002, val_loss2=0.000714, val_loss=0.00272, val_PSNR=31.50, val_SSIM=0.984, train_loss1=0.00203, train_loss2
+
+
+
+
+
+
+
+Epoch 200: 100%|█| 49/49 [00:11<00:00,  4.13it/s, v_num=41wn, val_loss1=0.00199, val_loss2=0.000685, val_loss=0.00268, val_PSNR=31.70, val_SSIM=0.985, train_loss1=0.00203, train_los
+
+
+
+
+
+
+Epoch 201: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00201, val_loss2=0.000733, val_loss=0.00274, val_PSNR=31.40, val_SSIM=0.985, train_loss1=0.00201, train_los
+
+
+
+
+
+
+Epoch 202: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00202, val_loss2=0.000718, val_loss=0.00274, val_PSNR=31.50, val_SSIM=0.984, train_loss1=0.00201, train_los
+
+
+
+
+
+
+Epoch 203: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00199, val_loss2=0.00068, val_loss=0.00267, val_PSNR=31.70, val_SSIM=0.985, train_loss1=0.002, train_loss2=
+
+
+
+
+
+
+
+Epoch 204: 100%|█| 49/49 [00:12<00:00,  4.04it/s, v_num=41wn, val_loss1=0.00202, val_loss2=0.000694, val_loss=0.00272, val_PSNR=31.60, val_SSIM=0.985, train_loss1=0.002, train_loss2
+
+
+
+
+
+
+Epoch 205: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.002, val_loss2=0.000693, val_loss=0.00269, val_PSNR=31.60, val_SSIM=0.985, train_loss1=0.00203, train_loss2
+Validation DataLoader 0:  43%|███████████████████████████████████████████████████▊                                                                     | 3/7 [00:01<00:01,  2.86it/s]
+
+
+
+
+
+
+Epoch 206: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00198, val_loss2=0.000672, val_loss=0.00265, val_PSNR=31.70, val_SSIM=0.985, train_loss1=0.00202, train_los
+
+
+
+
+
+
+Epoch 207: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00199, val_loss2=0.00077, val_loss=0.00276, val_PSNR=31.10, val_SSIM=0.982, train_loss1=0.002, train_loss2=
+
+
+
+
+
+
+Epoch 208: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00199, val_loss2=0.0007, val_loss=0.00269, val_PSNR=31.60, val_SSIM=0.984, train_loss1=0.00199, train_loss2
+
+
+
+
+
+
+
+Epoch 209: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00197, val_loss2=0.000664, val_loss=0.00264, val_PSNR=31.80, val_SSIM=0.986, train_loss1=0.00199, train_los
+
+
+
+
+
+
+Epoch 210: 100%|█| 49/49 [00:11<00:00,  4.13it/s, v_num=41wn, val_loss1=0.00202, val_loss2=0.000703, val_loss=0.00272, val_PSNR=31.50, val_SSIM=0.985, train_loss1=0.00198, train_los
+
+
+
+
+
+
+
+Epoch 211: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00197, val_loss2=0.000666, val_loss=0.00264, val_PSNR=31.80, val_SSIM=0.986, train_loss1=0.00198, train_los
+
+
+
+
+
+
+Epoch 212: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00208, val_loss2=0.000712, val_loss=0.00279, val_PSNR=31.50, val_SSIM=0.985, train_loss1=0.00199, train_los
+
+
+
+
+
+
+Epoch 213: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00197, val_loss2=0.000671, val_loss=0.00265, val_PSNR=31.70, val_SSIM=0.985, train_loss1=0.00199, train_los
+Validation DataLoader 0:  57%|█████████████████████████████████████████████████████████████████████▏                                                   | 4/7 [00:01<00:01,  2.91it/s]
+
+
+
+
+
+
+Epoch 214: 100%|█| 49/49 [00:11<00:00,  4.13it/s, v_num=41wn, val_loss1=0.00197, val_loss2=0.000668, val_loss=0.00264, val_PSNR=31.80, val_SSIM=0.986, train_loss1=0.00199, train_los
+
+
+
+
+
+
+Epoch 215: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00197, val_loss2=0.000651, val_loss=0.00262, val_PSNR=31.90, val_SSIM=0.986, train_loss1=0.00198, train_los
+
+
+
+
+
+
+Epoch 216: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00197, val_loss2=0.000653, val_loss=0.00262, val_PSNR=31.90, val_SSIM=0.986, train_loss1=0.00198, train_los
+
+
+
+
+
+
+
+Epoch 217: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00194, val_loss2=0.000645, val_loss=0.00259, val_PSNR=31.90, val_SSIM=0.986, train_loss1=0.00197, train_los
+
+
+
+
+
+
+Epoch 218: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00195, val_loss2=0.000661, val_loss=0.00261, val_PSNR=31.80, val_SSIM=0.986, train_loss1=0.00196, train_los
+
+
+
+
+
+
+Epoch 219: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00197, val_loss2=0.000663, val_loss=0.00263, val_PSNR=31.80, val_SSIM=0.986, train_loss1=0.00196, train_los
+
+
+
+
+
+
+Epoch 220: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00196, val_loss2=0.000662, val_loss=0.00262, val_PSNR=31.80, val_SSIM=0.986, train_loss1=0.00197, train_los
+
+
+
+
+
+
+Epoch 221: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00194, val_loss2=0.000648, val_loss=0.00259, val_PSNR=31.90, val_SSIM=0.986, train_loss1=0.00197, train_los
+
+Validation DataLoader 0:  71%|██████████████████████████████████████████████████████████████████████████████████████▍                                  | 5/7 [00:01<00:00,  2.90it/s]
+
+
+
+
+
+Epoch 222: 100%|█| 49/49 [00:11<00:00,  4.13it/s, v_num=41wn, val_loss1=0.00196, val_loss2=0.000644, val_loss=0.0026, val_PSNR=31.90, val_SSIM=0.986, train_loss1=0.00196, train_loss
+
+
+
+
+
+
+Epoch 223: 100%|█| 49/49 [00:11<00:00,  4.13it/s, v_num=41wn, val_loss1=0.00194, val_loss2=0.000651, val_loss=0.0026, val_PSNR=31.90, val_SSIM=0.986, train_loss1=0.00196, train_loss
+
+Validation DataLoader 0:  71%|██████████████████████████████████████████████████████████████████████████████████████▍                                  | 5/7 [00:01<00:00,  2.92it/s]
+
+
+
+
+
+
+Epoch 224: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00192, val_loss2=0.000634, val_loss=0.00256, val_PSNR=32.00, val_SSIM=0.986, train_loss1=0.00195, train_los
+
+
+
+
+
+
+Epoch 225: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00196, val_loss2=0.000703, val_loss=0.00266, val_PSNR=31.50, val_SSIM=0.984, train_loss1=0.00195, train_los
+
+
+
+
+
+
+Epoch 226: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00196, val_loss2=0.000711, val_loss=0.00268, val_PSNR=31.50, val_SSIM=0.984, train_loss1=0.00197, train_los
+
+
+
+
+
+
+Epoch 227: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00195, val_loss2=0.000681, val_loss=0.00263, val_PSNR=31.70, val_SSIM=0.984, train_loss1=0.00197, train_los
+
+
+
+
+
+
+Epoch 228: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00197, val_loss2=0.000649, val_loss=0.00261, val_PSNR=31.90, val_SSIM=0.986, train_loss1=0.00196, train_los
+
+
+
+
+
+
+Epoch 229: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00192, val_loss2=0.000645, val_loss=0.00256, val_PSNR=31.90, val_SSIM=0.986, train_loss1=0.00195, train_los
+
+
+
+
+
+
+Epoch 230: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00192, val_loss2=0.00068, val_loss=0.0026, val_PSNR=31.70, val_SSIM=0.985, train_loss1=0.00193, train_loss2
+
+
+
+
+
+
+Epoch 231: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00195, val_loss2=0.000679, val_loss=0.00263, val_PSNR=31.70, val_SSIM=0.985, train_loss1=0.00194, train_los
+
+
+
+
+
+
+Epoch 232: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00193, val_loss2=0.000639, val_loss=0.00257, val_PSNR=32.00, val_SSIM=0.986, train_loss1=0.00193, train_los
+
+
+
+
+
+
+
+Epoch 233: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00192, val_loss2=0.000632, val_loss=0.00255, val_PSNR=32.00, val_SSIM=0.986, train_loss1=0.00194, train_los
+
+
+
+
+
+
+Epoch 234: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00193, val_loss2=0.000648, val_loss=0.00258, val_PSNR=31.90, val_SSIM=0.985, train_loss1=0.00193, train_los
+
+
+
+
+
+
+Epoch 235: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.0019, val_loss2=0.000661, val_loss=0.00256, val_PSNR=31.80, val_SSIM=0.986, train_loss1=0.00193, train_loss
+
+Validation DataLoader 0:  71%|██████████████████████████████████████████████████████████████████████████████████████▍                                  | 5/7 [00:01<00:00,  2.89it/s]
+
+
+
+
+
+Epoch 236: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00194, val_loss2=0.000621, val_loss=0.00256, val_PSNR=32.10, val_SSIM=0.987, train_loss1=0.00192, train_los
+
+
+
+
+
+
+Epoch 237: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00192, val_loss2=0.000659, val_loss=0.00258, val_PSNR=31.80, val_SSIM=0.985, train_loss1=0.00192, train_los
+
+
+
+
+
+
+
+Epoch 238: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00191, val_loss2=0.000634, val_loss=0.00254, val_PSNR=32.00, val_SSIM=0.986, train_loss1=0.00192, train_los
+
+
+
+
+
+
+Epoch 239: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.0019, val_loss2=0.000641, val_loss=0.00254, val_PSNR=31.90, val_SSIM=0.985, train_loss1=0.00193, train_loss
+
+
+
+
+
+
+Epoch 240: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.0019, val_loss2=0.000637, val_loss=0.00254, val_PSNR=32.00, val_SSIM=0.985, train_loss1=0.00192, train_loss
+Validation DataLoader 0:  57%|█████████████████████████████████████████████████████████████████████▏                                                   | 4/7 [00:01<00:01,  2.92it/s]
+
+
+
+
+
+
+Epoch 241: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.0019, val_loss2=0.000612, val_loss=0.00251, val_PSNR=32.10, val_SSIM=0.987, train_loss1=0.00191, train_loss
+
+
+
+
+
+
+Epoch 242: 100%|█| 49/49 [00:11<00:00,  4.13it/s, v_num=41wn, val_loss1=0.0019, val_loss2=0.000658, val_loss=0.00256, val_PSNR=31.80, val_SSIM=0.984, train_loss1=0.00192, train_loss
+
+
+
+
+
+
+Epoch 243: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.0019, val_loss2=0.000634, val_loss=0.00253, val_PSNR=32.00, val_SSIM=0.986, train_loss1=0.00193, train_loss
+
+
+
+
+
+
+Epoch 244: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.0019, val_loss2=0.000628, val_loss=0.00253, val_PSNR=32.00, val_SSIM=0.986, train_loss1=0.00192, train_loss
+
+
+
+
+
+
+Epoch 245: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.0019, val_loss2=0.000615, val_loss=0.00252, val_PSNR=32.10, val_SSIM=0.986, train_loss1=0.0019, train_loss2
+
+
+
+
+
+
+Epoch 246: 100%|█| 49/49 [00:12<00:00,  4.06it/s, v_num=41wn, val_loss1=0.00189, val_loss2=0.000665, val_loss=0.00255, val_PSNR=31.80, val_SSIM=0.984, train_loss1=0.00191, train_los
+
+
+
+
+
+
+
+Epoch 247: 100%|█| 49/49 [00:12<00:00,  4.05it/s, v_num=41wn, val_loss1=0.00188, val_loss2=0.000647, val_loss=0.00253, val_PSNR=31.90, val_SSIM=0.985, train_loss1=0.0019, train_loss
+
+
+
+
+
+
+Epoch 248: 100%|█| 49/49 [00:11<00:00,  4.10it/s, v_num=41wn, val_loss1=0.0019, val_loss2=0.00064, val_loss=0.00254, val_PSNR=32.00, val_SSIM=0.985, train_loss1=0.0019, train_loss2=
+
+
+
+
+
+
+Epoch 249: 100%|█| 49/49 [00:11<00:00,  4.13it/s, v_num=41wn, val_loss1=0.00187, val_loss2=0.000604, val_loss=0.00247, val_PSNR=32.20, val_SSIM=0.986, train_loss1=0.0019, train_loss
+
+
+
+
+
+
+Epoch 250: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00187, val_loss2=0.000612, val_loss=0.00248, val_PSNR=32.20, val_SSIM=0.986, train_loss1=0.0019, train_loss
+
+
+
+
+
+
+Epoch 251: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00189, val_loss2=0.000653, val_loss=0.00254, val_PSNR=31.90, val_SSIM=0.985, train_loss1=0.00191, train_los
+
+
+
+
+
+
+Epoch 252: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00189, val_loss2=0.000654, val_loss=0.00255, val_PSNR=31.90, val_SSIM=0.983, train_loss1=0.00189, train_los
+
+
+
+
+
+
+Epoch 253: 100%|█| 49/49 [00:11<00:00,  4.14it/s, v_num=41wn, val_loss1=0.00192, val_loss2=0.000672, val_loss=0.00259, val_PSNR=31.70, val_SSIM=0.986, train_loss1=0.00189, train_los
+
+
+
+
+
+
+Epoch 254: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00192, val_loss2=0.000644, val_loss=0.00256, val_PSNR=31.90, val_SSIM=0.986, train_loss1=0.00189, train_los
+
+
+
+
+
+
+
+Epoch 255: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00187, val_loss2=0.000601, val_loss=0.00248, val_PSNR=32.20, val_SSIM=0.987, train_loss1=0.00189, train_los
+
+
+
+
+
+
+Epoch 256: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00188, val_loss2=0.000601, val_loss=0.00248, val_PSNR=32.20, val_SSIM=0.987, train_loss1=0.0019, train_loss
+
+
+
+
+
+
+Epoch 257: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00189, val_loss2=0.000654, val_loss=0.00255, val_PSNR=31.90, val_SSIM=0.984, train_loss1=0.00189, train_los
+
+
+
+
+
+
+Epoch 258: 100%|█| 49/49 [00:11<00:00,  4.10it/s, v_num=41wn, val_loss1=0.00187, val_loss2=0.000628, val_loss=0.0025, val_PSNR=32.00, val_SSIM=0.985, train_loss1=0.00189, train_loss
+
+
+
+
+
+
+
+Epoch 259: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00191, val_loss2=0.000611, val_loss=0.00252, val_PSNR=32.10, val_SSIM=0.986, train_loss1=0.00189, train_los
+
+
+
+
+
+
+Epoch 260: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00188, val_loss2=0.000617, val_loss=0.00249, val_PSNR=32.10, val_SSIM=0.986, train_loss1=0.00188, train_los
+
+
+
+
+
+
+Epoch 261: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00185, val_loss2=0.000626, val_loss=0.00248, val_PSNR=32.00, val_SSIM=0.987, train_loss1=0.00187, train_los
+
+
+
+
+
+
+Epoch 262: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00186, val_loss2=0.000616, val_loss=0.00247, val_PSNR=32.10, val_SSIM=0.986, train_loss1=0.00187, train_los
+
+
+
+
+
+
+Epoch 263: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00189, val_loss2=0.000626, val_loss=0.00251, val_PSNR=32.00, val_SSIM=0.986, train_loss1=0.00188, train_los
+
+
+
+
+
+
+Epoch 264: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00187, val_loss2=0.0006, val_loss=0.00247, val_PSNR=32.20, val_SSIM=0.987, train_loss1=0.00188, train_loss2
+
+
+
+
+
+
+
+Epoch 265: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00186, val_loss2=0.000593, val_loss=0.00246, val_PSNR=32.30, val_SSIM=0.987, train_loss1=0.00188, train_los
+
+
+
+
+
+
+Epoch 266: 100%|█| 49/49 [00:11<00:00,  4.10it/s, v_num=41wn, val_loss1=0.00187, val_loss2=0.000608, val_loss=0.00248, val_PSNR=32.20, val_SSIM=0.986, train_loss1=0.00187, train_los
+
+
+
+
+
+
+
+Epoch 267: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00185, val_loss2=0.000596, val_loss=0.00244, val_PSNR=32.30, val_SSIM=0.987, train_loss1=0.00187, train_los
+
+
+
+
+
+
+
+Epoch 268: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00186, val_loss2=0.000592, val_loss=0.00245, val_PSNR=32.30, val_SSIM=0.987, train_loss1=0.00187, train_los
+
+
+
+
+
+
+Epoch 269: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00187, val_loss2=0.000619, val_loss=0.00249, val_PSNR=32.10, val_SSIM=0.986, train_loss1=0.00186, train_los
+
+
+
+
+
+
+Epoch 270: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00187, val_loss2=0.000594, val_loss=0.00246, val_PSNR=32.30, val_SSIM=0.987, train_loss1=0.00187, train_los
+
+
+
+
+
+
+Epoch 271: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00185, val_loss2=0.000641, val_loss=0.00249, val_PSNR=31.90, val_SSIM=0.984, train_loss1=0.00186, train_los
+
+
+
+
+
+
+Epoch 272: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00186, val_loss2=0.000623, val_loss=0.00248, val_PSNR=32.10, val_SSIM=0.985, train_loss1=0.00185, train_los
+
+
+
+
+
+
+Epoch 273: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00185, val_loss2=0.0006, val_loss=0.00245, val_PSNR=32.20, val_SSIM=0.987, train_loss1=0.00187, train_loss2
+
+
+
+
+
+
+Epoch 274: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00184, val_loss2=0.000627, val_loss=0.00247, val_PSNR=32.00, val_SSIM=0.986, train_loss1=0.00185, train_los
+
+
+
+
+
+
+Epoch 275: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00185, val_loss2=0.000612, val_loss=0.00247, val_PSNR=32.20, val_SSIM=0.986, train_loss1=0.00186, train_los
+
+
+
+
+
+
+Epoch 276: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00184, val_loss2=0.0006, val_loss=0.00244, val_PSNR=32.20, val_SSIM=0.987, train_loss1=0.00185, train_loss2
+
+
+
+
+
+
+Epoch 277: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00183, val_loss2=0.00061, val_loss=0.00244, val_PSNR=32.20, val_SSIM=0.986, train_loss1=0.00185, train_loss
+
+
+
+
+
+
+Epoch 278: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00185, val_loss2=0.000597, val_loss=0.00244, val_PSNR=32.30, val_SSIM=0.986, train_loss1=0.00185, train_los
+
+
+
+
+
+
+Epoch 279: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00185, val_loss2=0.00059, val_loss=0.00243, val_PSNR=32.30, val_SSIM=0.987, train_loss1=0.00186, train_loss
+
+
+
+
+
+
+Epoch 280: 100%|█| 49/49 [00:11<00:00,  4.13it/s, v_num=41wn, val_loss1=0.00186, val_loss2=0.000636, val_loss=0.0025, val_PSNR=32.00, val_SSIM=0.985, train_loss1=0.00185, train_loss
+
+Validation DataLoader 0:  71%|██████████████████████████████████████████████████████████████████████████████████████▍                                  | 5/7 [00:01<00:00,  2.91it/s]
+
+
+
+
+
+Epoch 281: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00184, val_loss2=0.000583, val_loss=0.00242, val_PSNR=32.40, val_SSIM=0.987, train_loss1=0.00187, train_los
+
+
+
+
+
+
+
+Epoch 282: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00185, val_loss2=0.00061, val_loss=0.00246, val_PSNR=32.20, val_SSIM=0.986, train_loss1=0.00184, train_loss
+Validation DataLoader 0:  71%|██████████████████████████████████████████████████████████████████████████████████████▍                                  | 5/7 [00:01<00:00,  2.91it/s]
+
+
+
+
+
+
+Epoch 283: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00183, val_loss2=0.000575, val_loss=0.00241, val_PSNR=32.40, val_SSIM=0.987, train_loss1=0.00184, train_los
+
+
+
+
+
+
+Epoch 284: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00184, val_loss2=0.00059, val_loss=0.00243, val_PSNR=32.30, val_SSIM=0.986, train_loss1=0.00184, train_loss
+Validation DataLoader 0:  43%|███████████████████████████████████████████████████▊                                                                     | 3/7 [00:01<00:01,  2.91it/s]
+
+
+
+
+
+
+Epoch 285: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00182, val_loss2=0.000586, val_loss=0.0024, val_PSNR=32.30, val_SSIM=0.987, train_loss1=0.00183, train_loss
+
+
+
+
+
+
+Epoch 286: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00182, val_loss2=0.000614, val_loss=0.00243, val_PSNR=32.10, val_SSIM=0.986, train_loss1=0.00184, train_los
+
+
+
+
+
+
+Epoch 287: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00183, val_loss2=0.000584, val_loss=0.00242, val_PSNR=32.30, val_SSIM=0.987, train_loss1=0.00183, train_los
+
+
+
+
+
+
+Epoch 288: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00182, val_loss2=0.00059, val_loss=0.00241, val_PSNR=32.30, val_SSIM=0.987, train_loss1=0.00183, train_loss
+
+
+
+
+
+
+Epoch 289: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00183, val_loss2=0.000621, val_loss=0.00246, val_PSNR=32.10, val_SSIM=0.987, train_loss1=0.00183, train_los
+
+
+
+
+
+
+Epoch 290: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00186, val_loss2=0.000586, val_loss=0.00244, val_PSNR=32.30, val_SSIM=0.987, train_loss1=0.00183, train_los
+
+
+
+
+
+
+Epoch 291: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00182, val_loss2=0.000577, val_loss=0.0024, val_PSNR=32.40, val_SSIM=0.987, train_loss1=0.00183, train_loss
+
+
+
+
+
+
+Epoch 292: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00183, val_loss2=0.000578, val_loss=0.00241, val_PSNR=32.40, val_SSIM=0.987, train_loss1=0.00183, train_los
+
+
+
+
+
+
+Epoch 293: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.0018, val_loss2=0.000596, val_loss=0.0024, val_PSNR=32.30, val_SSIM=0.986, train_loss1=0.00183, train_loss2
+
+
+
+
+
+
+Epoch 294: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00182, val_loss2=0.000584, val_loss=0.0024, val_PSNR=32.40, val_SSIM=0.987, train_loss1=0.00182, train_loss
+
+
+
+
+
+
+
+Epoch 295: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.00181, val_loss2=0.000584, val_loss=0.00239, val_PSNR=32.40, val_SSIM=0.987, train_loss1=0.00183, train_los
+
+
+
+
+
+
+Epoch 296: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.0018, val_loss2=0.000584, val_loss=0.00239, val_PSNR=32.30, val_SSIM=0.987, train_loss1=0.00182, train_loss
+
+
+
+
+
+
+Epoch 297: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.0018, val_loss2=0.000579, val_loss=0.00238, val_PSNR=32.40, val_SSIM=0.987, train_loss1=0.00183, train_loss
+
+
+
+
+
+
+Epoch 298: 100%|█| 49/49 [00:11<00:00,  4.12it/s, v_num=41wn, val_loss1=0.00184, val_loss2=0.000635, val_loss=0.00247, val_PSNR=32.00, val_SSIM=0.985, train_loss1=0.00182, train_los
+
+
+
+
+
+
+Epoch 299: 100%|█| 49/49 [00:11<00:00,  4.11it/s, v_num=41wn, val_loss1=0.0018, val_loss2=0.000576, val_loss=0.00237, val_PSNR=32.40, val_SSIM=0.987, train_loss1=0.00181, train_loss
+
+Metric val_SSIM improved by 0.000 >= min_delta = 0.0. New best score: 0.987
+`Trainer.fit` stopped: `max_epochs=300` reached.
+Restoring states from the checkpoint path at D:\HISLab\DATASET\StripSkullCT_Simulation\RESULT\MODEL\last.ckpt
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+Loaded model weights from the checkpoint at D:\HISLab\DATASET\StripSkullCT_Simulation\RESULT\MODEL\last.ckpt
+
+Testing DataLoader 0: 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 7/7 [00:03<00:00,  1.89it/s]
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       Test metric             DataLoader 0
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+        test_PSNR            32.4078254699707
+        test_SSIM            0.987326443195343
+        test_loss          0.0024118120782077312
+       test_loss1          0.001835302566178143
+       test_loss2          0.0005765095120295882
+──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
