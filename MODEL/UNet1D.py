@@ -81,4 +81,4 @@ if __name__ == '__main__':
 
     from torchinfo import summary
     net = UNet1D(channels=256).to("cuda")
-    summary(net, (64, 256, 3001), device="cuda")
+    summary(net, (32, 256, 3001), device="cuda")

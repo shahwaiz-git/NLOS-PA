@@ -16,7 +16,7 @@ parser = ArgumentParser()
 parser.add_argument('--model_name', default='UNet-DAS', type=str)
 
 # Data direction
-parser.add_argument('--base_dir', default=r'D:\HISLab\DATASET\StripSkullCT_Simulation', type=str)
+parser.add_argument('--base_dir', default=r'D:\HISLab\DATASET\dataset_2D_phantom', type=str)
 parser.add_argument('--mixed_signal_dir', default=None, type=str)
 parser.add_argument('--direct_signal_dir', default=None, type=str)
 parser.add_argument('--target_dir', default=None, type=str)
@@ -25,7 +25,7 @@ parser.add_argument('--save_dir', default=None, type=str)
 
 # Model Control
 parser.add_argument('--n_classes', default=1, type=int)
-parser.add_argument('--channels', default=50, type=int)
+parser.add_argument('--channels', default=256, type=int)
 parser.add_argument('--dt', default=1 / 5e6, type=float)
 
 parser.add_argument('--train_size', default=0.8, type=float)
@@ -44,7 +44,7 @@ args = parser.parse_args()
 args.mixed_signal_dir = join(args.base_dir, 'mixed_signal')
 args.direct_signal_dir = join(args.base_dir, 'direct_signal')
 args.target_dir = join(args.base_dir, 'target')
-args.sensor_mask_dir = join(args.base_dir, 'sensor_mask_idx.mat')
+args.sensor_mask_dir = join(args.base_dir, 'sensor_pos')
 args.save_dir = join(args.base_dir, 'RESULT')
 
 # --------------------------------callback-------------------------------

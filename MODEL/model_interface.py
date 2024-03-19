@@ -12,19 +12,19 @@ class MInterface(pl.LightningModule):
     def __init__(self, **kwargs):
         super().__init__()
         self.save_hyperparameters()
-        self.das = DAS(sensor_mask_dir=kwargs['sensor_mask_dir'], dt=kwargs['dt'])
+        self.das = DAS(dt=kwargs['dt'])
         self.unet1d = UNet1D(channels=kwargs['channels'])
         self.unet2d = UNet2D(n_classes=kwargs['n_classes'])
         self.configure_loss()
 
         self.automatic_optimization = False
 
-    def forward(self, mixed_signal):
+    def forward(self, mixed_signal, mask):
         direct_signal = self.unet1d(mixed_signal)
         reflected_signal = mixed_signal - direct_signal
 
-        direct_image = self.das(direct_signal.detach()).unsqueeze(1)
-        reflected_image = self.das(reflected_signal.detach()).unsqueeze(1)
+        direct_image = self.das(direct_signal.detach(), mask).unsqueeze(1)
+        reflected_image = self.das(reflected_signal.detach(), mask).unsqueeze(1)
 
         reflected_image = self.unet2d(reflected_image)
 
@@ -33,9 +33,9 @@ class MInterface(pl.LightningModule):
     def training_step(self, batch, batch_idx):
         (opt1, opt2) = self.optimizers(use_pl_optimizer=False)
 
-        mixed_signal, direct_signal, target, _ = batch
+        mixed_signal, direct_signal, target, mask, _ = batch
 
-        direct_signal_hat, direct_image_hat, reflected_image_hat = self.forward(mixed_signal)
+        direct_signal_hat, direct_image_hat, reflected_image_hat = self.forward(mixed_signal, mask)
         loss1 = self.loss_function1(direct_signal.float(), direct_signal_hat.float())
         opt1.zero_grad()
         self.manual_backward(loss1)
@@ -51,8 +51,8 @@ class MInterface(pl.LightningModule):
 
     def evaluate(self, batch, stage):
         assert stage in ['val', 'test']
-        mixed_signal, direct_signal, target, names = batch
-        direct_signal_hat, direct_image_hat, reflected_image_hat = self.forward(mixed_signal)
+        mixed_signal, direct_signal, target, mask, names = batch
+        direct_signal_hat, direct_image_hat, reflected_image_hat = self.forward(mixed_signal, mask)
         image_hat = direct_image_hat + reflected_image_hat
         loss1 = self.loss_function1(direct_signal.float(), direct_signal_hat.float())
         loss2 = self.loss_function2((target-direct_image_hat).float(), reflected_image_hat.float())
@@ -72,10 +72,6 @@ class MInterface(pl.LightningModule):
 
     def test_step(self, batch, batch_idx):
         self.evaluate(batch, 'test')
-
-    def predict_step(self, x):
-        direct_signal_hat, direct_image_hat, reflected_image_hat = self.forward(x)
-        return direct_signal_hat, direct_image_hat, reflected_image_hat
 
     def configure_optimizers(self):
         opt1 = torch.optim.Adam(self.unet1d.parameters(), lr=self.hparams.lr1)
